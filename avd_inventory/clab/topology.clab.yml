@@ -1,0 +1,39 @@
+name: evpn-vxlan-clab
+prefix: ""
+
+mgmt:
+  network: custom_mgmt
+  ipv4-subnet: 192.168.0.0/24
+
+topology:
+  kinds:
+    ceos:
+      enforce-startup-config: true
+      image: ceos-lab:latest
+  defaults:
+    kind: ceos
+    startup-config: init-configs/ceos-init.cfg
+  nodes:
+    # EVPN-VXLAN
+    Spine1-J-2:
+      mgmt-ipv4: 192.168.0.11
+    Leaf11-T3-3:
+      mgmt-ipv4: 192.168.0.21
+    Leaf12-T3-4:
+      mgmt-ipv4: 192.168.0.22
+    Leaf21-Jp-5:
+      mgmt-ipv4: 192.168.0.23
+    Leaf22-Jp-6:
+      mgmt-ipv4: 192.168.0.24
+
+
+  links:
+  # EVPN-VXLAN links
+  - endpoints: ["Leaf11-T3-3:eth1", "Spine1-J-2:eth1"]
+  - endpoints: ["Leaf12-T3-4:eth1", "Spine1-J-2:eth2"]
+  - endpoints: ["Leaf21-Jp-5:eth1", "Spine1-J-2:eth3"]
+  - endpoints: ["Leaf22-Jp-6:eth1", "Spine1-J-2:eth4"]
+  - endpoints: ["Leaf11-T3-3:eth47", "Leaf12-T3-4:eth47"]
+  - endpoints: ["Leaf11-T3-3:eth48", "Leaf12-T3-4:eth48"]
+  - endpoints: ["Leaf21-Jp-5:eth47", "Leaf22-Jp-6:eth47"]
+  - endpoints: ["Leaf21-Jp-5:eth48", "Leaf22-Jp-6:eth48"]

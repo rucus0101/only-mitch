@@ -1,0 +1,15 @@
+---
+servers:
+
+  - name: test
+    adapters:
+      - endpoint_ports: [Ethernet68, Ethernet68]
+        switch_ports: [Ethernet68, Ethernet68]
+        switches: [L01, L02]
+        mode: trunk
+        vlans: "10-20,100"
+        spanning_tree_portfast: network
+        spanning_tree_bpdufilter: enabled
+        port_channel:
+          description: test
+          mode: active

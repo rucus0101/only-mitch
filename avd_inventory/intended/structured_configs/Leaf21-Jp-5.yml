@@ -1,0 +1,228 @@
+hostname: Leaf21-Jp-5
+metadata:
+  platform: cEOS
+is_deployed: true
+router_bgp:
+  as: '65102'
+  router_id: 192.0.255.5
+  bgp:
+    default:
+      ipv4_unicast: false
+  maximum_paths:
+    paths: 4
+    ecmp: 4
+  peer_groups:
+  - name: MLAG-IPv4-UNDERLAY-PEER
+    type: ipv4
+    remote_as: '65102'
+    next_hop_self: true
+    description: Leaf22-Jp-6
+    maximum_routes: 12000
+    send_community: all
+    route_map_in: RM-MLAG-PEER-IN
+  - name: IPv4-UNDERLAY-PEERS
+    type: ipv4
+    maximum_routes: 12000
+    send_community: all
+  - name: EVPN-OVERLAY-PEERS
+    type: evpn
+    update_source: Loopback0
+    bfd: true
+    send_community: all
+    maximum_routes: 0
+    ebgp_multihop: 3
+  address_family_ipv4:
+    peer_groups:
+    - name: MLAG-IPv4-UNDERLAY-PEER
+      activate: true
+    - name: IPv4-UNDERLAY-PEERS
+      activate: true
+    - name: EVPN-OVERLAY-PEERS
+      activate: false
+  neighbors:
+  - ip_address: 10.255.251.5
+    peer_group: MLAG-IPv4-UNDERLAY-PEER
+    peer: Leaf22-Jp-6
+    description: Leaf22-Jp-6
+  - ip_address: 172.30.255.4
+    peer_group: IPv4-UNDERLAY-PEERS
+    remote_as: '65000'
+    peer: Spine1-J-2
+    description: Spine1-J-2_Ethernet3
+  - ip_address: 192.0.255.1
+    peer_group: EVPN-OVERLAY-PEERS
+    peer: Spine1-J-2
+    description: Spine1-J-2
+    remote_as: '65000'
+  redistribute_routes:
+  - source_protocol: connected
+    route_map: RM-CONN-2-BGP
+  address_family_evpn:
+    peer_groups:
+    - name: EVPN-OVERLAY-PEERS
+      activate: true
+static_routes:
+- vrf: MGMT
+  destination_address_prefix: 0.0.0.0/0
+  gateway: 192.168.0.1
+service_routing_protocols_model: multi-agent
+ip_routing: true
+router_multicast:
+  ipv4:
+    routing: true
+    software_forwarding: sfe
+vlan_internal_order:
+  allocation: ascending
+  range:
+    beginning: 1006
+    ending: 1199
+ip_name_servers:
+- ip_address: 8.8.8.8
+  vrf: MGMT
+spanning_tree:
+  mode: mstp
+  mst_instances:
+  - id: '0'
+    priority: 16384
+  no_spanning_tree_vlan: 4093-4094
+local_users:
+- name: arista
+  privilege: 15
+  role: network-admin
+  sha512_password: $6$uO7WiGeT.ldvQqPK$NO6I38R9GaP7Duib0kgNKuMUo3l6sYQJ4lCwFQd9Z/X96/uYuq29p0dTimAGuPCt1HdxqLv1pN/kqVkRkKVeF/
+vrfs:
+- name: MGMT
+  ip_routing: false
+management_interfaces:
+- name: Management0
+  description: oob_management
+  shutdown: false
+  vrf: MGMT
+  ip_address: 192.168.0.23/24
+  gateway: 192.168.0.1
+  type: oob
+management_api_http:
+  enable_vrfs:
+  - name: MGMT
+  enable_https: true
+vlans:
+- id: 4093
+  tenant: system
+  name: LEAF_PEER_L3
+  trunk_groups:
+  - LEAF_PEER_L3
+- id: 4094
+  tenant: system
+  name: MLAG_PEER
+  trunk_groups:
+  - MLAG
+vlan_interfaces:
+- name: Vlan4093
+  description: MLAG_PEER_L3_PEERING
+  shutdown: false
+  mtu: 9214
+  ip_address: 10.255.251.4/31
+  pim:
+    ipv4:
+      sparse_mode: true
+- name: Vlan4094
+  description: MLAG_PEER
+  shutdown: false
+  ip_address: 10.255.252.4/31
+  no_autostate: true
+  mtu: 9214
+port_channel_interfaces:
+- name: Port-Channel47
+  description: MLAG_PEER_Leaf22-Jp-6_Po47
+  type: switched
+  shutdown: false
+  mode: trunk
+  trunk_groups:
+  - LEAF_PEER_L3
+  - MLAG
+ethernet_interfaces:
+- name: Ethernet47
+  peer: Leaf22-Jp-6
+  peer_interface: Ethernet47
+  peer_type: mlag_peer
+  description: MLAG_PEER_Leaf22-Jp-6_Ethernet47
+  type: port-channel-member
+  shutdown: false
+  channel_group:
+    id: 47
+    mode: active
+- name: Ethernet48
+  peer: Leaf22-Jp-6
+  peer_interface: Ethernet48
+  peer_type: mlag_peer
+  description: MLAG_PEER_Leaf22-Jp-6_Ethernet48
+  type: port-channel-member
+  shutdown: false
+  channel_group:
+    id: 47
+    mode: active
+- name: Ethernet1
+  peer: Spine1-J-2
+  peer_interface: Ethernet3
+  peer_type: spine
+  description: P2P_LINK_TO_SPINE1-J-2_Ethernet3
+  shutdown: false
+  mtu: 9214
+  type: routed
+  ip_address: 172.30.255.5/31
+  pim:
+    ipv4:
+      sparse_mode: true
+mlag_configuration:
+  domain_id: pod1
+  local_interface: Vlan4094
+  peer_address: 10.255.252.5
+  peer_link: Port-Channel47
+  reload_delay_mlag: '300'
+  reload_delay_non_mlag: '330'
+route_maps:
+- name: RM-MLAG-PEER-IN
+  sequence_numbers:
+  - sequence: 10
+    type: permit
+    set:
+    - origin incomplete
+    description: Make routes learned over MLAG Peer-link less preferred on spines to ensure optimal routing
+- name: RM-CONN-2-BGP
+  sequence_numbers:
+  - sequence: 10
+    type: permit
+    match:
+    - ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY
+loopback_interfaces:
+- name: Loopback0
+  description: EVPN_Overlay_Peering
+  shutdown: false
+  ip_address: 192.0.255.5/32
+- name: Loopback1
+  description: VTEP_VXLAN_Tunnel_Source
+  shutdown: false
+  ip_address: 192.0.254.5/32
+prefix_lists:
+- name: PL-LOOPBACKS-EVPN-OVERLAY
+  sequence_numbers:
+  - sequence: 10
+    action: permit 192.0.255.0/24 eq 32
+  - sequence: 20
+    action: permit 192.0.254.0/24 eq 32
+router_bfd:
+  multihop:
+    interval: 300
+    min_rx: 300
+    multiplier: 3
+ip_igmp_snooping:
+  globally_enabled: true
+ip_virtual_router_mac_address: 00:1c:73:00:dc:01
+vxlan_interface:
+  Vxlan1:
+    description: Leaf21-Jp-5_VTEP
+    vxlan:
+      udp_port: 4789
+      source_interface: Loopback0
+      mlag_source_interface: Loopback1
+      virtual_router_encapsulation_mac_address: mlag-system-id

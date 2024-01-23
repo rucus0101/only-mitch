@@ -1,0 +1,33 @@
+---
+all:
+  children:
+
+    AVD_FABRIC:
+      children:
+
+        EVPN_VXLAN_FABRIC:
+          children:
+
+            EVPN_VXLAN_SPINES:
+              vars:
+                type: spine
+              hosts:
+                Spine1-J-2:
+                  ansible_host: 192.168.0.11
+
+            EVPN_VXLAN_LEAFS:
+              vars:
+                type: l3leaf
+              children:
+                pod0:
+                  hosts:
+                    Leaf11-T3-3:
+                      ansible_host: 192.168.0.21
+                    Leaf12-T3-4:
+                      ansible_host: 192.168.0.22
+                pod1:
+                  hosts:
+                    Leaf21-Jp-5:
+                      ansible_host: 192.168.0.23
+                    Leaf22-Jp-6:
+                      ansible_host: 192.168.0.24
