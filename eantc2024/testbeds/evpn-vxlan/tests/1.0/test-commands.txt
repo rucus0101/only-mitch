@@ -1,0 +1,2 @@
+show version
+show running-config

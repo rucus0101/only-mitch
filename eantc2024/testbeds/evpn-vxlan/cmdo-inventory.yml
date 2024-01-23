@@ -11,45 +11,20 @@ devices:
   Spine1-J-2:
     platform: arista_eos
     address: 192.168.0.11
-    send-commands:
-    - show version
-    - show running-config
-    - show tech-support
-    - show bgp evpn summary
-    - show ip bgp summary
+    send-commands-from-file: test-commands.txt
   Leaf11-T3-3:
     platform: arista_eos
     address: 192.168.0.21
-    send-commands:
-    - show version
-    - show running-config
-    - show tech-support
-    - show bgp evpn summary
-    - show ip bgp summary
+    send-commands-from-file: test-commands.txt
   Leaf12-T3-4:
     platform: arista_eos
     address: 192.168.0.22
-    send-commands:
-    - show version
-    - show running-config
-    - show tech-support
-    - show bgp evpn summary
-    - show ip bgp summary
+    send-commands-from-file: test-commands.txt
   Leaf21-Jp-5:
     platform: arista_eos
     address: 192.168.0.23
-    send-commands:
-    - show version
-    - show running-config
-    - show tech-support
-    - show bgp evpn summary
-    - show ip bgp summary
+    send-commands-from-file: test-commands.txt
   Leaf22-Jp-6:
     platform: arista_eos
     address: 192.168.0.24
-    send-commands:
-    - show version
-    - show running-config
-    - show tech-support
-    - show bgp evpn summary
-    - show ip bgp summary
+    send-commands-from-file: test-commands.txt
