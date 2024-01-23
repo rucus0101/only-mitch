@@ -1,0 +1,4 @@
+{
+    "image": "ghcr.io/aristanetworks/ansible-avd/universal:python3.11-avd-v4.5.0",
+    "onCreateCommand": "pip3 install passlib cookiecutter; bash -c \"$(curl -sL https://get.containerlab.dev)\"; sudo apt-get update; sudo apt-get -y install xz-utils; bash -c \"$(curl -sL https://raw.githubusercontent.com/hellt/cmdo/master/get.sh)\""
+}
