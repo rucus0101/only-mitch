@@ -12,7 +12,7 @@ def interpreter():
         help='The EANTC year. Optional, default is 2024. This will be used to find tests parent directory.'
     )
     parser.add_argument(
-        '-c', '--category', choices=['evpn-vxlan', 'evpn-mpls', 'sr-mpls'],
+        '-c', '--category', choices=['evpn-vxlan', 'evpn-mpls', 'sr-mpls'], required=True,
         help='EANTC test category: evpn-vxlan, evpn-mpls, sr-mpls'
     )
     parser.add_argument(
