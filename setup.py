@@ -28,7 +28,8 @@ setup(
     install_requires=[
         "nornir==3.4.1",
         "nornir-napalm==0.4.0",
-        "nornir-utils==0.2.0"
+        "nornir-utils==0.2.0",
+        "argcomplete==3.2.2"
     ],
     entry_points = {
         "console_scripts": ['run = run.cli:interpreter']

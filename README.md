@@ -8,3 +8,8 @@ To start Containerlab:
 - Import the image: `docker import .gitignored/<cEOS-archive-filename> ceos-lab:latest`
 - Start the lab: `make start`
 - To stop the lab: `make stop`
+
+To install `run` CLI:
+
+- `pip3 install  --force file://$(pwd)`
+- `eval "$(register-python-argcomplete run)"`
