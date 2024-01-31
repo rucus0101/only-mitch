@@ -13,3 +13,7 @@ To install `run` CLI:
 
 - `pip3 install  --force file://$(pwd)`
 - `eval "$(register-python-argcomplete run)"`
+
+Test the CLI without install:
+
+- `python3 -m run --help`
