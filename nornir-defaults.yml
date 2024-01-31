@@ -1,0 +1,5 @@
+---
+# get-snapshot will ask for username and password
+username: arista
+password: arista
+platform: eos

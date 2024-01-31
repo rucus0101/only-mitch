@@ -1,0 +1,4 @@
+show version
+show running-config
+show ip bgp summary
+show bgp evpn summary
