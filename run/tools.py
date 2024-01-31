@@ -1,6 +1,8 @@
 import sys
 import yaml
 import csv
+from time import time as time
+from datetime import datetime as datetime
 
 
 def time_stamp():
