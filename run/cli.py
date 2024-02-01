@@ -5,13 +5,14 @@ from nornir_napalm.plugins.tasks import napalm_get
 from nornir_utils.plugins.functions import print_result
 from nornir_utils.plugins.tasks.files import write_file
 from nornir_napalm.plugins.tasks import napalm_cli
+from nornir.core.task import Task, Result
 import os
 import sys
 from run.tools import time_stamp
 
 
-def get_config(task, test_dir_full_path):
-    out_dir = os.path.join(test_dir_full_path, f'configs_{time_stamp}')
+def get_config(task: Task, test_dir_full_path: str, current_time='') -> Result:
+    out_dir = os.path.join(test_dir_full_path, f'configs_{current_time}')
     if not os.path.isdir(out_dir):
         os.makedirs(out_dir)
     result = task.run(
@@ -23,6 +24,7 @@ def get_config(task, test_dir_full_path):
         content=result.result['config']['running'],
         filename=f'{out_dir}/{task.host}.cfg'
     )
+    print('Saved ' + f'configs/{task.host}.cfg')
 
 
 def interpreter():
@@ -63,5 +65,9 @@ def interpreter():
             }
         }
     )
-    # collect confirs
-    nr.run(task=get_config)
+    # current time must be set outside of Nornir task to have single time stamp
+    current_time = time_stamp()
+    # collect configs
+    result = nr.run(task=get_config, test_dir_full_path=test_dir_full_path, current_time=current_time)
+    if result.failed:
+        print(result.failed_hosts)
