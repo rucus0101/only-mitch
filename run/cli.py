@@ -9,7 +9,6 @@ from nornir.core.task import Task, Result
 import os
 import sys
 from run.tools import time_stamp
-import logging
 
 
 def get_config(task: Task, test_dir_full_path: str, current_time='') -> Result:
@@ -28,11 +27,10 @@ def get_config(task: Task, test_dir_full_path: str, current_time='') -> Result:
         content=result.result['config']['running'],
         filename=f'{out_dir}/{task.host}.cfg'
     )
-    logging.info('Saved ' + f'configs/{task.host}.cfg')
+    print('Saved ' + f'configs/{task.host}.cfg')
 
 
 def interpreter():
-    logging.basicConfig(level=logging.INFO)
     # Get cookiecutter output_directory from CLI argument or default
     parser = argparse.ArgumentParser(
         prog="run",
@@ -82,4 +80,4 @@ def interpreter():
     # collect configs
     result = nr.run(task=get_config, test_dir_full_path=test_dir_full_path, current_time=current_time)
     if result.failed:
-        logging.error(f'Failed to collect configs from the following hosts: {[k for k in result.failed_hosts.keys()]}')
+        print(f'ERROR: Failed to collect configs from the following hosts: {[k for k in result.failed_hosts.keys()]}')
