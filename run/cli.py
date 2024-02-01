@@ -13,7 +13,10 @@ import logging
 
 
 def get_config(task: Task, test_dir_full_path: str, current_time='') -> Result:
-    out_dir = os.path.join(test_dir_full_path, f'configs_{current_time}')
+    if current_time:
+        out_dir = os.path.join(test_dir_full_path, f'configs_{current_time}')
+    else:
+        out_dir = os.path.join(test_dir_full_path, f'configs')
     if not os.path.isdir(out_dir):
         os.makedirs(out_dir)
     result = task.run(
@@ -47,6 +50,10 @@ def interpreter():
         # help="Task to perform on the selected EANTC inventory: "
         help = "test\ntest"
     )
+    parser.add_argument(
+        '-notime', '--no_timestamp', action='store_true', default=False,
+        help='Do not add time stamp to the output directory name. By default it will be added.'
+    )
     argcomplete.autocomplete(parser)
     args = parser.parse_args()
     
@@ -68,7 +75,10 @@ def interpreter():
         }
     )
     # current time must be set outside of Nornir task to have single time stamp
-    current_time = time_stamp()
+    if args.no_timestamp:
+        current_time = ''
+    else:
+        current_time = time_stamp()
     # collect configs
     result = nr.run(task=get_config, test_dir_full_path=test_dir_full_path, current_time=current_time)
     if result.failed:
