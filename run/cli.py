@@ -28,11 +28,11 @@ def get_config(task: Task, test_dir_full_path: str, current_time='') -> Result:
         content=result.result['config']['running'],
         filename=f'{out_dir}/{task.host}.cfg'
     )
-    logging.debug('Saved ' + f'configs/{task.host}.cfg')
+    logging.info('Saved ' + f'configs/{task.host}.cfg')
 
 
 def interpreter():
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.INFO)
     # Get cookiecutter output_directory from CLI argument or default
     parser = argparse.ArgumentParser(
         prog="run",
