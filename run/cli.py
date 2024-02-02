@@ -30,6 +30,17 @@ def run_a_command_list(task: Task, cmds_and_dirnames: list) -> Result:
         task=napalm_cli,
         commands=[cmd[0] for cmd in cmds_and_dirnames]
     )
+    # generate a single report file with all commands
+    report_string = f'# Test results for {task.host}\n\n'
+    for cmd, cmd_dirname in cmds_and_dirnames:
+        report_string += f'## {cmd}\n\n'
+        report_string += f'```text\n{result.result[cmd]}```\n\n'
+        task.run(
+            task=write_file,
+            content=report_string,
+            filename=f'{os.path.dirname(cmd_dirname)}/{task.host}_merged.md'
+        )
+        print('Saved ' + f'{os.path.dirname(cmd_dirname)}/{task.host}_merged.md')
     # write a command output to a file
     for cmd, cmd_dirname in cmds_and_dirnames:
         task.run(
