@@ -195,7 +195,7 @@ def interpreter():
         result = nr.run(task=get_config, cfg_dir=config_dir)
         if result.failed:
             print(f'ERROR: Failed to collect configs from the following hosts: {[k for k in result.failed_hosts.keys()]}')
-        # collect show comands
+        # collect show commands
         result = nr.run(task=run_a_command_list, cmds_and_dirnames=cmd_list_with_dirnames)
         if result.failed:
             print(f'ERROR: Failed to collect show commands from the following hosts: {[k for k in result.failed_hosts.keys()]}')
