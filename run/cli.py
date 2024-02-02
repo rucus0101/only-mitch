@@ -184,7 +184,7 @@ def interpreter():
         result = nr.run(task=get_sh_tech, tech_dir=tech_support_dir)
         if result.failed:
             print(f'ERROR: Failed to collect show tech from the following hosts: {[k for k in result.failed_hosts.keys()]}')
-    if args.recover:
+    elif args.recover:
         if not os.path.isdir(args.recover):
             sys.exit(f'ERROR: {args.recover} directory does not exist! Must be a full path!')
         result = nr.run(task=recover_config, cfg_dir=args.recover)
