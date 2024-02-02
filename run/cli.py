@@ -4,7 +4,7 @@ from nornir import InitNornir
 from nornir_napalm.plugins.tasks import napalm_get
 from nornir_utils.plugins.functions import print_result
 from nornir_utils.plugins.tasks.files import write_file
-from nornir_napalm.plugins.tasks import napalm_cli
+from nornir_napalm.plugins.tasks import napalm_cli, napalm_configure
 from nornir.core.task import Task, Result
 import os
 import sys
@@ -62,7 +62,17 @@ def get_sh_tech(task: Task, tech_dir: str) -> Result:
         content=result.result['show tech-support | no-more | tr -cd "[:print:][:space:]"'],
         filename=f'{tech_dir}/{task.host}.txt'
     )
-    print('Saved ' + f'{tech_dir}/{task.host}.cfg')
+    print('Saved ' + f'{tech_dir}/{task.host}.txt')
+
+
+def recover_config(task: Task, cfg_dir: str) -> Result:
+    result = task.run(
+        task=napalm_configure,
+        replace=True,
+        filename=f'{cfg_dir}/{task.host}.cfg'
+    )
+    print(f'Recovered {task.host} config from {cfg_dir}/{task.host}.cfg')
+    return result
 
 
 def interpreter():
@@ -87,6 +97,10 @@ def interpreter():
         '-notime', '--no_timestamp', action='store_true', default=False,
         help='Do not add time stamp to the output directory name. By default it will be added.'
     )
+    parser.add_argument(
+        '-r', '--recover', default='',
+        help='Recover device configuration from the specified directory. Please provide the full path to the directory as an argument.'
+    )
     argcomplete.autocomplete(parser)
     args = parser.parse_args()
 
@@ -105,7 +119,9 @@ def interpreter():
         current_time = ''
     else:
         current_time = time_stamp()
-    if args.task == 'tech':
+    if args.recover:
+        pass  # there is no need to create any new directories to recover configs
+    elif args.task == 'tech':
         # create dir to save show tech
         if current_time:
             tech_support_dir = os.path.join(test_dir_full_path, f'tech_support_{current_time}')
@@ -168,6 +184,10 @@ def interpreter():
         result = nr.run(task=get_sh_tech, tech_dir=tech_support_dir)
         if result.failed:
             print(f'ERROR: Failed to collect show tech from the following hosts: {[k for k in result.failed_hosts.keys()]}')
+    if args.recover:
+        if not os.path.isdir(args.recover):
+            sys.exit(f'ERROR: {args.recover} directory does not exist! Must be a full path!')
+        result = nr.run(task=recover_config, cfg_dir=args.recover)
     else:
         # collect configs
         result = nr.run(task=get_config, cfg_dir=config_dir)
