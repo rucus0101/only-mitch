@@ -1,10 +1,34 @@
 {
-    "build": {
-        "dockerfile": "Dockerfile",
-        "args": {
-            "FROM_IMAGE": "ghcr.io/aristanetworks/avd/universal",
-            "FROM_VARIANT": "python3.11-avd-v4.6.0-dev1",
-            "USERNAME": "avd"
+    "image": "ghcr.io/aristanetworks/avd/universal:python3.11-avd-v4.6.0-dev1",
+    "postCreateCommand": "bash -c \"$(curl -sL https://get.containerlab.dev)\"; pip3 install --force file://$(pwd); echo 'eval \"$(register-python-argcomplete run)\"' >> ~/.zshrc",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // git essentials
+                "mhutchie.git-graph",
+                "donjayamanne.githistory",
+                // spell checker
+                "streetsidesoftware.code-spell-checker",
+                // excalidraw, drawio and tldraw
+                "hediet.vscode-drawio",
+                "tldraw-org.tldraw-vscode",
+                // markdown
+                "yzhang.markdown-all-in-one",
+                "bierner.markdown-checkbox",
+                "DavidAnson.vscode-markdownlint",
+                // various tools
+                "tuxtina.json2yaml",
+                "vscode-icons-team.vscode-icons",
+                "mutantdino.resourcemonitor"
+            ]
         }
     }
+    // "build": {
+    //     "dockerfile": "Dockerfile",
+    //     "args": {
+    //         "FROM_IMAGE": "ghcr.io/aristanetworks/avd/universal",
+    //         "FROM_VARIANT": "python3.11-avd-v4.6.0-dev1",
+    //         "USERNAME": "avd"
+    //     }
+    // }
 }

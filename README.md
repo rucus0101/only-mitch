@@ -11,7 +11,7 @@ To start Containerlab:
 
 To install `run` CLI:
 
-- `pip3 install  --force file://$(pwd)`
+- `pip3 install --force file://$(pwd)`
 - `eval "$(register-python-argcomplete run)"`
 
 Test the CLI without install:
