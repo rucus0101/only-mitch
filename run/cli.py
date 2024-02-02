@@ -151,7 +151,7 @@ def interpreter():
             }
         }
     )
-    
+
     if args.task == 'tech':
         # collect show tech
         result = nr.run(task=get_sh_tech, tech_dir=tech_support_dir)
