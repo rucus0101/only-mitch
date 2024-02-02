@@ -188,6 +188,8 @@ def interpreter():
         if not os.path.isdir(args.recover):
             sys.exit(f'ERROR: {args.recover} directory does not exist! Must be a full path!')
         result = nr.run(task=recover_config, cfg_dir=args.recover)
+        if result.failed:
+            print(f'ERROR: Failed to recover config on: {[k for k in result.failed_hosts.keys()]}')
     else:
         # collect configs
         result = nr.run(task=get_config, cfg_dir=config_dir)
