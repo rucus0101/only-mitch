@@ -81,10 +81,11 @@ def interpreter():
 
     # create the required directories outside Nornir to avoid issues with threading
     # check if test directory exists
-    test_dir_name = f'eantc{args.year}/testbeds/{args.inventory}/tests/{args.task}'
-    test_dir_full_path = os.path.join(os.getcwd(), test_dir_name)
-    if not os.path.isdir(test_dir_full_path):
-        sys.exit(f'ERROR: {test_dir_full_path} does not exist!')
+    if args.task not in ['tech']:
+        test_dir_name = f'eantc{args.year}/testbeds/{args.inventory}/tests/{args.task}'
+        test_dir_full_path = os.path.join(os.getcwd(), test_dir_name)
+        if not os.path.isdir(test_dir_full_path):
+            sys.exit(f'ERROR: {test_dir_full_path} does not exist!')
     # build time stamp if required
     if args.no_timestamp:
         current_time = ''
