@@ -65,13 +65,17 @@ def get_sh_tech(task: Task, tech_dir: str) -> Result:
     print('Saved ' + f'{tech_dir}/{task.host}.txt')
 
 
-def recover_config(task: Task, cfg_dir: str) -> Result:
+def recover_config(task: Task, cfg_dir: str, dry_run: bool) -> Result:
     result = task.run(
         task=napalm_configure,
         replace=True,
-        filename=f'{cfg_dir}/{task.host}.cfg'
+        filename=f'{cfg_dir}/{task.host}.cfg',
+        dry_run=dry_run
     )
-    print(f'Recovered {task.host} config from {cfg_dir}/{task.host}.cfg')
+    if dry_run:
+        print_result(result)
+    else:
+        print(f'Recovered {task.host} config from {cfg_dir}/{task.host}.cfg')
     return result
 
 
@@ -101,6 +105,10 @@ def interpreter():
         '-r', '--recover', default='',
         help='Recover device configuration from the specified directory. Please provide the full path to the directory as an argument.'
     )
+    parser.add_argument(
+        '-ndr', '--no_dry_run', action='store_false', default=True,
+        help='Do not recover configs, use Nornir dry run to check the diff.'
+    )
     argcomplete.autocomplete(parser)
     args = parser.parse_args()
 
@@ -127,7 +135,7 @@ def interpreter():
     if args.recover:
         if not os.path.isdir(args.recover):
             sys.exit(f'ERROR: {args.recover} directory does not exist! Must be a full path!')
-        result = nr.run(task=recover_config, cfg_dir=args.recover)
+        result = nr.run(task=recover_config, cfg_dir=args.recover, dry_run=args.no_dry_run)
         if result.failed:
             print(f'ERROR: Failed to recover config on: {[k for k in result.failed_hosts.keys()]}')
     else:
