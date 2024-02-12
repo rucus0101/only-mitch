@@ -104,6 +104,13 @@ def interpreter():
     argcomplete.autocomplete(parser)
     args = parser.parse_args()
 
+    # overwrite default settings if custom settings defined in .gitignored
+    nr_defaults_file = f'{os.getcwd()}/.gitignored/nornir-defaults.yml'
+    if not os.path.isfile(nr_defaults_file):
+        nr_defaults_file = f'{os.getcwd()}/nornir-defaults.yml'
+    nr_groups_file = f'{os.getcwd()}/.gitignored/nornir-groups.yml'
+    if not os.path.isfile(nr_groups_file):
+        nr_groups_file = f'{os.getcwd()}/nornir-groups.yml'
     # init Nornir
     nr = InitNornir(
         runner={'plugin': 'threaded', 'options': {'num_workers': 20}},
@@ -112,7 +119,7 @@ def interpreter():
             'options': {
                 'host_file': f'{os.getcwd()}/eantc2024/testbeds/evpn-vxlan/nornir-hosts.yml',
                 'group_file': f'{os.getcwd()}/nornir-groups.yml',
-                'defaults_file': f'{os.getcwd()}/nornir-defaults.yml'
+                'defaults_file': nr_defaults_file
             }
         }
     )

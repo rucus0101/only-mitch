@@ -2,6 +2,7 @@
 SNAPSHOT:
   data:
     site: ANYWHERE
+  platform: eos
   connection_options:
     napalm:
       extras:
