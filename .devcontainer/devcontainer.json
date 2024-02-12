@@ -23,12 +23,4 @@
             ]
         }
     }
-    // "build": {
-    //     "dockerfile": "Dockerfile",
-    //     "args": {
-    //         "FROM_IMAGE": "ghcr.io/aristanetworks/avd/universal",
-    //         "FROM_VARIANT": "python3.11-avd-v4.6.0-dev1",
-    //         "USERNAME": "avd"
-    //     }
-    // }
 }
