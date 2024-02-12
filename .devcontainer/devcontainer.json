@@ -22,12 +22,5 @@
                 "mutantdino.resourcemonitor"
             ]
         }
-    },
-    // set nornir credentials
-    "containerEnv": {
-        "NORNIR_USER": "arista",
-        // uncomment string below if password is defined as system env var
-        // "NORNIR_PASSWORD": "${localEnv:NORNIR_PASSWORD}"
-        "NORNIR_PASSWORD": "arista"
     }
 }
