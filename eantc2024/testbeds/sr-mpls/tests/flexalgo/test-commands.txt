@@ -1,4 +1,7 @@
 show version
+show mac address-table 
+show ip interface brief | exclude una
+show interfaces counters rates | nz
 show isis neighbors
 show isis database detail
 show isis flex-algo
@@ -17,6 +20,8 @@ show tunnel rib system-tunnel-rib brief
 show tunnel rib colored brief
 show rib route ip
 show rib route ipv6
-
+show platform sand l3 summary
+show platform jericho2 ip route
+show platform jericho2 fec all
 
 

@@ -1,0 +1,8 @@
+Port      Name              Intvl  In Mbps      %  In Kpps Out Mbps      %
+Et1       Uplink to Leaf #1  0:05      0.0   0.0%        0      0.1   0.0%
+Et2       Uplink to Leaf #2  0:05    174.1   2.3%      340      0.0   0.0%
+Et3       Uplink to Leaf #3  0:05      0.0   0.0%        0      0.1   0.0%
+Et4       Uplink to Leaf #4  0:05    167.0   2.2%      326      0.0   0.0%
+Ma1                          0:05      0.0   0.0%        0      0.2   0.0%
+
+Port      Out Kpps

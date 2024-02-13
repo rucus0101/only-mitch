@@ -1,4 +1,2 @@
-show version
-show running-config
-show ip route
+wr mem
 reload now force
