@@ -1,0 +1,13 @@
+---
+S1:
+  groups: [SNAPSHOT]
+  hostname: 100.64.64.101
+S2:
+  groups: [SNAPSHOT]
+  hostname: 100.64.64.102
+L1:
+  groups: [SNAPSHOT]
+  hostname: 100.64.64.113
+L2:
+  groups: [SNAPSHOT]
+  hostname: 100.64.64.114
