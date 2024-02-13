@@ -1,0 +1,175 @@
+VRF: default, Protocol: connected
+Codes: C - Connected, S - Static, P - Route Input, G - Gribi
+       B - BGP, O - Ospf, O3 - Ospf3, I - Isis, R - Rip, VL - VRF Leak
+       > - Best Route, * - Unresolved Next hop
+       EM - Exact match of the SR-TE Policy
+       NM - Null endpoint match of the SR-TE Policy
+       AM - Any endpoint match of the SR-TE Policy
+       L - Part of a recursive route resolution loop
+       A - Next hop not resolved in ARP/ND
+       NF - Not in FEC
+>C    10.1.1.0/31 [0 pref/0 metric] updated 00:34:01 ago
+         via Ethernet1, directly connected
+>C    10.1.1.2/31 [0 pref/0 metric] updated 00:34:01 ago
+         via Ethernet2, directly connected
+>C    10.1.1.4/31 [0 pref/0 metric] updated 00:34:01 ago
+         via Ethernet3, directly connected
+>C    10.1.1.6/31 [0 pref/0 metric] updated 00:34:01 ago
+         via Ethernet4, directly connected
+>C    10.1.1.8/31 [0 pref/0 metric] updated 00:33:56 ago
+         via Ethernet7, directly connected
+>C    10.1.1.10/31 [0 pref/0 metric] updated 00:33:58 ago
+         via Ethernet8, directly connected
+>C    10.1.1.12/31 [0 pref/0 metric] updated 00:33:57 ago
+         via Ethernet9, directly connected
+>C    10.1.1.14/31 [0 pref/0 metric] updated 00:33:56 ago
+         via Ethernet10, directly connected
+>C    10.255.255.1/32 [0 pref/0 metric] updated 00:35:45 ago
+         via Loopback0, directly connected
+>C    223.255.255.255/32 [0 pref/0 metric] updated 00:35:45 ago
+         via Loopback2100, directly connected
+VRF: default, Protocol: bgp
+Codes: C - Connected, S - Static, P - Route Input, G - Gribi
+       B - BGP, O - Ospf, O3 - Ospf3, I - Isis, R - Rip, VL - VRF Leak
+       > - Best Route, * - Unresolved Next hop
+       EM - Exact match of the SR-TE Policy
+       NM - Null endpoint match of the SR-TE Policy
+       AM - Any endpoint match of the SR-TE Policy
+       L - Part of a recursive route resolution loop
+       A - Next hop not resolved in ARP/ND
+       NF - Not in FEC
+>B    10.10.10.0/24 [200 pref/0 MED] updated 00:34:00 ago
+         via 10.1.1.1 [0 pref/0 metric] type ipv4
+            via 10.1.1.1, Ethernet1
+         via 10.1.1.3 [0 pref/0 metric] type ipv4
+            via 10.1.1.3, Ethernet2
+>B    10.10.11.0/24 [200 pref/0 MED] updated 00:34:00 ago
+         via 10.1.1.5 [0 pref/0 metric] type ipv4
+            via 10.1.1.5, Ethernet3
+         via 10.1.1.7 [0 pref/0 metric] type ipv4
+            via 10.1.1.7, Ethernet4
+>B    10.10.12.0/24 [200 pref/0 MED] updated 00:33:56 ago
+         via 10.1.1.11 [0 pref/0 metric] type ipv4
+            via 10.1.1.11, Ethernet8
+         via 10.1.1.9 [0 pref/0 metric] type ipv4
+            via 10.1.1.9, Ethernet7
+>B    10.10.13.0/24 [200 pref/0 MED] updated 00:33:55 ago
+         via 10.1.1.13 [0 pref/0 metric] type ipv4
+            via 10.1.1.13, Ethernet9
+         via 10.1.1.15 [0 pref/0 metric] type ipv4
+            via 10.1.1.15, Ethernet10
+>B    10.20.20.0/24 [200 pref/0 MED] updated 00:34:00 ago
+         via 10.1.1.1 [0 pref/0 metric] type ipv4
+            via 10.1.1.1, Ethernet1
+         via 10.1.1.3 [0 pref/0 metric] type ipv4
+            via 10.1.1.3, Ethernet2
+>B    10.20.21.0/24 [200 pref/0 MED] updated 00:34:00 ago
+         via 10.1.1.5 [0 pref/0 metric] type ipv4
+            via 10.1.1.5, Ethernet3
+         via 10.1.1.7 [0 pref/0 metric] type ipv4
+            via 10.1.1.7, Ethernet4
+>B    10.20.22.0/24 [200 pref/0 MED] updated 00:33:56 ago
+         via 10.1.1.11 [0 pref/0 metric] type ipv4
+            via 10.1.1.11, Ethernet8
+         via 10.1.1.9 [0 pref/0 metric] type ipv4
+            via 10.1.1.9, Ethernet7
+>B    10.20.23.0/24 [200 pref/0 MED] updated 00:33:55 ago
+         via 10.1.1.13 [0 pref/0 metric] type ipv4
+            via 10.1.1.13, Ethernet9
+         via 10.1.1.15 [0 pref/0 metric] type ipv4
+            via 10.1.1.15, Ethernet10
+>B    10.30.30.0/24 [200 pref/0 MED] updated 00:34:00 ago
+         via 10.1.1.1 [0 pref/0 metric] type ipv4
+            via 10.1.1.1, Ethernet1
+         via 10.1.1.3 [0 pref/0 metric] type ipv4
+            via 10.1.1.3, Ethernet2
+>B    10.30.31.0/24 [200 pref/0 MED] updated 00:34:00 ago
+         via 10.1.1.5 [0 pref/0 metric] type ipv4
+            via 10.1.1.5, Ethernet3
+         via 10.1.1.7 [0 pref/0 metric] type ipv4
+            via 10.1.1.7, Ethernet4
+>B    10.30.32.0/24 [200 pref/0 MED] updated 00:33:56 ago
+         via 10.1.1.11 [0 pref/0 metric] type ipv4
+            via 10.1.1.11, Ethernet8
+         via 10.1.1.9 [0 pref/0 metric] type ipv4
+            via 10.1.1.9, Ethernet7
+>B    10.30.33.0/24 [200 pref/0 MED] updated 00:33:55 ago
+         via 10.1.1.13 [0 pref/0 metric] type ipv4
+            via 10.1.1.13, Ethernet9
+         via 10.1.1.15 [0 pref/0 metric] type ipv4
+            via 10.1.1.15, Ethernet10
+>B    10.40.40.0/24 [200 pref/0 MED] updated 00:34:00 ago
+         via 10.1.1.1 [0 pref/0 metric] type ipv4
+            via 10.1.1.1, Ethernet1
+         via 10.1.1.3 [0 pref/0 metric] type ipv4
+            via 10.1.1.3, Ethernet2
+>B    10.40.41.0/24 [200 pref/0 MED] updated 00:34:00 ago
+         via 10.1.1.5 [0 pref/0 metric] type ipv4
+            via 10.1.1.5, Ethernet3
+         via 10.1.1.7 [0 pref/0 metric] type ipv4
+            via 10.1.1.7, Ethernet4
+>B    10.40.42.0/24 [200 pref/0 MED] updated 00:33:56 ago
+         via 10.1.1.11 [0 pref/0 metric] type ipv4
+            via 10.1.1.11, Ethernet8
+         via 10.1.1.9 [0 pref/0 metric] type ipv4
+            via 10.1.1.9, Ethernet7
+>B    10.40.43.0/24 [200 pref/0 MED] updated 00:33:55 ago
+         via 10.1.1.13 [0 pref/0 metric] type ipv4
+            via 10.1.1.13, Ethernet9
+         via 10.1.1.15 [0 pref/0 metric] type ipv4
+            via 10.1.1.15, Ethernet10
+>B    10.255.1.1/32 [200 pref/0 MED] updated 00:34:00 ago
+         via 10.1.1.1 [0 pref/0 metric] type ipv4
+            via 10.1.1.1, Ethernet1
+         via 10.1.1.3 [0 pref/0 metric] type ipv4
+            via 10.1.1.3, Ethernet2
+>B    10.255.1.2/32 [200 pref/0 MED] updated 00:34:00 ago
+         via 10.1.1.1 [0 pref/0 metric] type ipv4
+            via 10.1.1.1, Ethernet1
+         via 10.1.1.3 [0 pref/0 metric] type ipv4
+            via 10.1.1.3, Ethernet2
+>B    10.255.2.1/32 [200 pref/0 MED] updated 00:34:00 ago
+         via 10.1.1.5 [0 pref/0 metric] type ipv4
+            via 10.1.1.5, Ethernet3
+         via 10.1.1.7 [0 pref/0 metric] type ipv4
+            via 10.1.1.7, Ethernet4
+>B    10.255.2.2/32 [200 pref/0 MED] updated 00:34:00 ago
+         via 10.1.1.5 [0 pref/0 metric] type ipv4
+            via 10.1.1.5, Ethernet3
+         via 10.1.1.7 [0 pref/0 metric] type ipv4
+            via 10.1.1.7, Ethernet4
+>B    10.255.3.1/32 [200 pref/0 MED] updated 00:33:56 ago
+         via 10.1.1.11 [0 pref/0 metric] type ipv4
+            via 10.1.1.11, Ethernet8
+         via 10.1.1.9 [0 pref/0 metric] type ipv4
+            via 10.1.1.9, Ethernet7
+>B    10.255.3.2/32 [200 pref/0 MED] updated 00:33:56 ago
+         via 10.1.1.11 [0 pref/0 metric] type ipv4
+            via 10.1.1.11, Ethernet8
+         via 10.1.1.9 [0 pref/0 metric] type ipv4
+            via 10.1.1.9, Ethernet7
+>B    10.255.4.1/32 [200 pref/0 MED] updated 00:33:55 ago
+         via 10.1.1.13 [0 pref/0 metric] type ipv4
+            via 10.1.1.13, Ethernet9
+         via 10.1.1.15 [0 pref/0 metric] type ipv4
+            via 10.1.1.15, Ethernet10
+>B    10.255.4.2/32 [200 pref/0 MED] updated 00:33:55 ago
+         via 10.1.1.13 [0 pref/0 metric] type ipv4
+            via 10.1.1.13, Ethernet9
+         via 10.1.1.15 [0 pref/0 metric] type ipv4
+            via 10.1.1.15, Ethernet10
+VRF: default, Protocol: route-input
+Codes: C - Connected, S - Static, P - Route Input, G - Gribi
+       B - BGP, O - Ospf, O3 - Ospf3, I - Isis, R - Rip, VL - VRF Leak
+       > - Best Route, * - Unresolved Next hop
+       EM - Exact match of the SR-TE Policy
+       NM - Null endpoint match of the SR-TE Policy
+       AM - Any endpoint match of the SR-TE Policy
+       L - Part of a recursive route resolution loop
+       A - Next hop not resolved in ARP/ND
+       NF - Not in FEC
+>P    0.0.0.0/8 [1 pref/0 metric] updated 00:35:42 ago
+         via Null0, directly connected [NF]
+>P    127.0.0.0/8 [1 pref/0 metric] updated 00:35:42 ago
+         via :: [1 pref/1 metric] type ipv4
+            via , directly connected

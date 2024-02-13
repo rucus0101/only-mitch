@@ -1,3 +1,22 @@
 show version
-show running-config
+show isis neighbors
+show isis database detail
+show isis flex-algo
+show isis segment-routing tunnel
+show isis segment-routing prefix-segments
 show ip route
+show ipv6 route
+show mpls route
+show mpls lfib route
+show bgp evpn
+show bgp vpn-ipv4
+show bgp vpn-ipv6
+show bgp ipv4 labeled-unicast
+show bgp neighbors
+show tunnel rib system-tunnel-rib brief
+show tunnel rib colored brief
+show rib route ip
+show rib route ipv6
+
+
+
