@@ -125,7 +125,7 @@ def interpreter():
         inventory={
             'plugin': 'SimpleInventory',
             'options': {
-                'host_file': f'{os.getcwd()}/eantc2024/testbeds/evpn-vxlan/nornir-hosts.yml',
+                'host_file': f'{os.getcwd()}/eantc2024/testbeds/{args.inventory}/nornir-hosts.yml',
                 'group_file': f'{os.getcwd()}/nornir-groups.yml',
                 'defaults_file': nr_defaults_file
             }
