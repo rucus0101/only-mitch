@@ -1,6 +1,7 @@
 {
     "image": "ghcr.io/aristanetworks/avd/universal:python3.11-avd-v4.6.0-dev1",
     "postCreateCommand": "bash -c \"$(curl -sL https://get.containerlab.dev)\"; pip3 install --force file://$(pwd); echo 'eval \"$(register-python-argcomplete run)\"' >> ~/.zshrc; git config --global --add safe.directory /workspaces/eantc-automation",
+    "remoteUser": "avd",
     "customizations": {
         "vscode": {
             "extensions": [
