@@ -285,3 +285,6 @@ clab/cv-onboarding-token
 .gitignored/*
 !.gitignored/.gitkeep
 cmdo
+
+# ignore show-tech
+tech_support/
