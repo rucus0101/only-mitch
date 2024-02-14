@@ -1,2 +1,2 @@
-wr mem
+write memory
 reload now force

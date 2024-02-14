@@ -1,0 +1,37 @@
+Tunnel Type: Mpop(mpls pop), Mpush(mpls push), Mswap(mpls swap),
+             MoG(mpls-over-gre), T(IPv4 tunnels GRE/GUE/VXLAN),
+             N(Ipsec tunnel NAT-T [IP,SPORT,DPORT])
+CW  - Control word
+FL  - Flow label
+EL  - Entropy label
+ELI - Entropy label indicator
+D   - ECMP is divergent across switching chips
+ -----------------------------------------------------------------------------------------------
+|                                              FEC Entry                                        |
+ -----------------------------------------------------------------------------------------------
+|     |      |     |                    |     |        |                   |
+| ECMP|  FEC |     |                    |     |        |                   |
+|Index| Index| Cmd |     Destination    | VID | Outlif |   MAC / CPU Code  |    Tunnel Value
+ -----------------------------------------------------------------------------------------------
+|16384|288366|ROUTE| Et1                |1007 |103421  | 74:83:ef:6c:be:a5 |   -   
+|16384|288367|ROUTE| Et2                |1006 |103422  | 74:83:ef:6c:c1:3f |   -   
+|  -  |288360|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |288361|ROUTE| Po2000             |4094 |2097151 | 94:8e:d3:51:7c:10 |   -   
+|  -  |288362|ROUTE| Po2000             |4094 |2097151 | 94:8e:d3:51:7c:10 |   -   
+|  -  |288363|ROUTE| Et1                |1007 |103421  | 74:83:ef:6c:be:a5 |   -   
+|  -  |288364|ROUTE| Et1                |1007 |103421  | 74:83:ef:6c:be:a5 |   -   
+|  -  |288365|ROUTE| Et2                |1006 |103422  | 74:83:ef:6c:c1:3f |   -   
+|  -  |288368|ROUTE| Et2                |1006 |103422  | 74:83:ef:6c:c1:3f |   -   
+|  -  |524288|TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |   -   
+|  -  |524291|TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |   -   
+|  -  |524292|TRAP | CoppSystemL3LpmOver|0    |  -     | SlowReceive       |   -   
+|  -  |524293|TRAP | CoppSystemL3LpmOver|0    |  -     | SlowReceive       |   -   
+|  -  |524294|TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |   -   
+|  -  |524304|TRAP | CoppSystemL3DstMiss|10   |10      | ArpTrap           |   -   
+|  -  |524314|TRAP | CoppSystemL3DstMiss|20   |20      | ArpTrap           |   -   
+|  -  |524324|TRAP | CoppSystemL3DstMiss|30   |30      | ArpTrap           |   -   
+|  -  |524334|TRAP | CoppSystemL3DstMiss|40   |40      | ArpTrap           |   -   
+|  -  |525300|TRAP | CoppSystemL3DstMiss|1006 |1006    | ArpTrap           |   -   
+|  -  |525301|TRAP | CoppSystemL3DstMiss|1007 |1007    | ArpTrap           |   -   
+|  -  |528388|TRAP | CoppSystemL3DstMiss|4094 |4094    | ArpTrap           |   -   
+
