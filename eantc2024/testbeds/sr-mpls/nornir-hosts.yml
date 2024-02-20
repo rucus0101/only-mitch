@@ -1,13 +1,13 @@
 ---
-S1:
+PE32-J2-171:
   groups: [SNAPSHOT]
-  hostname: 100.64.64.101
-S2:
+  hostname: 192.168.20.171
+PE32-J2-172:
   groups: [SNAPSHOT]
-  hostname: 100.64.64.102
-L1:
+  hostname: 192.168.20.172
+Harness3-J-175:
   groups: [SNAPSHOT]
-  hostname: 100.64.64.113
-L2:
+  hostname: 192.168.20.175
+Spine3-J-170:
   groups: [SNAPSHOT]
-  hostname: 100.64.64.114
+  hostname: 192.168.20.170

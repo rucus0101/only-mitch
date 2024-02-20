@@ -1,0 +1,5 @@
+Port      Name                 Intvl  In Mbps      %  In Kpps Out Mbps      %
+Et1       "Link to Cisco 157 E  0:05      0.0   0.0%        0      0.0   0.0%
+Et3       "Link to Spirent 179  0:05      0.0   0.0%        0      0.0   0.0%
+
+Port      Out Kpps
