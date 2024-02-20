@@ -1,0 +1,76 @@
+MPLS forwarding table (Label [metric] Vias) - 11 routes 
+MPLS next-hop resolution allow default route: False
+Via Type Codes:
+          M - MPLS via, P - Pseudowire via,
+          I - IP lookup via, V - VLAN via,
+          VA - EVPN VLAN aware via, ES - EVPN ethernet segment via,
+          VF - EVPN VLAN flood via, AF - EVPN VLAN aware flood via,
+          NG - Nexthop group via
+Source Codes:
+          G - gRIBI, S - Static MPLS route,
+          B2 - BGP L2 EVPN, B3 - BGP L3 VPN,
+          R - RSVP, LP - LDP pseudowire,
+          L - LDP, M - MLDP,
+          I>BL - IS-IS SR to BGP LU, IP - IS-IS SR prefix segment,
+          IA - IS-IS SR adjacency segment, I>L - IS-IS SR to LDP,
+          L>I - LDP to IS-IS SR, OP - Ospf SR prefix segment,
+          OA - Ospf SR adjacency segment, OL - Ospf SR segment to LDP,
+          L0 - LDP to Ospf SR segment, BL - BGP LU,
+          BL>L - BGP LU to LDP, L>BL - LDP to BGP LU,
+          ST - SR TE policy, SMP - SR P2MP,
+          BL>I - BGP LU to IS-IS SR, DE - Debug LFIB
+
+ IP    20019    [1], 10.0.0.19/32
+                via TI-LFA tunnel index 5, forward
+                 payload autoDecide, ttlMode uniform, dscpMode uniform, apply egress-acl
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label 20057
+ IP    20057    [1], 10.0.0.57/32
+                via M, 20.149.171.149, forward
+                 payload autoDecide, ttlMode uniform, dscpMode uniform, apply egress-acl
+                 interface Ethernet24
+                via M, 20.170.171.170, forward
+                 payload autoDecide, ttlMode uniform, dscpMode uniform, apply egress-acl
+                 interface Ethernet1
+ IP    20083    [1], 10.0.0.83/32
+                via TI-LFA tunnel index 5, forward
+                 payload autoDecide, ttlMode uniform, dscpMode uniform, apply egress-acl
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label 20057
+ IP    20170    [1], 10.0.0.170/32
+                via TI-LFA tunnel index 2, pop
+                 payload autoDecide, ttlMode uniform, dscpMode uniform, apply egress-acl
+                    via 20.170.171.170, Ethernet1, label imp-null(3)
+                    backup via 20.149.171.149, Ethernet24, label 20057 20170
+ IP    20254    [1], 10.0.0.254/32
+                via TI-LFA tunnel index 5, forward
+                 payload autoDecide, ttlMode uniform, dscpMode uniform, apply egress-acl
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label 20057
+ IP    20349    [1], 10.0.1.49/32
+                via TI-LFA tunnel index 6, pop
+                 payload autoDecide, ttlMode uniform, dscpMode uniform, apply egress-acl
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label 20057 20349
+ IP    20355    [1], 10.0.1.55/32
+                via TI-LFA tunnel index 3, forward
+                 payload autoDecide, ttlMode uniform, dscpMode uniform, apply egress-acl
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label 20379
+ IP    20379    [1], 10.0.0.179/32
+                via M, 20.149.171.149, forward
+                 payload autoDecide, ttlMode uniform, dscpMode uniform, apply egress-acl
+                 interface Ethernet24
+                via M, 20.170.171.170, forward
+                 payload autoDecide, ttlMode uniform, dscpMode uniform, apply egress-acl
+                 interface Ethernet1
+ IA    362144   [1]
+                via M, 20.149.171.149, pop
+                 payload autoDecide, ttlMode uniform, apply egress-acl
+                 interface Ethernet24
+ IA    362145   [1]
+                via M, 20.170.171.170, pop
+                 payload autoDecide, ttlMode uniform, apply egress-acl
+                 interface Ethernet1
+ B3    378528   [0]
+                via I, ipv4, vrf ISIS-SR-L3VPN

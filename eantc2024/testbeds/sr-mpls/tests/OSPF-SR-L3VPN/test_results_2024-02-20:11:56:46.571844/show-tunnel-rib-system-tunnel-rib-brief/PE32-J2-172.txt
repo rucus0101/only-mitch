@@ -1,0 +1,27 @@
+Tunnel RIB: system-tunnel-rib
+Endpoint       Tunnel Type Index(es) Tunnel Preference IGP Preference IGP Metric
+-------------- ----------- --------- ----------------- -------------- ----------
+10.0.0.5/32    OSPF SR     9         60                110            21        
+10.0.0.19/32   OSPF SR     8         60                110            11        
+10.0.0.24/32   OSPF SR     10        60                110            11        
+10.0.0.32/32   OSPF SR     1         60                110            11        
+10.0.0.47/32   OSPF SR     2         60                110            12        
+10.0.0.57/32   OSPF SR     7         60                110            11        
+10.0.0.211/32  OSPF SR     4         60                110            10        
+10.0.0.233/32  OSPF SR     5         60                110            11        
+10.0.1.43/32   OSPF SR     3         60                110            12        
+100.0.1.111/32 OSPF SR     6         60                110            11        
+
+Metric Type
+-----------
+metric     
+metric     
+metric     
+metric     
+metric     
+metric     
+metric     
+metric     
+metric     
+metric     
+

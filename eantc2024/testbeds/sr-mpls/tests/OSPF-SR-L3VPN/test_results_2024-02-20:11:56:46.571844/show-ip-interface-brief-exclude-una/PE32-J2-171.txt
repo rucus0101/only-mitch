@@ -1,0 +1,10 @@
+                                                                        Address
+Interface       IP Address           Status    Protocol           MTU   Owner  
+--------------- -------------------- --------- -------------- --------- -------
+Ethernet1       20.170.171.171/24    up        up                1500          
+Ethernet5       20.111.171.171/24    up        up                1500          
+Ethernet24      20.149.171.171/24    up        up                1500          
+Ethernet46      20.55.171.171/24     up        up                1500          
+Loopback0       10.0.0.171/32        up        up               65535          
+Management1     192.168.20.171/23    up        up                1500          
+

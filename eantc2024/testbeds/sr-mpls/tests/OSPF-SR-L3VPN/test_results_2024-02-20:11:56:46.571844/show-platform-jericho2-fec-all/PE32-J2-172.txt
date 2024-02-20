@@ -1,0 +1,48 @@
+Tunnel Type: Mpop(mpls pop), Mpush(mpls push), Mswap(mpls swap),
+             MoG(mpls-over-gre), T(IPv4 tunnels GRE/GUE/VXLAN),
+             N(Ipsec tunnel NAT-T [IP,SPORT,DPORT])
+CW  - Control word
+FL  - Flow label
+EL  - Entropy label
+ELI - Entropy label indicator
+D   - ECMP is divergent across switching chips
+ -----------------------------------------------------------------------------------------------
+|                                              FEC Entry                                        |
+ -----------------------------------------------------------------------------------------------
+|     |      |     |                    |     |        |                   |
+| ECMP|  FEC |     |                    |     |        |                   |
+|Index| Index| Cmd |     Destination    | VID | Outlif |   MAC / CPU Code  |    Tunnel Value
+ -----------------------------------------------------------------------------------------------
+|  -  |91752 |ROUTE| FEC 288365         |   - |2097143 |                 - |Mpush 24001
+|  -  |91753 |ROUTE| FEC 288368         |   - |2097147 |                 - |Mpush 17
+|  -  |91754 |ROUTE| FEC 288369         |   - |2097145 |                 - |Mpush 720897
+|  -  |91755 |ROUTE| FEC 288366         |   - |2097149 |                 - |Mpush 1278
+|  -  |91756 |ROUTE| FEC 288367         |   - |2097141 |                 - |Mpush 524285
+|  -  |91757 |ROUTE| FEC 288371         |   - |2097139 |                 - |Mpush 756645
+|  -  |91758 |ROUTE| FEC 288372         |   - |2097137 |                 - |Mpush 16
+|  -  |91759 |ROUTE| FEC 288373         |   - |2097135 |                 - |Mpush 56508
+|  -  |91760 |ROUTE| FEC 288374         |   - |2097133 |                 - |Mpush 68007
+|  -  |288360|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |288361|ROUTE| Et45               |1006 |103421  | ac:78:d1:2c:d7:38 |   -   
+|  -  |288362|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |288363|ROUTE| Et45               |1006 |103421  | ac:78:d1:2c:d7:38 |   -   
+|  -  |288364|ROUTE| Et45               |1006 |103421  | ac:78:d1:2c:d7:38 |   -   
+|  -  |288365|ROUTE| FEC 528482         |   - |2097144 |                 - |Mpush 20343
+|  -  |288366|ROUTE| FEC 528482         |   - |2097150 |                 - |Mpush 20019
+|  -  |288367|ROUTE| FEC 528482         |   - |2097142 |                 - |Mpush 20057
+|  -  |288368|ROUTE| FEC 528482         |   - |2097148 |                 - |Mpush 20233
+|  -  |288369|ROUTE| FEC 528482         |   - |2097146 |                 - |Mpush 20047
+|  -  |288370|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |288371|ROUTE| FEC 528482         |   - |2097140 |                 - |Mpush 20032
+|  -  |288372|ROUTE| FEC 528482         |   - |2097138 |                 - |Mpush 20411
+|  -  |288373|ROUTE| FEC 528482         |   - |2097136 |                 - |Mpush 20010
+|  -  |288374|ROUTE| FEC 528482         |   - |2097134 |                 - |Mpush 20005
+|  -  |288375|ROUTE| Et5                |1007 |103422  | 00:14:01:00:00:01 |   -   
+|  -  |524288|TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |   -   
+|  -  |524291|TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |   -   
+|  -  |524292|TRAP | CoppSystemL3LpmOver|0    |  -     | SlowReceive       |   -   
+|  -  |524294|TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |   -   
+|  -  |525300|TRAP | CoppSystemL3DstMiss|1006 |1006    | ArpTrap           |   -   
+|  -  |525301|TRAP | CoppSystemL3DstMiss|1007 |1007    | ArpTrap           |   -   
+|  -  |528482|ROUTE| Et45               |1006 |103421  | ac:78:d1:2c:d7:38 |   -   
+

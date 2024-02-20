@@ -1,0 +1,274 @@
+Legend:
+H - hostname conflict
+U - node unreachable
+
+IS-IS Instance: IGP VRF: default
+  IS-IS Level 2 Link State Database
+    LSPID                   Seq Num  Cksum  Life Length IS  Received LSPID        Flags
+    juniper_379_MX304.00-00       123  58512   949    227 L2  0000.0000.0017.00-00  <>
+      Remaining lifetime received: 1199 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4) 0x8E(IPv6)
+      Hostname: juniper_379_MX304
+      Area addresses: 49.0001.00
+      Interface address: 10.0.0.179
+      IS Neighbor          : h55-8201-24H8FH.00  Metric: 10
+        IPv4 Neighbor Address: 20.155.179.155
+        IPv4 Interface Address: 20.155.179.179
+        Adj-sid: 18 flags: [L V] weight: 0x0
+      IS Neighbor          : SR1-SRMPLS.00       Metric: 10
+        IPv4 Neighbor Address: 20.57.179.57
+        IPv4 Interface Address: 20.57.179.179
+        Adj-sid: 20 flags: [L V] weight: 0x0
+      Reachability         : 20.155.179.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.57.179.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 10.0.0.179/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 379 Flags: [N] Algorithm: 0
+      Router Capabilities: Router Id: 10.0.0.179 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  4
+        SR Capability: Flags: [I V]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 1
+      Unsupported TLV: Type: 14 Length: 2
+    0000.0000.0019.00-00        236  15102   737    134 L2  0000.0000.0019.00-00  <>
+      NLPID: 0xCC(IPv4)
+      Area addresses: 49
+      Interface address: 10.0.0.19
+      Interface address: 20.19.149.19
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        Adj-sid: 1151 flags: [L V] weight: 0x0
+      Reachability         : 10.0.0.19/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 19 Flags: [N] Algorithm: 0
+      Reachability         : 20.19.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.19.211.0/24 Metric: 0 Type: 1 Up
+      Reachability         : 192.168.0.0/19 Metric: 0 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.19 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  13
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+    eantc-jcnr2.00-00           434  11317   794    229 L2  0000.0000.0020.00-00  <>
+      NLPID: 0xCC(IPv4) 0x8E(IPv6)
+      Hostname: eantc-jcnr2
+      Area addresses: 49.0001.00
+      Interface address: 10.0.0.83
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.83.149.149
+        IPv4 Interface Address: 20.83.149.83
+        Adj-sid: 16 flags: [L V] weight: 0x0
+      Reachability         : 20.83.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 10.0.0.83/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 83 Flags: [N] Algorithm: 0
+      Reachability          : fe80::cc33:4dff:fe3e:5c1d/128 Metric: 0 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.83 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  0
+        SR Capability: Flags: [I V]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 1
+      Unsupported TLV: Type: 14 Length: 2
+    huawei_34_NetEngine_8000_F8.00-00        98   8017   895    167 L2  0000.0000.0254.00-00  <>
+      NLPID: 0xCC(IPv4)
+      Hostname: huawei_34_NetEngine_8000_F8
+      Area addresses: 49
+      Interface address: 10.0.0.254
+      Interface address: 20.171.254.254
+      Interface address: 20.149.254.254
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.149.254.149
+        IPv4 Interface Address: 20.149.254.254
+        Adj-sid: 48030 flags: [L V] weight: 0x0
+      Reachability         : 10.0.0.254/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 254 Flags: [N] Algorithm: 0
+      Reachability         : 20.171.254.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.149.254.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.254 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  10
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+    h49-N540-24Q8L2DD.00-00       192  33275   885    535 L2  0000.0000.0349.00-00  <>
+      NLPID: 0xCC(IPv4)
+      Hostname: h49-N540-24Q8L2DD
+      Area addresses: 49
+      Interface address: 10.0.1.49
+      IS Neighbor          : 0000.0000.0019.00   Metric: 10
+        IPv4 Neighbor Address: 20.19.149.19
+        IPv4 Interface Address: 20.19.149.149
+        Adj-sid: 24005 flags: [L V] weight: 0x0
+      IS Neighbor          : eantc-jcnr2.00      Metric: 10
+        IPv4 Neighbor Address: 20.83.149.83
+        IPv4 Interface Address: 20.83.149.149
+        Adj-sid: 24021 flags: [L V] weight: 0x0
+      IS Neighbor          : huawei_34_NetEngine_8000_F8.00 Metric: 10
+        IPv4 Neighbor Address: 20.149.254.254
+        IPv4 Interface Address: 20.149.254.149
+        Adj-sid: 24001 flags: [L V] weight: 0x0
+      IS Neighbor          : PE31-J2-171.00      Metric: 10
+        IPv4 Neighbor Address: 20.149.171.171
+        IPv4 Interface Address: 20.149.171.149
+        Adj-sid: 24011 flags: [L V] weight: 0x0
+      IS Neighbor          : h55-8201-24H8FH.00  Metric: 10
+        IPv4 Neighbor Address: 20.149.155.155
+        IPv4 Interface Address: 20.149.155.149
+        Adj-sid: 24013 flags: [L V] weight: 0x0
+      IS Neighbor          : SR1-SRMPLS.00       Metric: 10
+        IPv4 Neighbor Address: 20.57.149.57
+        IPv4 Interface Address: 20.57.149.149
+        Adj-sid: 24009 flags: [L V] weight: 0x0
+      Reachability         : 10.0.1.49/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 349 Flags: [N] Algorithm: 0
+      Reachability         : 20.5.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.19.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.32.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.47.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.57.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.83.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.111.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.149.155.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.149.171.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.149.254.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.1.49 Flags: []
+        SR Local Block:
+          SRLB Base: 15000 Range: 1000
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 1
+      Unsupported TLV: Type: 14 Length: 2
+    h55-8201-24H8FH.00-00       125  19930   477    259 L2  0000.0000.0355.00-00  <>
+      NLPID: 0xCC(IPv4)
+      Hostname: h55-8201-24H8FH
+      Area addresses: 49
+      Interface address: 10.0.1.55
+      IS Neighbor          : juniper_379_MX304.00 Metric: 10
+        IPv4 Neighbor Address: 20.155.179.179
+        IPv4 Interface Address: 20.155.179.155
+        Adj-sid: 24003 flags: [L V] weight: 0x0
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.149.155.149
+        IPv4 Interface Address: 20.149.155.155
+        Adj-sid: 24001 flags: [L V] weight: 0x0
+      Reachability         : 10.0.1.55/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 355 Flags: [N] Algorithm: 0
+      Reachability         : 20.149.155.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.155.179.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.1.55 Flags: []
+        SR Local Block:
+          SRLB Base: 15000 Range: 1000
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  7
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 1
+      Unsupported TLV: Type: 14 Length: 2
+    SR1-SRMPLS.00-00            165  39745  1014    424 L2  0100.0000.0057.00-00  <>
+      Remaining lifetime received: 1199 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4) 0x8E(IPv6)
+      Hostname: SR1-SRMPLS
+      Area addresses: 49.0000.0000.0057.00
+      Interface address: 10.0.0.57
+      Interface address: 20.57.59.57
+      Interface address: 20.57.149.57
+      Interface address: 20.57.170.57
+      Interface address: 20.57.179.57
+      Interface address: 2002::57
+      IS Neighbor (Narrow metrics, unsupported): h49-N540-24Q8L2DD.00 Metric: 10
+      IS Neighbor (Narrow metrics, unsupported): Spine3-J-170.00     Metric: 10
+      IS Neighbor (Narrow metrics, unsupported): juniper_379_MX304.00 Metric: 10
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.57.149.149
+        IPv4 Interface Address: 20.57.149.57
+        Adj-sid: 30149 flags: [L V] weight: 0x0
+      IS Neighbor          : Spine3-J-170.00     Metric: 10
+        IPv4 Neighbor Address: 20.57.170.170
+        IPv4 Interface Address: 20.57.170.57
+        Adj-sid: 30170 flags: [L V] weight: 0x0
+      IS Neighbor          : juniper_379_MX304.00 Metric: 10
+        IPv4 Neighbor Address: 20.57.179.179
+        IPv4 Interface Address: 20.57.179.57
+        Adj-sid: 30179 flags: [L V] weight: 0x0
+      Reachability (Narrow metrics, unsupported): 10.0.0.57/32 Metric: 0 Type: 1
+      Reachability (Narrow metrics, unsupported): 20.57.59.0/24 Metric: 10 Type: 1
+      Reachability (Narrow metrics, unsupported): 20.57.149.0/24 Metric: 10 Type: 1
+      Reachability (Narrow metrics, unsupported): 20.57.170.0/24 Metric: 10 Type: 1
+      Reachability (Narrow metrics, unsupported): 20.57.179.0/24 Metric: 10 Type: 1
+      Reachability         : 10.0.0.57/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 57 Flags: [N P] Algorithm: 0
+      Reachability         : 20.57.59.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.57.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.57.170.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.57.179.0/24 Metric: 10 Type: 1 Up
+      Reachability          : 2002::57/128 Metric: 0 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.57 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+        SR Capability: Flags: [I V]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0
+    Spine3-J-170.00-00          138  51519  1129    235 L2  0100.0000.0170.00-00  <>
+      Remaining lifetime received: 1199 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: Spine3-J-170
+      Area addresses: 49.0000
+      Interface address: 20.170.171.170
+      Interface address: 20.47.170.170
+      Interface address: 20.57.170.170
+      Interface address: 20.32.170.170
+      Interface address: 20.170.254.170
+      Interface address: 10.0.0.170
+      IS Neighbor          : PE31-J2-171.00      Metric: 10
+        IPv4 Neighbor Address: 20.170.171.171
+        IPv4 Interface Address: 20.170.171.170
+        Adj-sid: 362144 flags: [L V] weight: 0x0
+      IS Neighbor          : SR1-SRMPLS.00       Metric: 10
+        IPv4 Neighbor Address: 20.57.170.57
+        IPv4 Interface Address: 20.57.170.170
+        Adj-sid: 362145 flags: [L V] weight: 0x0
+      Reachability         : 20.170.171.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.47.170.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.57.170.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.32.170.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.170.254.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 10.0.0.170/32 Metric: 10 Type: 1 Up
+        SR Prefix-SID: 170 Flags: [N] Algorithm: 0
+      Router Capabilities: Router Id: 100.0.0.170 Flags: []
+        SR Local Block:
+          SRLB Base: 965536 Range: 65536
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  6
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+    PE31-J2-171.00-00           129  26131   838    210 L2  0100.0000.0171.00-00  <>
+      LSP generation remaining wait time: 0 ms
+      Time remaining until refresh: 538 s
+      NLPID: 0xCC(IPv4)
+      Hostname: PE31-J2-171
+      Area addresses: 49.0000
+      Interface address: 20.170.171.171
+      Interface address: 20.55.171.171
+      Interface address: 20.149.171.171
+      Interface address: 10.0.0.171
+      IS Neighbor          : Spine3-J-170.00     Metric: 10
+        IPv4 Neighbor Address: 20.170.171.170
+        IPv4 Interface Address: 20.170.171.171
+        Adj-sid: 362145 flags: [L V] weight: 0x0
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.149.171.149
+        IPv4 Interface Address: 20.149.171.171
+        Adj-sid: 362144 flags: [L V] weight: 0x0
+      Reachability         : 20.170.171.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.55.171.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.149.171.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 10.0.0.171/32 Metric: 10 Type: 1 Up
+        SR Prefix-SID: 171 Flags: [N] Algorithm: 0
+      Router Capabilities: Router Id: 10.0.0.171 Flags: []
+        SR Local Block:
+          SRLB Base: 965536 Range: 65536
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000

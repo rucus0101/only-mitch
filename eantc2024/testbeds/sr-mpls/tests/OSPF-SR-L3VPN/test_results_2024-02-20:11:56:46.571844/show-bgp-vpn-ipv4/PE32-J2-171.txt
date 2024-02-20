@@ -1,0 +1,27 @@
+BGP routing table information for VRF default
+Router identifier 10.0.0.171, local AS number 65000
+Route status codes: s - suppressed contributor, * - valid, > - active, E - ECMP head, e - ECMP
+                    S - Stale, c - Contributing to ECMP, b - backup, L - labeled-unicast
+                    % - Pending best path selection
+Origin codes: i - IGP, e - EGP, ? - incomplete
+AS Path Attributes: Or-ID - Originator ID, C-LST - Cluster List, LL Nexthop - Link Local Nexthop
+
+          Network                Next Hop              Metric  LocPref Weight  Path
+ * >      RD: 65000:19 IPv4 prefix 20.19.111.0/24
+                                 10.0.0.19             0       100     0       ? Or-ID: 10.0.0.19 C-LST: 10.0.1.49 
+ * >      RD: 65001:19 IPv4 prefix 20.19.111.0/24
+                                 10.0.0.19             0       100     0       ? Or-ID: 10.0.0.19 C-LST: 10.0.1.49 
+ * >      RD: 10.0.1.55:1 IPv4 prefix 20.55.111.0/24
+                                 10.0.1.55             0       100     0       ? Or-ID: 10.0.1.55 C-LST: 10.0.1.49 
+ * >      RD: 10.0.0.57:1 IPv4 prefix 20.57.111.0/24
+                                 10.0.0.57             -       100     0       i Or-ID: 10.0.0.57 C-LST: 10.0.1.49 
+ * >      RD: 10.0.0.57:2 IPv4 prefix 20.57.112.0/24
+                                 10.0.0.57             -       100     0       i Or-ID: 10.0.0.57 C-LST: 10.0.1.49 
+ * >      RD: 10.0.0.83:2 IPv4 prefix 20.83.111.0/24
+                                 10.0.0.83             -       100     0       i Or-ID: 10.0.0.83 C-LST: 10.0.1.49 
+ * >      RD: 10.0.0.171:1 IPv4 prefix 20.111.171.0/24
+                                 -                     -       -       0       i
+ * >      RD: 10.0.0.179:1800 IPv4 prefix 20.111.179.0/24
+                                 10.0.0.179            -       100     0       i Or-ID: 10.0.0.179 C-LST: 10.0.1.49 
+ * >      RD: 65000:254 IPv4 prefix 20.111.254.0/24
+                                 10.0.0.254            0       100     0       ? Or-ID: 10.0.0.254 C-LST: 10.0.1.49 

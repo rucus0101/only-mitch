@@ -1,0 +1,58 @@
+MPLS forwarding table (Label [metric] Vias) - 12 routes 
+MPLS next-hop resolution allow default route: False
+Metric Codes:
+          A - Active metric
+Via Type Codes:
+          M - MPLS via, P - Pseudowire via,
+          I - IP lookup via, V - VLAN via,
+          VA - EVPN VLAN aware via, ES - EVPN ethernet segment via,
+          VF - EVPN VLAN flood via, AF - EVPN VLAN aware flood via,
+          NG - Nexthop group via
+
+ 20005   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.172.211.211 Ethernet45
+ 20010   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.172.211.211 Ethernet45
+ 20019   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.172.211.211 Ethernet45
+ 20032   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.172.211.211 Ethernet45
+ 20047   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.172.211.211 Ethernet45
+ 20057   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.172.211.211 Ethernet45
+ 20211   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.172.211.211 Ethernet45
+ 20233   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.172.211.211 Ethernet45
+ 20343   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.172.211.211 Ethernet45
+ 20411   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.172.211.211 Ethernet45
+ 362144  A[1]
+                via M, 20.172.211.211, pop
+                    EgressACL: apply
+                    directly connected, Ethernet45
+                    ac:78:d1:2c:d7:38, vlan 1006
+ 378534   [0]
+                via I, ipv4, vrf OSPF-SR-L3VPN

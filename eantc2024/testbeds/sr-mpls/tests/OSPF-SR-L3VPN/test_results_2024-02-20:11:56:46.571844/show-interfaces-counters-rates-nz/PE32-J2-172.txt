@@ -1,0 +1,3 @@
+Port      Name        Intvl  In Mbps      %  In Kpps Out Mbps      % Out Kpps
+Et5                    0:05      8.0   0.1%        0      8.0   0.1%        0
+Et45      Juniper_311  0:05      8.0   0.1%        1      8.0   0.1%        1
