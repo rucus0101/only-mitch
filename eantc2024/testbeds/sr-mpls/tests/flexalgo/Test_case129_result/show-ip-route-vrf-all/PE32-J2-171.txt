@@ -1,0 +1,359 @@
+
+VRF: default
+Source Codes:
+       C - connected, S - static, K - kernel,
+       O - OSPF, IA - OSPF inter area, E1 - OSPF external type 1,
+       E2 - OSPF external type 2, N1 - OSPF NSSA external type 1,
+       N2 - OSPF NSSA external type2, B - Other BGP Routes,
+       B I - iBGP, B E - eBGP, R - RIP, I L1 - IS-IS level 1,
+       I L2 - IS-IS level 2, O3 - OSPFv3, A B - BGP Aggregate,
+       A O - OSPF Summary, NG - Nexthop Group Static Route,
+       V - VXLAN Control Service, M - Martian,
+       DH - DHCP client installed default route,
+       DP - Dynamic Policy Route, L - VRF Leaked,
+       G  - gRIBI, RC - Route Cache Route,
+       CL - CBF Leaked Route
+
+Gateway of last resort is not set
+
+ I L2     10.0.0.5/32 [115/30]
+           via 20.149.171.149, Ethernet24
+ I L2     10.0.0.19/32 [115/20]
+           via 20.149.171.149, Ethernet24
+ I L2     10.0.0.24/32 [115/20]
+           via 20.149.171.149, Ethernet24
+ I L2     10.0.0.57/32 [115/20]
+           via 20.149.171.149, Ethernet24
+           via 20.155.171.155, Ethernet46
+ I L2     10.0.0.83/32 [115/20]
+           via 20.149.171.149, Ethernet24
+ C        10.0.0.171/32
+           directly connected, Loopback0
+ I L2     10.0.0.179/32 [115/20]
+           via 20.155.171.155, Ethernet46
+ I L2     10.0.0.254/32 [115/20]
+           via 20.149.171.149, Ethernet24
+ I L2     10.0.1.49/32 [115/10]
+           via 20.149.171.149, Ethernet24
+ I L2     10.0.1.55/32 [115/10]
+           via 20.155.171.155, Ethernet46
+ I L2     20.5.149.0/24 [115/20]
+           via 20.149.171.149, Ethernet24
+ I L2     20.19.149.0/24 [115/20]
+           via 20.149.171.149, Ethernet24
+ I L2     20.24.149.0/24 [115/20]
+           via 20.149.171.149, Ethernet24
+ I L2     20.47.149.0/24 [115/20]
+           via 20.149.171.149, Ethernet24
+ I L2     20.57.59.0/24 [115/30]
+           via 20.149.171.149, Ethernet24
+           via 20.155.171.155, Ethernet46
+ I L2     20.57.149.0/24 [115/20]
+           via 20.149.171.149, Ethernet24
+ I L2     20.57.155.0/24 [115/20]
+           via 20.155.171.155, Ethernet46
+ I L2     20.57.179.0/24 [115/30]
+           via 20.149.171.149, Ethernet24
+           via 20.155.171.155, Ethernet46
+ I L2     20.57.211.0/24 [115/30]
+           via 20.149.171.149, Ethernet24
+           via 20.155.171.155, Ethernet46
+ I L2     20.83.149.0/24 [115/20]
+           via 20.149.171.149, Ethernet24
+ I L2     20.111.149.0/24 [115/20]
+           via 20.149.171.149, Ethernet24
+ I L2     20.149.155.0/24 [115/20]
+           via 20.149.171.149, Ethernet24
+           via 20.155.171.155, Ethernet46
+ C        20.149.171.0/24
+           directly connected, Ethernet24
+ I L2     20.149.254.0/24 [115/20]
+           via 20.149.171.149, Ethernet24
+ C        20.155.171.0/24
+           directly connected, Ethernet46
+ I L2     20.155.179.0/24 [115/20]
+           via 20.155.171.155, Ethernet46
+ I L2     100.0.1.111/32 [115/20]
+           via 20.149.171.149, Ethernet24
+ I L2     192.168.20.0/23 [115/20]
+           via 20.149.171.149, Ethernet24
+ I L2     192.168.0.0/19 [115/20]
+           via 20.149.171.149, Ethernet24
+
+
+VRF: ISIS-SR-FLEXALGO-MIN-DELAY
+Source Codes:
+       C - connected, S - static, K - kernel,
+       O - OSPF, IA - OSPF inter area, E1 - OSPF external type 1,
+       E2 - OSPF external type 2, N1 - OSPF NSSA external type 1,
+       N2 - OSPF NSSA external type2, B - Other BGP Routes,
+       B I - iBGP, B E - eBGP, R - RIP, I L1 - IS-IS level 1,
+       I L2 - IS-IS level 2, O3 - OSPFv3, A B - BGP Aggregate,
+       A O - OSPF Summary, NG - Nexthop Group Static Route,
+       V - VXLAN Control Service, M - Martian,
+       DH - DHCP client installed default route,
+       DP - Dynamic Policy Route, L - VRF Leaked,
+       G  - gRIBI, RC - Route Cache Route,
+       CL - CBF Leaked Route
+
+Gateway of last resort is not set
+
+ B I      20.5.111.0/24 [200/0]
+           via 10.0.0.5/32, IS-IS SR tunnel index 12, label 62001
+              via TI-LFA tunnel index 4, label 20005
+                 via 20.149.171.149, Ethernet24, label imp-null(3)
+                 backup via 20.155.171.155, Ethernet46, label imp-null(3)
+ B I      20.19.111.0/24 [200/0]
+           via 10.0.0.19/32, IS-IS SR tunnel index 4, label 1277
+              via 20.149.171.149, Ethernet24, label 20019
+ B I      20.24.111.0/24 [200/0]
+           via 10.0.0.24/32, IS-IS SR tunnel index 11, label 56507
+              via 20.149.171.149, Ethernet24, label 20024
+ B I      20.57.111.0/24 [200/0]
+           via 10.0.0.57/32, algorithm MIN-LATENCY, IS-IS FlexAlgo tunnel index 15, label 524286
+              via TI-LFA tunnel index 6, label 21057
+                 via 20.155.171.155, Ethernet46, label imp-null(3)
+                 backup via 20.149.171.149, Ethernet24, label 24009
+ B I      20.111.111.0/24 [200/0]
+           via 100.0.1.111/32, algorithm MIN-LATENCY, IS-IS FlexAlgo tunnel index 28, label 17
+              via TI-LFA tunnel index 4, label 21111
+                 via 20.149.171.149, Ethernet24, label imp-null(3)
+                 backup via 20.155.171.155, Ethernet46, label imp-null(3)
+ B I      20.111.155.0/24 [200/0]
+           via 10.0.1.55/32, algorithm MIN-LATENCY, IS-IS FlexAlgo tunnel index 8, label 24009
+              via TI-LFA tunnel index 8, label imp-null(3)
+                 via 20.155.171.155, Ethernet46, label imp-null(3)
+                 backup via 20.149.171.149, Ethernet24, label 21355
+ C        20.111.171.0/24
+           directly connected, Ethernet5.128
+ B I      20.111.179.0/24 [200/0]
+           via 10.0.0.179/32, algorithm MIN-LATENCY, IS-IS FlexAlgo tunnel index 19, label 16
+              via TI-LFA tunnel index 6, label 21179
+                 via 20.155.171.155, Ethernet46, label imp-null(3)
+                 backup via 20.149.171.149, Ethernet24, label 24009
+ B I      20.111.254.0/24 [200/0]
+           via 10.0.0.254/32, algorithm MIN-LATENCY, IS-IS FlexAlgo tunnel index 14, label 48091
+              via TI-LFA tunnel index 4, label 21254
+                 via 20.149.171.149, Ethernet24, label imp-null(3)
+                 backup via 20.155.171.155, Ethernet46, label imp-null(3)
+
+
+VRF: ISIS-SR-FLEXALGO-MIN-IGP
+Source Codes:
+       C - connected, S - static, K - kernel,
+       O - OSPF, IA - OSPF inter area, E1 - OSPF external type 1,
+       E2 - OSPF external type 2, N1 - OSPF NSSA external type 1,
+       N2 - OSPF NSSA external type2, B - Other BGP Routes,
+       B I - iBGP, B E - eBGP, R - RIP, I L1 - IS-IS level 1,
+       I L2 - IS-IS level 2, O3 - OSPFv3, A B - BGP Aggregate,
+       A O - OSPF Summary, NG - Nexthop Group Static Route,
+       V - VXLAN Control Service, M - Martian,
+       DH - DHCP client installed default route,
+       DP - Dynamic Policy Route, L - VRF Leaked,
+       G  - gRIBI, RC - Route Cache Route,
+       CL - CBF Leaked Route
+
+Gateway of last resort is not set
+
+ B I      20.5.111.0/24 [200/0]
+           via 10.0.0.5/32, IS-IS SR tunnel index 12, label 62003
+              via TI-LFA tunnel index 4, label 20005
+                 via 20.149.171.149, Ethernet24, label imp-null(3)
+                 backup via 20.155.171.155, Ethernet46, label imp-null(3)
+ B I      20.19.111.0/24 [200/0]
+           via 10.0.0.19/32, IS-IS SR tunnel index 4, label 1275
+              via 20.149.171.149, Ethernet24, label 20019
+ B I      20.24.111.0/24 [200/0]
+           via 10.0.0.24/32, IS-IS SR tunnel index 11, label 56505
+              via 20.149.171.149, Ethernet24, label 20024
+ B I      20.57.111.0/24 [200/0]
+           via 10.0.0.57/32, algorithm MIN-IGP, IS-IS FlexAlgo tunnel index 17, label 524283
+              via 20.149.171.149, Ethernet24, label 21257
+              via 20.155.171.155, Ethernet46, label 21257
+ B I      20.111.111.0/24 [200/0]
+           via 100.0.1.111/32, algorithm MIN-IGP, IS-IS FlexAlgo tunnel index 26, label 19
+              via TI-LFA tunnel index 4, label 21311
+                 via 20.149.171.149, Ethernet24, label imp-null(3)
+                 backup via 20.155.171.155, Ethernet46, label imp-null(3)
+ B I      20.111.155.0/24 [200/0]
+           via 10.0.1.55/32, algorithm MIN-IGP, IS-IS FlexAlgo tunnel index 1, label 24012
+              via TI-LFA tunnel index 9, label imp-null(3)
+                 via 20.155.171.155, Ethernet46, label imp-null(3)
+                 backup via 20.149.171.149, Ethernet24, label 21555
+ C        20.111.171.0/24
+           directly connected, Ethernet5.130
+ B I      20.111.179.0/24 [200/0]
+           via 10.0.0.179/32, IS-IS SR tunnel index 8, label 18
+              via TI-LFA tunnel index 2, label 20379
+                 via 20.155.171.155, Ethernet46, label imp-null(3)
+                 backup via 20.149.171.149, Ethernet24, label 20057
+ B I      20.111.254.0/24 [200/0]
+           via 10.0.0.254/32, algorithm MIN-IGP, IS-IS FlexAlgo tunnel index 10, label 48093
+              via TI-LFA tunnel index 4, label 21454
+                 via 20.149.171.149, Ethernet24, label imp-null(3)
+                 backup via 20.155.171.155, Ethernet46, label imp-null(3)
+ B I      55.55.55.130/32 [200/0]
+           via 10.0.1.55/32, algorithm MIN-IGP, IS-IS FlexAlgo tunnel index 1, label 24012
+              via TI-LFA tunnel index 9, label imp-null(3)
+                 via 20.155.171.155, Ethernet46, label imp-null(3)
+                 backup via 20.149.171.149, Ethernet24, label 21555
+
+
+VRF: ISIS-SR-FLEXALGO-MIN-IGP-ADMIN
+Source Codes:
+       C - connected, S - static, K - kernel,
+       O - OSPF, IA - OSPF inter area, E1 - OSPF external type 1,
+       E2 - OSPF external type 2, N1 - OSPF NSSA external type 1,
+       N2 - OSPF NSSA external type2, B - Other BGP Routes,
+       B I - iBGP, B E - eBGP, R - RIP, I L1 - IS-IS level 1,
+       I L2 - IS-IS level 2, O3 - OSPFv3, A B - BGP Aggregate,
+       A O - OSPF Summary, NG - Nexthop Group Static Route,
+       V - VXLAN Control Service, M - Martian,
+       DH - DHCP client installed default route,
+       DP - Dynamic Policy Route, L - VRF Leaked,
+       G  - gRIBI, RC - Route Cache Route,
+       CL - CBF Leaked Route
+
+Gateway of last resort is not set
+
+ B I      20.19.111.0/24 [200/0]
+           via 10.0.0.19/32, IS-IS SR tunnel index 4, label 1274
+              via 20.149.171.149, Ethernet24, label 20019
+ B I      20.24.111.0/24 [200/0]
+           via 10.0.0.24/32, IS-IS SR tunnel index 11, label 56504
+              via 20.149.171.149, Ethernet24, label 20024
+ B I      20.57.111.0/24 [200/0]
+           via 10.0.0.57/32, algorithm MIN-IGP-ADMIN, IS-IS FlexAlgo tunnel index 20, label 524282
+              via 20.155.171.155, Ethernet46, label 21357
+ B I      20.111.111.0/24 [200/0]
+           via 100.0.1.111/32, algorithm MIN-IGP-ADMIN, IS-IS FlexAlgo tunnel index 27, label 20
+              via 20.155.171.155, Ethernet46, label 21411
+ B I      20.111.155.0/24 [200/0]
+           via 10.0.1.55/32, algorithm MIN-IGP-ADMIN, IS-IS FlexAlgo tunnel index 5, label 24011
+              via 20.155.171.155, Ethernet46, label imp-null(3)
+ C        20.111.171.0/24
+           directly connected, Ethernet5.131
+ B I      20.111.254.0/24 [200/0]
+           via 10.0.0.254/32, algorithm MIN-IGP-ADMIN, IS-IS FlexAlgo tunnel index 11, label 48094
+              via 20.155.171.155, Ethernet46, label 21554
+
+
+VRF: ISIS-SR-FLEXALGO-MIN-TE
+Source Codes:
+       C - connected, S - static, K - kernel,
+       O - OSPF, IA - OSPF inter area, E1 - OSPF external type 1,
+       E2 - OSPF external type 2, N1 - OSPF NSSA external type 1,
+       N2 - OSPF NSSA external type2, B - Other BGP Routes,
+       B I - iBGP, B E - eBGP, R - RIP, I L1 - IS-IS level 1,
+       I L2 - IS-IS level 2, O3 - OSPFv3, A B - BGP Aggregate,
+       A O - OSPF Summary, NG - Nexthop Group Static Route,
+       V - VXLAN Control Service, M - Martian,
+       DH - DHCP client installed default route,
+       DP - Dynamic Policy Route, L - VRF Leaked,
+       G  - gRIBI, RC - Route Cache Route,
+       CL - CBF Leaked Route
+
+Gateway of last resort is not set
+
+ B I      20.5.111.0/24 [200/0]
+           via 10.0.0.5/32, IS-IS SR tunnel index 12, label 62002
+              via TI-LFA tunnel index 4, label 20005
+                 via 20.149.171.149, Ethernet24, label imp-null(3)
+                 backup via 20.155.171.155, Ethernet46, label imp-null(3)
+ B I      20.19.111.0/24 [200/0]
+           via 10.0.0.19/32, IS-IS SR tunnel index 4, label 1276
+              via 20.149.171.149, Ethernet24, label 20019
+ B I      20.24.111.0/24 [200/0]
+           via 10.0.0.24/32, IS-IS SR tunnel index 11, label 56506
+              via 20.149.171.149, Ethernet24, label 20024
+ B I      20.57.111.0/24 [200/0]
+           via 10.0.0.57/32, algorithm MIN-TE, IS-IS FlexAlgo tunnel index 16, label 524284
+              via 20.149.171.149, Ethernet24, label 21157
+              via 20.155.171.155, Ethernet46, label 21157
+ B I      20.111.111.0/24 [200/0]
+           via 100.0.1.111/32, algorithm MIN-TE, IS-IS FlexAlgo tunnel index 29, label 18
+              via TI-LFA tunnel index 4, label 21211
+                 via 20.149.171.149, Ethernet24, label imp-null(3)
+                 backup via 20.155.171.155, Ethernet46, label imp-null(3)
+ B I      20.111.155.0/24 [200/0]
+           via 10.0.1.55/32, algorithm MIN-TE, IS-IS FlexAlgo tunnel index 7, label 24010
+              via TI-LFA tunnel index 1, label imp-null(3)
+                 via 20.155.171.155, Ethernet46, label imp-null(3)
+                 backup via 20.149.171.149, Ethernet24, label 21455
+ C        20.111.171.0/24
+           directly connected, Ethernet5.129
+ B I      20.111.179.0/24 [200/0]
+           via 10.0.0.179/32, algorithm MIN-TE, IS-IS FlexAlgo tunnel index 18, label 17
+              via TI-LFA tunnel index 12, label 21279
+                 via 20.155.171.155, Ethernet46, label imp-null(3)
+                 backup via 20.149.171.149, Ethernet24, label 21157
+ B I      20.111.254.0/24 [200/0]
+           via 10.0.0.254/32, algorithm MIN-TE, IS-IS FlexAlgo tunnel index 12, label 48092
+              via TI-LFA tunnel index 4, label 21354
+                 via 20.149.171.149, Ethernet24, label imp-null(3)
+                 backup via 20.155.171.155, Ethernet46, label imp-null(3)
+
+
+VRF: ISIS-SR-L3VPN
+Source Codes:
+       C - connected, S - static, K - kernel,
+       O - OSPF, IA - OSPF inter area, E1 - OSPF external type 1,
+       E2 - OSPF external type 2, N1 - OSPF NSSA external type 1,
+       N2 - OSPF NSSA external type2, B - Other BGP Routes,
+       B I - iBGP, B E - eBGP, R - RIP, I L1 - IS-IS level 1,
+       I L2 - IS-IS level 2, O3 - OSPFv3, A B - BGP Aggregate,
+       A O - OSPF Summary, NG - Nexthop Group Static Route,
+       V - VXLAN Control Service, M - Martian,
+       DH - DHCP client installed default route,
+       DP - Dynamic Policy Route, L - VRF Leaked,
+       G  - gRIBI, RC - Route Cache Route,
+       CL - CBF Leaked Route
+
+Gateway of last resort is not set
+
+ B I      20.5.111.0/24 [200/0]
+           via 10.0.0.5/32, IS-IS SR tunnel index 12, label 62000
+              via TI-LFA tunnel index 4, label 20005
+                 via 20.149.171.149, Ethernet24, label imp-null(3)
+                 backup via 20.155.171.155, Ethernet46, label imp-null(3)
+ B I      20.19.111.0/24 [200/0]
+           via 10.0.0.19/32, IS-IS SR tunnel index 4, label 1279
+              via 20.149.171.149, Ethernet24, label 20019
+ B I      20.55.111.0/24 [200/0]
+           via 10.0.1.55/32, IS-IS SR tunnel index 5, label 24004
+              via TI-LFA tunnel index 3, label imp-null(3)
+                 via 20.155.171.155, Ethernet46, label imp-null(3)
+                 backup via 20.149.171.149, Ethernet24, label 20355
+ B I      20.57.111.0/24 [200/0]
+           via 10.0.0.57/32, IS-IS SR tunnel index 7, label 524287
+              via 20.149.171.149, Ethernet24, label 20057
+              via 20.155.171.155, Ethernet46, label 20057
+ B I      20.83.111.0/24 [200/0]
+           via 10.0.0.83/32, IS-IS SR tunnel index 1, label 18
+              via TI-LFA tunnel index 4, label 20083
+                 via 20.149.171.149, Ethernet24, label imp-null(3)
+                 backup via 20.155.171.155, Ethernet46, label imp-null(3)
+
+
+VRF: mgmt
+Source Codes:
+       C - connected, S - static, K - kernel,
+       O - OSPF, IA - OSPF inter area, E1 - OSPF external type 1,
+       E2 - OSPF external type 2, N1 - OSPF NSSA external type 1,
+       N2 - OSPF NSSA external type2, B - Other BGP Routes,
+       B I - iBGP, B E - eBGP, R - RIP, I L1 - IS-IS level 1,
+       I L2 - IS-IS level 2, O3 - OSPFv3, A B - BGP Aggregate,
+       A O - OSPF Summary, NG - Nexthop Group Static Route,
+       V - VXLAN Control Service, M - Martian,
+       DH - DHCP client installed default route,
+       DP - Dynamic Policy Route, L - VRF Leaked,
+       G  - gRIBI, RC - Route Cache Route,
+       CL - CBF Leaked Route
+
+Gateway of last resort:
+ S        0.0.0.0/0 [1/0]
+           via 192.168.20.1, Management1
+
+ C        192.168.20.0/23
+           directly connected, Management1
+
