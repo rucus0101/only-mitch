@@ -1,0 +1,24 @@
+Legend:
+H - hostname conflict
+U - node unreachable
+
+IS-IS Instance: IGP VRF: default
+  IS-IS Level 2 Link State Database
+    LSPID                   Seq Num  Cksum  Life Length IS  Received LSPID        Flags
+    Spine3-J-170.00-00          264   5903   565    113 L2  0100.0000.0170.00-00  <>
+      LSP generation remaining wait time: 0 ms
+      Time remaining until refresh: 265 s
+      NLPID: 0xCC(IPv4)
+      Hostname: Spine3-J-170
+      Area addresses: 49.0000
+      Interface address: 10.0.0.170
+      Reachability         : 10.0.0.170/32 Metric: 10 Type: 1 Up
+        SR Prefix-SID: 170 Flags: [N] Algorithm: 0
+      Router Capabilities: Router Id: 100.0.0.170 Flags: []
+        SR Local Block:
+          SRLB Base: 965536 Range: 65536
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  6
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
