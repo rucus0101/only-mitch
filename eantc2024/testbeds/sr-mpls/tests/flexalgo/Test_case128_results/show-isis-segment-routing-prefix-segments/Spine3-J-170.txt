@@ -1,0 +1,13 @@
+
+System ID: Spine3-J-170			Instance: 'IGP'
+SR supported Data-plane: MPLS			SR Router ID: 100.0.0.170
+
+Node: 1      Proxy-Node: 0      Prefix: 0       Total Segments: 1
+
+Flag Descriptions: R: Re-advertised, N: Node Segment, P: no-PHP
+                   E: Explicit-NULL, V: Value, L: Local
+Segment status codes: * - Self originated Prefix, L1 - level 1, L2 - level 2, ! - SR-unreachable,
+                      # - Some IS-IS next-hops are SR-unreachable
+   Prefix                      SID Type       Flags                        System ID       Level Protection  Algorithm   
+   ------------------------- ----- ---------- ---------------------------- --------------- ----- ----------- -------------
+*  10.0.0.170/32               170 Node       R:0 N:1 P:0 E:0 V:0 L:0      Spine3-J-170    L2    unprotected SPF         

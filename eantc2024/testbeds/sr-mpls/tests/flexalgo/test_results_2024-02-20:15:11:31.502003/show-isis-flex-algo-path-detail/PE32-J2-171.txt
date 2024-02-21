@@ -1,0 +1,330 @@
+Flex algo paths for IPv4 address family
+Topology ID: Level-2
+Destination: PE31-J2-171
+Path ID: 640
+Path constraints: algo MIN-LATENCY
+                  metric type MIN-DELAY
+Request sequence number: 59
+Response sequence number: 59
+Number of times path updated: 59
+Last updated: 0:11:43 ago
+Next Hop Interface
+-------- ---------
+
+Destination: PE31-J2-171
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 59
+Response sequence number: 59
+Number of times path updated: 59
+Last updated: 0:11:43 ago
+Next Hop Interface
+-------- ---------
+
+Destination: PE31-J2-171
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 59
+Response sequence number: 59
+Number of times path updated: 59
+Last updated: 0:11:43 ago
+Next Hop Interface
+-------- ---------
+
+Destination: PE31-J2-171
+Path ID: 643
+Path constraints: algo MIN-IGP-ADMIN
+                  metric type IGP
+Request sequence number: 42
+Response sequence number: 42
+Number of times path updated: 42
+Last updated: 0:11:43 ago
+Next Hop Interface
+-------- ---------
+
+Destination: Ribbon-32
+Path ID: 640
+Path constraints: algo MIN-LATENCY
+                  metric type MIN-DELAY
+Request sequence number: 58
+Response sequence number: 58
+Number of times path updated: 60
+Last updated: 0:10:09 ago
+Metric: 13
+Next Hop       Interface 
+-------------- ----------
+20.149.171.149 Ethernet24
+
+Destination: Ribbon-32
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 58
+Response sequence number: 58
+Number of times path updated: 58
+Last updated: 0:11:43 ago
+Metric: 24
+Next Hop       Interface 
+-------------- ----------
+20.149.171.149 Ethernet24
+
+Destination: Ribbon-32
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 58
+Response sequence number: 58
+Number of times path updated: 58
+Last updated: 0:11:43 ago
+Metric: 20
+Next Hop       Interface 
+-------------- ----------
+20.149.171.149 Ethernet24
+
+Destination: SR1-SRMPLS
+Path ID: 640
+Path constraints: algo MIN-LATENCY
+                  metric type MIN-DELAY
+Request sequence number: 19
+Response sequence number: 19
+Number of times path updated: 32
+Last updated: 0:10:09 ago
+Metric: 13
+Next Hop       Interface 
+-------------- ----------
+20.155.171.155 Ethernet46
+20.149.171.149 Ethernet24
+
+Destination: SR1-SRMPLS
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 18
+Response sequence number: 18
+Number of times path updated: 27
+Last updated: 0:11:43 ago
+Metric: 24
+Next Hop       Interface 
+-------------- ----------
+20.155.171.155 Ethernet46
+20.149.171.149 Ethernet24
+
+Destination: SR1-SRMPLS
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 18
+Response sequence number: 18
+Number of times path updated: 28
+Last updated: 0:11:43 ago
+Metric: 20
+Next Hop       Interface 
+-------------- ----------
+20.155.171.155 Ethernet46
+20.149.171.149 Ethernet24
+
+Destination: SR1-SRMPLS
+Path ID: 643
+Path constraints: algo MIN-IGP-ADMIN
+                  metric type IGP
+Request sequence number: 15
+Response sequence number: 15
+Number of times path updated: 19
+Last updated: 0:11:43 ago
+Metric: 20
+Next Hop       Interface 
+-------------- ----------
+20.155.171.155 Ethernet46
+20.149.171.149 Ethernet24
+
+Destination: h49-N540-24Q8L2DD
+Path ID: 640
+Path constraints: algo MIN-LATENCY
+                  metric type MIN-DELAY
+Request sequence number: 62
+Response sequence number: 62
+Number of times path updated: 65
+Last updated: 0:10:09 ago
+Metric: 2
+Next Hop       Interface 
+-------------- ----------
+20.149.171.149 Ethernet24
+
+Destination: h49-N540-24Q8L2DD
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 61
+Response sequence number: 61
+Number of times path updated: 62
+Last updated: 0:11:43 ago
+Metric: 12
+Next Hop       Interface 
+-------------- ----------
+20.149.171.149 Ethernet24
+
+Destination: h49-N540-24Q8L2DD
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 53
+Response sequence number: 53
+Number of times path updated: 62
+Last updated: 0:11:43 ago
+Metric: 10
+Next Hop       Interface 
+-------------- ----------
+20.149.171.149 Ethernet24
+
+Destination: h55-8201-24H8FH
+Path ID: 640
+Path constraints: algo MIN-LATENCY
+                  metric type MIN-DELAY
+Request sequence number: 62
+Response sequence number: 62
+Number of times path updated: 66
+Last updated: 0:10:09 ago
+Metric: 2
+Next Hop       Interface 
+-------------- ----------
+20.155.171.155 Ethernet46
+
+Destination: h55-8201-24H8FH
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 61
+Response sequence number: 61
+Number of times path updated: 62
+Last updated: 0:11:43 ago
+Metric: 12
+Next Hop       Interface 
+-------------- ----------
+20.155.171.155 Ethernet46
+
+Destination: h55-8201-24H8FH
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 60
+Response sequence number: 60
+Number of times path updated: 62
+Last updated: 0:11:43 ago
+Metric: 10
+Next Hop       Interface 
+-------------- ----------
+20.155.171.155 Ethernet46
+
+Destination: h55-8201-24H8FH
+Path ID: 643
+Path constraints: algo MIN-IGP-ADMIN
+                  metric type IGP
+Request sequence number: 39
+Response sequence number: 39
+Number of times path updated: 40
+Last updated: 0:11:43 ago
+Metric: 10
+Next Hop       Interface 
+-------------- ----------
+20.155.171.155 Ethernet46
+
+Destination: huawei_34_NetEngine_8000_F8
+Path ID: 640
+Path constraints: algo MIN-LATENCY
+                  metric type MIN-DELAY
+Request sequence number: 37
+Response sequence number: 37
+Number of times path updated: 39
+Last updated: 0:10:09 ago
+Metric: 13
+Next Hop       Interface 
+-------------- ----------
+20.149.171.149 Ethernet24
+
+Destination: huawei_34_NetEngine_8000_F8
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 37
+Response sequence number: 37
+Number of times path updated: 37
+Last updated: 0:11:43 ago
+Metric: 24
+Next Hop       Interface 
+-------------- ----------
+20.149.171.149 Ethernet24
+
+Destination: huawei_34_NetEngine_8000_F8
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 37
+Response sequence number: 37
+Number of times path updated: 37
+Last updated: 0:11:43 ago
+Metric: 20
+Next Hop       Interface 
+-------------- ----------
+20.149.171.149 Ethernet24
+
+Destination: huawei_34_NetEngine_8000_F8
+Path ID: 643
+Path constraints: algo MIN-IGP-ADMIN
+                  metric type IGP
+Request sequence number: 28
+Response sequence number: 28
+Number of times path updated: 28
+Last updated: 0:11:43 ago
+Metric: 20
+Next Hop       Interface 
+-------------- ----------
+20.149.171.149 Ethernet24
+
+Destination: juniper_379_MX304
+Path ID: 640
+Path constraints: algo MIN-LATENCY
+                  metric type MIN-DELAY
+Request sequence number: 5
+Response sequence number: 5
+Number of times path updated: 7
+Last updated: 0:10:09 ago
+Metric: 13
+Next Hop       Interface 
+-------------- ----------
+20.155.171.155 Ethernet46
+
+Destination: juniper_379_MX304
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 4
+Response sequence number: 4
+Number of times path updated: 7
+Last updated: 0:11:43 ago
+Metric: 24
+Next Hop       Interface 
+-------------- ----------
+20.155.171.155 Ethernet46
+
+Destination: juniper_379_MX304
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 4
+Response sequence number: 4
+Number of times path updated: 4
+Last updated: 0:11:43 ago
+Metric: 20
+Next Hop       Interface 
+-------------- ----------
+20.155.171.155 Ethernet46
+
