@@ -1,0 +1,112 @@
+VRF: default, Protocol: connected
+Codes: C - Connected, S - Static, P - Route Input, G - Gribi
+       B - BGP, O - Ospf, O3 - Ospf3, I - Isis, R - Rip, VL - VRF Leak
+       > - Best Route, * - Unresolved Next hop
+       EM - Exact match of the SR-TE Policy
+       NM - Null endpoint match of the SR-TE Policy
+       AM - Any endpoint match of the SR-TE Policy
+       L - Part of a recursive route resolution loop
+       A - Next hop not resolved in ARP/ND
+       NF - Not in FEC
+>C    10.0.0.172/32 [0 pref/0 metric] updated 18:23:23 ago
+         via Loopback0, directly connected
+>C    20.57.172.0/24 [0 pref/0 metric] updated 01:12:36 ago
+         via Ethernet49/1, directly connected
+>C    20.171.172.0/24 [0 pref/0 metric] updated 01:01:22 ago
+         via Ethernet47, directly connected
+VRF: default, Protocol: route-input
+Codes: C - Connected, S - Static, P - Route Input, G - Gribi
+       B - BGP, O - Ospf, O3 - Ospf3, I - Isis, R - Rip, VL - VRF Leak
+       > - Best Route, * - Unresolved Next hop
+       EM - Exact match of the SR-TE Policy
+       NM - Null endpoint match of the SR-TE Policy
+       AM - Any endpoint match of the SR-TE Policy
+       L - Part of a recursive route resolution loop
+       A - Next hop not resolved in ARP/ND
+       NF - Not in FEC
+>P    0.0.0.0/8 [1 pref/0 metric] updated 18:23:21 ago
+         via Null0, directly connected [NF]
+>P    127.0.0.0/8 [1 pref/0 metric] updated 18:23:21 ago
+         via :: [1 pref/1 metric] type ipv4
+            via , directly connected
+VRF: default, Protocol: isis
+Codes: C - Connected, S - Static, P - Route Input, G - Gribi
+       B - BGP, O - Ospf, O3 - Ospf3, I - Isis, R - Rip, VL - VRF Leak
+       > - Best Route, * - Unresolved Next hop
+       EM - Exact match of the SR-TE Policy
+       NM - Null endpoint match of the SR-TE Policy
+       AM - Any endpoint match of the SR-TE Policy
+       L - Part of a recursive route resolution loop
+       A - Next hop not resolved in ARP/ND
+       NF - Not in FEC
+>I    10.0.0.5/32 [115 pref/40 metric] updated 00:50:52 ago
+         via 20.57.172.57, Ethernet49/1
+>I    10.0.0.19/32 [115 pref/30 metric] updated 00:50:52 ago
+         via 20.57.172.57, Ethernet49/1
+>I    10.0.0.24/32 [115 pref/30 metric] updated 00:50:52 ago
+         via 20.57.172.57, Ethernet49/1
+>I    10.0.0.32/32 [115 pref/20 metric] updated 00:14:17 ago
+         via 20.57.172.57, Ethernet49/1
+         via 20.171.172.171, Ethernet47
+>I    10.0.0.57/32 [115 pref/10 metric] updated 01:00:00 ago
+         via 20.57.172.57, Ethernet49/1
+>I    10.0.0.83/32 [115 pref/30 metric] updated 00:50:52 ago
+         via 20.57.172.57, Ethernet49/1
+>I    10.0.0.171/32 [115 pref/10 metric] updated 01:00:49 ago
+         via 20.171.172.171, Ethernet47
+>I    10.0.0.179/32 [115 pref/20 metric] updated 00:03:16 ago
+         via 20.57.172.57, Ethernet49/1
+         via 20.171.172.171, Ethernet47
+>I    10.0.0.254/32 [115 pref/20 metric] updated 00:50:05 ago
+         via 20.57.172.57, Ethernet49/1
+>I    10.0.1.49/32 [115 pref/20 metric] updated 00:50:52 ago
+         via 20.57.172.57, Ethernet49/1
+>I    10.0.1.55/32 [115 pref/20 metric] updated 00:45:35 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.5.149.0/24 [115 pref/30 metric] updated 00:50:52 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.19.149.0/24 [115 pref/30 metric] updated 00:50:52 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.24.149.0/24 [115 pref/30 metric] updated 00:50:52 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.32.57.0/24 [115 pref/20 metric] updated 00:30:12 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.32.149.0/24 [115 pref/30 metric] updated 00:14:17 ago
+         via 20.57.172.57, Ethernet49/1
+         via 20.171.172.171, Ethernet47
+>I    20.32.171.0/24 [115 pref/20 metric] updated 00:23:27 ago
+         via 20.171.172.171, Ethernet47
+>I    20.32.211.0/24 [115 pref/30 metric] updated 00:14:17 ago
+         via 20.57.172.57, Ethernet49/1
+         via 20.171.172.171, Ethernet47
+>I    20.47.149.0/24 [115 pref/30 metric] updated 00:50:52 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.57.149.0/24 [115 pref/20 metric] updated 01:00:00 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.57.155.0/24 [115 pref/20 metric] updated 01:00:00 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.57.171.0/24 [115 pref/20 metric] updated 00:51:24 ago
+         via 20.57.172.57, Ethernet49/1
+         via 20.171.172.171, Ethernet47
+>I    20.57.179.0/24 [115 pref/20 metric] updated 01:00:00 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.57.211.0/24 [115 pref/20 metric] updated 01:00:00 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.57.254.0/24 [115 pref/20 metric] updated 01:00:00 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.83.149.0/24 [115 pref/30 metric] updated 00:50:52 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.111.149.0/24 [115 pref/30 metric] updated 00:50:52 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.149.155.0/24 [115 pref/30 metric] updated 00:45:35 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.149.254.0/24 [115 pref/30 metric] updated 00:50:05 ago
+         via 20.57.172.57, Ethernet49/1
+>I    20.171.179.0/24 [115 pref/20 metric] updated 00:03:25 ago
+         via 20.171.172.171, Ethernet47
+>I    20.179.254.0/24 [115 pref/30 metric] updated 00:02:24 ago
+         via 20.57.172.57, Ethernet49/1
+>I    192.168.0.0/19 [115 pref/30 metric] updated 00:50:52 ago
+         via 20.57.172.57, Ethernet49/1
+>I    192.168.20.0/23 [115 pref/30 metric] updated 00:50:52 ago
+         via 20.57.172.57, Ethernet49/1

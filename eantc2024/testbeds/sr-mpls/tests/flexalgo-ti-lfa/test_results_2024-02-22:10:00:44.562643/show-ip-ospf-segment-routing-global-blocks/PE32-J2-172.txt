@@ -1,0 +1,8 @@
+OSPF Instance ID: 1
+SR supported Data-plane: MPLS			SR Router ID: 10.0.0.172
+Number of OSPF segment routing capable nodes excluding self: 0
+
+    Router ID        Base    Size
+---------------- ----------- ----
+   10.0.0.172       20000    2000
+
