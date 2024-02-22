@@ -1,0 +1,5 @@
+Port      Name           Intvl  In Mbps      %  In Kpps Out Mbps      % Out Kpps
+Et1       Arista_171      0:01      0.0   0.0%        0      8.0   0.1%        1
+Et23      Ixia_111        0:01      8.0   0.1%        1      8.0   0.1%        1
+Et44      Nokia_57        0:01      8.0   0.1%        0      0.0   0.0%        0
+Ma1                       0:01      0.0   0.0%        0      0.1   0.0%        0
