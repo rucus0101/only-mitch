@@ -1,0 +1,336 @@
+Flex algo paths for IPv4 address family
+Topology ID: Level-2
+Destination: 0010.0010.0005
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 11
+Response sequence number: 11
+Number of times path updated: 11
+Last updated: 0:00:04 ago
+Metric: 36
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: 0010.0010.0005
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 11
+Response sequence number: 11
+Number of times path updated: 11
+Last updated: 0:00:04 ago
+Metric: 30
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: 0010.0010.0005
+Path ID: 643
+Path constraints: algo MIN-IGP-ADMIN
+                  metric type IGP
+                  administrative-group exclude 127
+Request sequence number: 11
+Response sequence number: 11
+Number of times path updated: 11
+Last updated: 0:00:04 ago
+Next Hop Interface
+-------- ---------
+
+Destination: 12502-1
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 65
+Last updated: 0:00:04 ago
+Metric: 36
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: 12502-1
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 65
+Last updated: 0:00:04 ago
+Metric: 30
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: 12502-1
+Path ID: 643
+Path constraints: algo MIN-IGP-ADMIN
+                  metric type IGP
+                  administrative-group exclude 127
+Request sequence number: 62
+Response sequence number: 62
+Number of times path updated: 63
+Last updated: 0:00:04 ago
+Metric: 40
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: NOKIA-SR2-57
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 64
+Last updated: 0:00:04 ago
+Metric: 12
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: NOKIA-SR2-57
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 64
+Last updated: 0:00:04 ago
+Metric: 10
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: NOKIA-SR2-57
+Path ID: 643
+Path constraints: algo MIN-IGP-ADMIN
+                  metric type IGP
+                  administrative-group exclude 127
+Request sequence number: 62
+Response sequence number: 62
+Number of times path updated: 62
+Last updated: 0:00:04 ago
+Metric: 10
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: PE31-J2-171
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 64
+Last updated: 0:00:04 ago
+Metric: 12
+Next Hop       Interface 
+-------------- ----------
+20.171.172.171 Ethernet47
+
+Destination: PE31-J2-171
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 64
+Last updated: 0:00:04 ago
+Metric: 10
+Next Hop       Interface 
+-------------- ----------
+20.171.172.171 Ethernet47
+
+Destination: PE31-J2-171
+Path ID: 643
+Path constraints: algo MIN-IGP-ADMIN
+                  metric type IGP
+                  administrative-group exclude 127
+Request sequence number: 62
+Response sequence number: 62
+Number of times path updated: 61
+Last updated: 0:00:04 ago
+Metric: 10
+Next Hop       Interface 
+-------------- ----------
+20.171.172.171 Ethernet47
+
+Destination: PE32-J2-172
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 46
+Response sequence number: 46
+Number of times path updated: 46
+Last updated: 0:00:04 ago
+Next Hop Interface
+-------- ---------
+
+Destination: PE32-J2-172
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 46
+Response sequence number: 46
+Number of times path updated: 46
+Last updated: 0:00:04 ago
+Next Hop Interface
+-------- ---------
+
+Destination: PE32-J2-172
+Path ID: 643
+Path constraints: algo MIN-IGP-ADMIN
+                  metric type IGP
+                  administrative-group exclude 127
+Request sequence number: 45
+Response sequence number: 45
+Number of times path updated: 45
+Last updated: 0:00:04 ago
+Next Hop Interface
+-------- ---------
+
+Destination: h3c_19_CR16010E-F
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 65
+Last updated: 0:00:04 ago
+Metric: 36
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: h3c_19_CR16010E-F
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 65
+Last updated: 0:00:04 ago
+Metric: 30
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: h3c_19_CR16010E-F
+Path ID: 643
+Path constraints: algo MIN-IGP-ADMIN
+                  metric type IGP
+                  administrative-group exclude 127
+Request sequence number: 62
+Response sequence number: 62
+Number of times path updated: 63
+Last updated: 0:00:04 ago
+Metric: 40
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: h49-N540-24Q8L2DD
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 65
+Last updated: 0:00:04 ago
+Metric: 24
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: h49-N540-24Q8L2DD
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 65
+Last updated: 0:00:04 ago
+Metric: 20
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: h55-8201-24H8FH
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 65
+Last updated: 0:00:04 ago
+Metric: 24
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: h55-8201-24H8FH
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 65
+Last updated: 0:00:04 ago
+Metric: 20
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: h55-8201-24H8FH
+Path ID: 643
+Path constraints: algo MIN-IGP-ADMIN
+                  metric type IGP
+                  administrative-group exclude 127
+Request sequence number: 62
+Response sequence number: 62
+Number of times path updated: 63
+Last updated: 0:00:04 ago
+Metric: 20
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: juniper_379_MX304
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 66
+Last updated: 0:00:04 ago
+Metric: 24
+Next Hop     Interface   
+------------ ------------
+20.57.172.57 Ethernet49/1
+
+Destination: juniper_379_MX304
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 65
+Response sequence number: 65
+Number of times path updated: 67
+Last updated: 0:00:04 ago
+Metric: 20
+Next Hop       Interface   
+-------------- ------------
+20.171.172.171 Ethernet47  
+20.57.172.57   Ethernet49/1
+
