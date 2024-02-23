@@ -1,0 +1,4 @@
+ 
+Instance  VRF      System Id        Type Interface          SNPA              State Hold time   Circuit Id          
+IGP       default  Ribbon-32        L2   Ethernet50/1       P2P               UP    81          00                  
+IGP       default  Ericsson_47      L2   Ethernet51/1       P2P               UP    22          02                  

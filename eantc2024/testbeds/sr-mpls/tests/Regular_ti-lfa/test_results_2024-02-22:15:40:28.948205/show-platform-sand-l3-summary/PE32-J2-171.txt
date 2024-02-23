@@ -1,0 +1,88 @@
+Number of vrfs: 7
+
+Ipv4:
+  Routes:       63  backlog:  0  unprogrammed:  0
+  Adjacencies:  44  backlog:  0  unprogrammed:  0
+Ipv6:
+  Routes:       0   backlog:  0  unprogrammed:  0
+  Adjacencies:  44  backlog:  0  unprogrammed:  0
+Mpls:
+  Routes:       8  backlog:  0  unprogrammed:  0
+  Adjacencies:  1  backlog:  0  unprogrammed:  0
+
+Jericho2 Ip Fecs:
+  Non-ecmp fecs:  4110  ecmp fecs:  0  fec entries:  4110
+Jericho2 Mpls Fecs:
+  Non-ecmp fecs:  1  ecmp fecs:  0  fec entries:  1
+Jericho2 Vxlan Tunnel Fecs:
+  Non-ecmp fecs:  0  ecmp fecs:  0  fec entries:  0
+  Number of vxlan tunnels configured: 0
+
+Jericho2 Lpm Routes:
+  Routes:   63  unprogrammed:   0   
+  Routes6:  1   unprogrammed6:  0   
+  Backlog:  0 
+
+Jericho2 Lpm:
+  TCAM entries used:   3   Percent free:  99  ADS2 entries used:   8  Percent free:  99
+  Pivot buckets used:  4   Rows used:     1   Entries Per Bucket:  2  Percent free:  99
+  Route buckets used:  10  Rows used:     3   Entries Per Bucket:  6  Percent free:  99
+
+Lem:
+  IPv4  Host in Lem:            disabled
+  IPv4  Prefix-lengths in Lem:  None    
+  IPv6  Host in Lem:            disabled
+  IPv6  Prefix-lengths in Lem:  None    
+  Number of downloads:        0
+  Number of overflow events:  0
+
+Egress Arp rewrite entries in use (in each fap):
+  FixedSystem: 4
+Egress Arp remote rewrite entries in use (in each fap):
+  FixedSystem: 0
+Egress Ip tunnel rewrite entries in use (in each fap):
+  FixedSystem: 0
+Egress Mpls (for outer 2 labels) rewrite entries in use (in each fap):
+  FixedSystem: 0
+Egress Mpls (for inner 2 labels) rewrite entries in use (in each fap):
+  FixedSystem: 0
+Egress Sflow rewrite entries in use (in each fap):
+  FixedSystem: 0
+
+Egress rewrite chains in backlog: resource-full 0, no-interface 0
+
+Glem entries used per fap :
+  FixedSystem: 4100
+
+Jericho2 Fec:
+  Maximum FEC hierarchy levels:  2
+  ReusedEcmp:  14  allocs:  617  frees:  604  shuffles:  0  cmds:  0
+  Zombies:     0    purges:    0
+  Quarantine:  0/0  shuffles:  0  deletes:  0   
+  Fec insertion failures:  0
+  Level1  Fecs:
+    Non-ecmp fecs:            0    ecmp fecs:            1 
+    Non-ecmp (Percent free):  100  ecmp (Percent free):  99
+  Level2  Fecs:
+    Non-ecmp fecs:            0    ecmp fecs:            0  
+    Non-ecmp (Percent free):  100  ecmp (Percent free):  100
+  Level3  Fecs:
+    Non-ecmp fecs:            26  ecmp fecs:            0  
+    Non-ecmp (Percent free):  99  ecmp (Percent free):  100
+
+Lpm Detail:
+  Requests:  1138  cleanses:  273  batches:  273  avg batch size:  4
+
+Jericho Arp:
+  ArpTable writes:      26409  queued      0   
+  IngressTable writes:  81842  queued      0   
+  Coprocessors:         1      in CmdRing
+
+Tunnel Counter Status
+  Number of MPLS tunnels:                  0    
+  Number of uncountable MPLS tunnels:      0    
+  Number of MPLSoGRE tunnels:              0    
+  Number of uncountable MPLSoGRE tunnels:  0    
+  Number of IP tunnels:                    0    
+  Number of uncountable IP tunnels:        0    
+  Shuffle tunnel enabled:                  False

@@ -1,0 +1,30 @@
+MPLS forwarding table (Label [metric] Vias) - 4 routes 
+MPLS next-hop resolution allow default route: False
+Via Type Codes:
+          M - MPLS via, P - Pseudowire via,
+          I - IP lookup via, V - VLAN via,
+          VA - EVPN VLAN aware via, ES - EVPN ethernet segment via,
+          VF - EVPN VLAN flood via, AF - EVPN VLAN aware flood via,
+          NG - Nexthop group via
+Source Codes:
+          G - gRIBI, S - Static MPLS route,
+          B2 - BGP L2 EVPN, B3 - BGP L3 VPN,
+          R - RSVP, LP - LDP pseudowire,
+          L - LDP, M - MLDP,
+          I>BL - IS-IS SR to BGP LU, IP - IS-IS SR prefix segment,
+          IA - IS-IS SR adjacency segment, I>L - IS-IS SR to LDP,
+          L>I - LDP to IS-IS SR, OP - Ospf SR prefix segment,
+          OA - Ospf SR adjacency segment, OL - Ospf SR segment to LDP,
+          L0 - LDP to Ospf SR segment, BL - BGP LU,
+          BL>L - BGP LU to LDP, L>BL - LDP to BGP LU,
+          ST - SR TE policy, SMP - SR P2MP,
+          BL>I - BGP LU to IS-IS SR, DE - Debug LFIB
+
+ B3    378528   [0]
+                via I, ipv4, vrf ISIS-SR-FLEXALGO-MIN-TE
+ B3    378529   [0]
+                via I, ipv4, vrf ISIS-SR-FLEXALGO-MIN-IGP-ADMIN
+ B3    378530   [0]
+                via I, ipv4, vrf ISIS-SR-FLEXALGO-MIN-IGP
+ B3    378531   [0]
+                via I, ipv4, vrf ISIS-SR-FLEXALGO-MIN-DELAY

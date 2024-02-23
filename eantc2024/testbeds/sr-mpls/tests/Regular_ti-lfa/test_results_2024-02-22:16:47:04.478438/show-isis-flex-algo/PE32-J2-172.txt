@@ -1,0 +1,9 @@
+
+IS-IS Instance: IGP VRF: default
+
+Algorithm     Advertised Level Metric  Selected   
+------------- ---------- ----- ------- -----------
+MIN-TE        yes        L2    TE      PE32-J2-172
+MIN-IGP       yes        L2    default PE32-J2-172
+MIN-IGP-ADMIN yes        L2    default PE32-J2-172
+

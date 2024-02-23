@@ -1,0 +1,230 @@
+Legend:
+H - hostname conflict
+U - node unreachable
+
+IS-IS Instance: IGP VRF: default
+  IS-IS Level 2 Link State Database
+    LSPID                   Seq Num  Cksum  Life Length IS  Received LSPID        Flags
+    h3c_24_S12500R-48C6D.00-00      7845  47415  1074    461 L2  0000.0000.0024.00-00  <>
+      Remaining lifetime received: 1198 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: h3c_24_S12500R-48C6D
+      TE IPv4 router ID: 10.0.0.24
+      Area addresses: 49
+      Interface address: 10.0.0.24
+      Interface address: 20.24.32.24
+      Interface address: 20.24.47.24
+      IS Neighbor          : Ribbon-32.00        Metric: 10
+        IPv4 Neighbor Address: 20.24.32.32
+        IPv4 Interface Address: 20.24.32.24
+        Adj-sid: 56636 flags: [L V] weight: 0x0
+        TE default metric: 10
+        Maximum link BW: 0.00 bps
+        Maximum reservable link BW: 0.00 bps
+        Unreserved BW:
+            TE class 0: 0.00 bps	TE class 1: 0.00 bps	TE class 2: 0.00 bps
+            TE class 3: 0.00 bps	TE class 4: 0.00 bps	TE class 5: 0.00 bps
+            TE class 6: 0.00 bps	TE class 7: 0.00 bps
+      IS Neighbor          : Ericsson_47.00      Metric: 10
+        IPv4 Neighbor Address: 20.24.47.47
+        IPv4 Interface Address: 20.24.47.24
+        Adj-sid: 56635 flags: [L V] weight: 0x0
+        TE default metric: 10
+        Maximum link BW: 0.00 bps
+        Maximum reservable link BW: 0.00 bps
+        Unreserved BW:
+            TE class 0: 0.00 bps	TE class 1: 0.00 bps	TE class 2: 0.00 bps
+            TE class 3: 0.00 bps	TE class 4: 0.00 bps	TE class 5: 0.00 bps
+            TE class 6: 0.00 bps	TE class 7: 0.00 bps
+      Reachability         : 10.0.0.24/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 24 Flags: [N P] Algorithm: 0
+        SR Prefix-SID: 1024 Flags: [N P] Algorithm: 128
+        SR Prefix-SID: 1124 Flags: [N P] Algorithm: 129
+        SR Prefix-SID: 1224 Flags: [N P] Algorithm: 130
+        SR Prefix-SID: 1324 Flags: [N P] Algorithm: 131
+      Reachability         : 20.24.32.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.24.47.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 192.168.20.0/23 Metric: 0 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.24 Flags: []
+        SR Local Block:
+          SRLB Base: 15000 Range: 1000
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  10
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+    Ribbon-32.00-00              30   9776   724     79 L2  0000.0000.0032.00-00  <>
+      NLPID: 0xCC(IPv4)
+      TE IPv4 router ID: 10.0.0.32
+      Area addresses: 49.0001
+      Router Capabilities: Router Id: 10.0.0.32 Flags: []
+        SR Local Block:
+          SRLB Base: 16 Range: 15344
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  10
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+      Unsupported TLV: Type: 14 Length: 2
+    Ribbon-32.00-03              19  28099   835     38 L2  0000.0000.0032.00-03  <>
+      Hostname: Ribbon-32
+    Ribbon-32.00-04             243   5621  1123    285 L2  0000.0000.0032.00-04  <>
+      Interface address: 10.0.0.32
+      Interface address: 20.32.172.32
+      Interface address: 20.24.32.32
+      IS Neighbor          : PE32-J2-172.00      Metric: 10
+        IPv4 Neighbor Address: 20.32.172.172
+        IPv4 Interface Address: 20.32.172.32
+        Adj-sid: 756650 flags: [L V] weight: 0x0
+        Adj-sid: 756653 flags: [L V B] weight: 0x0
+        TE default metric: 10
+        Maximum link BW: 10.00 Gbps
+        Maximum reservable link BW: 10.00 Gbps
+        Unreserved BW:
+            TE class 0: 10.00 Gbps	TE class 1: 10.00 Gbps	TE class 2: 10.00 Gbps
+            TE class 3: 10.00 Gbps	TE class 4: 10.00 Gbps	TE class 5: 10.00 Gbps
+            TE class 6: 10.00 Gbps	TE class 7: 10.00 Gbps
+      IS Neighbor          : h3c_24_S12500R-48C6D.00 Metric: 10
+        IPv4 Neighbor Address: 20.24.32.24
+        IPv4 Interface Address: 20.24.32.32
+        Adj-sid: 756647 flags: [L V B] weight: 0x0
+        Adj-sid: 756648 flags: [L V] weight: 0x0
+        TE default metric: 10
+        Maximum link BW: 0.00 bps
+        Maximum reservable link BW: 0.00 bps
+        Unreserved BW:
+            TE class 0: 0.00 bps	TE class 1: 0.00 bps	TE class 2: 0.00 bps
+            TE class 3: 0.00 bps	TE class 4: 0.00 bps	TE class 5: 0.00 bps
+            TE class 6: 0.00 bps	TE class 7: 0.00 bps
+      Reachability         : 10.0.0.32/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 32 Flags: [N] Algorithm: 0
+      Reachability         : 20.32.172.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.24.32.0/24 Metric: 10 Type: 1 Up
+    Ericsson_47.00-00            58  38900   964    325 L2  0000.0000.0047.00-00  <>
+      Remaining lifetime received: 1199 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: Ericsson_47
+      TE IPv4 router ID: 10.0.0.47
+      Area addresses: 49
+      Interface address: 10.0.0.47
+      Interface address: 2002::47
+      IS Neighbor          : h3c_24_S12500R-48C6D.00 Metric: 30
+        IPv4 Neighbor Address: 20.24.47.24
+        IPv4 Interface Address: 20.24.47.47
+        Adj-sid: 983042 flags: [L V] weight: 0x0
+        Maximum link BW: 100.00 Gbps
+        Maximum reservable link BW: 100.00 Gbps
+        Unreserved BW:
+            TE class 0: 100.00 Gbps	TE class 1: 100.00 Gbps	TE class 2: 100.00 Gbps
+            TE class 3: 100.00 Gbps	TE class 4: 100.00 Gbps	TE class 5: 100.00 Gbps
+            TE class 6: 100.00 Gbps	TE class 7: 100.00 Gbps
+      IS Neighbor          : PE32-J2-172.00      Metric: 10
+        IPv4 Neighbor Address: 20.47.172.172
+        IPv4 Interface Address: 20.47.172.47
+        Adj-sid: 983041 flags: [L V] weight: 0x0
+        Maximum link BW: 100.00 Gbps
+        Maximum reservable link BW: 100.00 Gbps
+        Unreserved BW:
+            TE class 0: 100.00 Gbps	TE class 1: 100.00 Gbps	TE class 2: 100.00 Gbps
+            TE class 3: 100.00 Gbps	TE class 4: 100.00 Gbps	TE class 5: 100.00 Gbps
+            TE class 6: 100.00 Gbps	TE class 7: 100.00 Gbps
+      Reachability         : 20.24.47.0/24 Metric: 30 Type: 1 Up
+      Reachability         : 10.0.0.47/32 Metric: 1 Type: 1 Up
+        SR Prefix-SID: 47 Flags: [N P] Algorithm: 0
+      Reachability         : 20.47.172.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.47 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  8
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0
+    PE31-J2-171.00-00           543   7964   421    275 L2  0100.0000.0171.00-00  <>
+      Remaining lifetime received: 1199 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: PE31-J2-171
+      Area addresses: 49.0000
+      Interface address: 20.57.171.171
+      Interface address: 20.171.172.171
+      Interface address: 10.0.0.171
+      IS Neighbor          : PE32-J2-172.00      Metric: 10
+        IPv4 Neighbor Address: 20.171.172.172
+        IPv4 Interface Address: 20.171.172.171
+        Adj-sid: 362146 flags: [L V] weight: 0x0
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+            TE default metric: 12
+            Min/Max unidirectional link delay: 11/11 us
+      Reachability         : 10.0.0.171/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 171 Flags: [N] Algorithm: 0
+        SR Prefix-SID: 1171 Flags: [N] Algorithm: 128
+        SR Prefix-SID: 1271 Flags: [N] Algorithm: 129
+        SR Prefix-SID: 1371 Flags: [N] Algorithm: 130
+        SR Prefix-SID: 1471 Flags: [N] Algorithm: 131
+      Reachability         : 20.57.171.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.171.172.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.171 Flags: []
+        SR Local Block:
+          SRLB Base: 965536 Range: 65536
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 128, 129, 130, 131
+        Flex Algo: Algorithm: 131 Metric: IGP Metric (0) Calc: SPF (0) Prio: 237
+          Exclude admin groups: 127
+        Flex Algo: Algorithm: 130 Metric: IGP Metric (0) Calc: SPF (0) Prio: 237
+          Exclude admin groups: 1
+        Flex Algo: Algorithm: 129 Metric: TE Metric (2) Calc: SPF (0) Prio: 237
+        Flex Algo: Algorithm: 128 Metric: Min Unidirectional Delay Metric (1) Calc: SPF (0) Prio: 237
+    PE32-J2-172.00-00            56  23686  1110    351 L2  0100.0000.0172.00-00  <>
+      LSP generation remaining wait time: 0 ms
+      Time remaining until refresh: 810 s
+      NLPID: 0xCC(IPv4)
+      Hostname: PE32-J2-172
+      Area addresses: 49.0000
+      Interface address: 20.47.172.172
+      Interface address: 20.32.172.172
+      Interface address: 20.171.172.172
+      Interface address: 10.0.0.172
+      IS Neighbor          : Ericsson_47.00      Metric: 10
+        IPv4 Neighbor Address: 20.47.172.47
+        IPv4 Interface Address: 20.47.172.172
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+            TE default metric: 12
+            Min/Max unidirectional link delay: 11/11 us
+      IS Neighbor          : Ribbon-32.00        Metric: 10
+        IPv4 Neighbor Address: 20.32.172.32
+        IPv4 Interface Address: 20.32.172.172
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+            TE default metric: 12
+            Min/Max unidirectional link delay: 11/11 us
+      IS Neighbor          : PE31-J2-171.00      Metric: 10
+        IPv4 Neighbor Address: 20.171.172.171
+        IPv4 Interface Address: 20.171.172.172
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+            TE default metric: 12
+            Min/Max unidirectional link delay: 11/11 us
+      Reachability         : 20.47.172.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.32.172.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.171.172.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 10.0.0.172/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 172 Flags: [N] Algorithm: 0
+        SR Prefix-SID: 1272 Flags: [N] Algorithm: 129
+        SR Prefix-SID: 1372 Flags: [N] Algorithm: 130
+        SR Prefix-SID: 1472 Flags: [N] Algorithm: 131
+      Router Capabilities: Router Id: 10.0.0.172 Flags: []
+        SR Local Block:
+          SRLB Base: 965536 Range: 65536
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 129, 130, 131
+        Flex Algo: Algorithm: 131 Metric: IGP Metric (0) Calc: SPF (0) Prio: 237
+          Exclude admin groups: 127
+        Flex Algo: Algorithm: 130 Metric: IGP Metric (0) Calc: SPF (0) Prio: 237
+          Exclude admin groups: 1
+        Flex Algo: Algorithm: 129 Metric: TE Metric (2) Calc: SPF (0) Prio: 237

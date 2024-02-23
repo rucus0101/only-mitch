@@ -1,0 +1,4 @@
+Port      Name             Intvl  In Mbps      %  In Kpps Out Mbps      %
+Ma1                         0:01      0.0   0.0%        0      0.1   0.0%
+
+Port      Out Kpps

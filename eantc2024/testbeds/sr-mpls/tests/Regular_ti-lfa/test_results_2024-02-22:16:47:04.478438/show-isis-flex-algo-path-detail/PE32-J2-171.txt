@@ -1,0 +1,48 @@
+Flex algo paths for IPv4 address family
+Topology ID: Level-2
+Destination: PE31-J2-171
+Path ID: 640
+Path constraints: algo MIN-LATENCY
+                  metric type MIN-DELAY
+Request sequence number: 611
+Response sequence number: 611
+Number of times path updated: 610
+Last updated: 0:04:04 ago
+Next Hop Interface
+-------- ---------
+
+Destination: PE31-J2-171
+Path ID: 641
+Path constraints: algo MIN-TE
+                  metric type TE
+Request sequence number: 81
+Response sequence number: 81
+Number of times path updated: 79
+Last updated: 0:04:04 ago
+Next Hop Interface
+-------- ---------
+
+Destination: PE31-J2-171
+Path ID: 642
+Path constraints: algo MIN-IGP
+                  metric type IGP
+                  administrative-group exclude 1
+Request sequence number: 82
+Response sequence number: 82
+Number of times path updated: 80
+Last updated: 0:04:04 ago
+Next Hop Interface
+-------- ---------
+
+Destination: PE31-J2-171
+Path ID: 643
+Path constraints: algo MIN-IGP-ADMIN
+                  metric type IGP
+                  administrative-group exclude 127
+Request sequence number: 83
+Response sequence number: 83
+Number of times path updated: 81
+Last updated: 0:04:04 ago
+Next Hop Interface
+-------- ---------
+

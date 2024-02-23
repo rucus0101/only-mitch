@@ -1,0 +1,63 @@
+Tunnel Type: M(mpls), G(gre), MoG(mpls-over-gre), MoU(mpls-over-udp), IPoU(ip-over-udp)
+             vxlan-o(vxlan outer-rewrite info), vxlan-i(vxlan inner-rewrite info)
+CW  - Control word
+FL  - Flow label
+EL  - Entropy label
+ELI - Entropy label indicator
+*   - Routes in LEM
+D   - ECMP is divergent across switching chips
+ ----------------------------------------------------------------------------------------------------------
+|                                 Routing Table                                            |              |
+|----------------------------------------------------------------------------------------------------------
+|VRF|   Destination    |     |                    |     |        |                   | ECMP|  FEC | Tunnel
+| ID|      Subnet      | Cmd |     Destination    | VID | Outlif |   MAC / CPU Code  |Index| Index|T Value
+ ----------------------------------------------------------------------------------------------------------
+|0  |0.0.0.0/8         |DROP | DROP               |0    |  -     |                   |  -  |288360|   -   
+|0  |10.0.0.24/32      |ROUTE| Et50/1             |1011 |103423  | 30:c5:07:1f:33:10 |  -  |288367|   -   
+|0  |10.0.0.32/32      |ROUTE| Et50/1             |1011 |103423  | 30:c5:07:1f:33:10 |  -  |288367|   -   
+|0  |10.0.0.47/32      |ROUTE| Et51/1             |1012 |103422  | 58:70:7f:9f:ca:0d |  -  |288368|   -   
+|0  |10.0.0.171/32     |ROUTE| Et47               |1010 |103421  | 2c:dd:e9:96:1a:b3 |  -  |288366|   -   
+|0  |10.0.0.172/32     |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|0  |20.24.32.0/24     |ROUTE| Et50/1             |1011 |103423  | 30:c5:07:1f:33:10 |  -  |288367|   -   
+|0  |20.24.47.0/24     |ROUTE| Et50/1             |1011 |103423  | 30:c5:07:1f:33:10 |  -  |288367|   -   
+|0  |20.32.172.0/32    |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|0  |20.32.172.32/32   |ROUTE| Et50/1             |1011 |103423  | 30:c5:07:1f:33:10 |  -  |288373|   -   
+|0  |20.32.172.172/32  |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|0  |20.32.172.255/32  |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|0  |20.32.172.0/24    |TRAP | CoppSystemL3DstMiss|1011 |1011    | ArpTrap           |  -  |525305|   -   
+|0  |20.47.172.0/32    |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|0  |20.47.172.47/32   |ROUTE| Et51/1             |1012 |103422  | 58:70:7f:9f:ca:0d |  -  |288365|   -   
+|0  |20.47.172.172/32  |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|0  |20.47.172.255/32  |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|0  |20.47.172.0/24    |TRAP | CoppSystemL3DstMiss|1012 |1012    | ArpTrap           |  -  |525306|   -   
+|0  |20.57.171.0/24    |ROUTE| Et47               |1010 |103421  | 2c:dd:e9:96:1a:b3 |  -  |288366|   -   
+|0  |20.171.172.0/32   |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|0  |20.171.172.171/32 |ROUTE| Et47               |1010 |103421  | 2c:dd:e9:96:1a:b3 |  -  |288364|   -   
+|0  |20.171.172.172/32 |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|0  |20.171.172.255/32 |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|0  |20.171.172.0/24   |TRAP | CoppSystemL3DstMiss|1010 |1010    | ArpTrap           |  -  |525304|   -   
+|0  |127.0.0.0/8       |TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |  -  |524294|   -   
+|0  |192.168.20.0/23   |ROUTE| Et50/1             |1011 |103423  | 30:c5:07:1f:33:10 |  -  |288367|   -   
+|0  |0.0.0.0/0         |TRAP | CoppSystemL3LpmOver|0    |  -     | SlowReceive       |  -  |524292|   -   
+|1  |0.0.0.0/8         |DROP | DROP               |0    |  -     |                   |  -  |288362|   -   
+|1  |127.0.0.0/8       |TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |  -  |524294|   -   
+|1  |192.168.20.0/32   |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|1  |192.168.20.172/32 |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|1  |192.168.21.255/32 |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|1  |192.168.20.0/23   |TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |  -  |524294|   -   
+|1  |0.0.0.0/0         |TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |  -  |524294|   -   
+|2  |0.0.0.0/8         |DROP | DROP               |0    |  -     |                   |  -  |288363|   -   
+|2  |20.111.172.0/32   |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|2  |20.111.172.172/32 |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|2  |20.111.172.255/32 |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|2  |20.111.172.0/24   |TRAP | CoppSystemL3DstMiss|1006 |1006    | ArpTrap           |  -  |525300|   -   
+|2  |127.0.0.0/8       |TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |  -  |524294|   -   
+|2  |0.0.0.0/0         |TRAP | CoppSystemL3LpmOver|0    |  -     | SlowReceive       |  -  |524292|   -   
+|7  |0.0.0.0/8         |DROP | DROP               |0    |  -     |                   |  -  |288361|   -   
+|7  |20.111.172.0/32   |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|7  |20.111.172.172/32 |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|7  |20.111.172.255/32 |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|7  |20.111.172.0/24   |TRAP | CoppSystemL3DstMiss|1014 |1014    | ArpTrap           |  -  |525308|   -   
+|7  |127.0.0.0/8       |TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |  -  |524294|   -   
+|7  |0.0.0.0/0         |TRAP | CoppSystemL3LpmOver|0    |  -     | SlowReceive       |  -  |524292|   -   
+

@@ -1,0 +1,48 @@
+Tunnel Type: Mpop(mpls pop), Mpush(mpls push), Mswap(mpls swap),
+             MoG(mpls-over-gre), T(IPv4 tunnels GRE/GUE/VXLAN),
+             N(Ipsec tunnel NAT-T [IP,SPORT,DPORT])
+CW  - Control word
+FL  - Flow label
+EL  - Entropy label
+ELI - Entropy label indicator
+D   - ECMP is divergent across switching chips
+ -----------------------------------------------------------------------------------------------
+|                                              FEC Entry                                        |
+ -----------------------------------------------------------------------------------------------
+|     |      |     |                    |     |        |                   |
+| ECMP|  FEC |     |                    |     |        |                   |
+|Index| Index| Cmd |     Destination    | VID | Outlif |   MAC / CPU Code  |    Tunnel Value
+ -----------------------------------------------------------------------------------------------
+|24576|528486|ROUTE| Et51/1             |1007 |103422  | 58:70:7f:9f:ca:0d |   -   
+|24576|528487|ROUTE| Et50/1             |1008 |103421  | 30:c5:07:1f:33:10 |   -   
+|24576|528488|ROUTE| Et50/1             |1008 |103421  | 30:c5:07:1f:33:10 |   -   
+|24576|528489|ROUTE| Et51/1             |1007 |103422  | 58:70:7f:9f:ca:0d |   -   
+|  -  |91752 |ROUTE| FEC 528490         |   - |2097151 |                 - |Mpush 756651
+|  -  |91754 |ROUTE| FEC 528482         |   - |  -     |                   |   -   
+|  -  |91756 |ROUTE| FEC 528496         |   - |  -     |                   |   -   
+|  -  |288366|ROUTE| Et50/1             |1008 |103421  | 30:c5:07:1f:33:10 |   -   
+|  -  |288368|ROUTE| Et50/1             |1008 |103421  | 30:c5:07:1f:33:10 |   -   
+|  -  |288370|ROUTE| Et51/1             |1007 |103422  | 58:70:7f:9f:ca:0d |   -   
+|  -  |288372|ROUTE| Et5                |1014 |103423  | 00:14:01:00:00:01 |   -   
+|  -  |288374|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |288376|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |288378|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |288380|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |288382|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |524288|TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |   -   
+|  -  |524291|TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |   -   
+|  -  |524292|TRAP | CoppSystemL3LpmOver|0    |  -     | SlowReceive       |   -   
+|  -  |524294|TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |   -   
+|  -  |525301|TRAP | CoppSystemL3DstMiss|1007 |1007    | ArpTrap           |   -   
+|  -  |525302|TRAP | CoppSystemL3DstMiss|1008 |1008    | ArpTrap           |   -   
+|  -  |525305|TRAP | CoppSystemL3DstMiss|1011 |1011    | ArpTrap           |   -   
+|  -  |525308|TRAP | CoppSystemL3DstMiss|1014 |1014    | ArpTrap           |   -   
+|  -  |528482|ROUTE| Et51/1             |1007 |103427  | 58:70:7f:9f:ca:0d |   -   
+|  -  |528483|ROUTE| Et50/1             |1008 |103428  | 30:c5:07:1f:33:10 |Mpush 20047
+|  -  |528490|ROUTE| Et50/1             |1008 |103434  | 30:c5:07:1f:33:10 |   -   
+|  -  |528491|ROUTE| Et51/1             |1007 |103426  | 58:70:7f:9f:ca:0d |Mpush 20032
+|  -  |528494|ROUTE| Et50/1             |1008 |103430  | 30:c5:07:1f:33:10 |   -   
+|  -  |528495|ROUTE| Et51/1             |1007 |103431  | 58:70:7f:9f:ca:0d |   -   
+|  -  |528496|ROUTE| Et50/1             |1008 |103435  | 30:c5:07:1f:33:10 |   -   
+|  -  |528497|ROUTE| Et51/1             |1007 |103436  | 58:70:7f:9f:ca:0d |Mpush 20032
+

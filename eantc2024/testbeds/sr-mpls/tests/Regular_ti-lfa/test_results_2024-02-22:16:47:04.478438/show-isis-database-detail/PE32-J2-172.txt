@@ -1,0 +1,213 @@
+Legend:
+H - hostname conflict
+U - node unreachable
+
+IS-IS Instance: IGP VRF: default
+  IS-IS Level 2 Link State Database
+    LSPID                   Seq Num  Cksum  Life Length IS  Received LSPID        Flags
+    h3c_19_CR16010E-F.00-00      2221  25455  1186    403 L2  0000.0000.0019.00-00  <>
+      Remaining lifetime received: 1197 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: h3c_19_CR16010E-F
+      Area addresses: 49
+      Interface address: 10.0.0.19
+      Interface address: 20.19.32.19
+      Interface address: 20.19.47.19
+      IS Neighbor          : Ribbon-32.00        Metric: 10
+        IPv4 Neighbor Address: 20.19.32.32
+        IPv4 Interface Address: 20.19.32.19
+        Adj-sid: 1661 flags: [L V] weight: 0x0
+      IS Neighbor          : Ericsson_47.00      Metric: 10
+        IPv4 Neighbor Address: 20.19.47.47
+        IPv4 Interface Address: 20.19.47.19
+        Adj-sid: 1662 flags: [L V] weight: 0x0
+      Reachability         : 10.0.0.19/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 19 Flags: [N] Algorithm: 0
+      Reachability         : 20.19.32.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.19.47.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 192.168.0.0/19 Metric: 0 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.19 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  13
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+ U  eantc-jcnr2.00-00           684  21012   842    229 L2  0000.0000.0020.00-00  <>
+      Remaining lifetime received: 419 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4) 0x8E(IPv6)
+      Hostname: eantc-jcnr2
+      Area addresses: 49.0001.00
+      Interface address: 10.0.0.83
+      IS Neighbor          : 0000.0000.0349.00   Metric: 10
+        IPv4 Neighbor Address: 20.83.149.149
+        IPv4 Interface Address: 20.83.149.83
+        Adj-sid: 16 flags: [L V] weight: 0x0
+      Reachability         : 10.0.0.83/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 83 Flags: [N] Algorithm: 0
+      Reachability         : 20.83.149.0/24 Metric: 10 Type: 1 Up
+      Reachability          : fe80::cc33:4dff:fe3e:5c1d/128 Metric: 0 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.83 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  0
+        SR Capability: Flags: [I V]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 1
+      Unsupported TLV: Type: 14 Length: 2
+    Ribbon-32.00-00              35   7221   842     79 L2  0000.0000.0032.00-00  <>
+      Remaining lifetime received: 1166 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Area addresses: 49.0001
+      Router Capabilities: Router Id: 10.0.0.32 Flags: []
+        SR Local Block:
+          SRLB Base: 16 Range: 15344
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  10
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+      Unsupported TLV: Type: 14 Length: 2
+    Ribbon-32.00-03              24  25544   842     38 L2  0000.0000.0032.00-03  <>
+      Remaining lifetime received: 1044 s Modified to: 1200 s
+      Hostname: Ribbon-32
+    Ribbon-32.00-04             274  33935  1186    285 L2  0000.0000.0032.00-04  <>
+      Remaining lifetime received: 1195 s Modified to: 1200 s
+      Interface address: 10.0.0.32
+      Interface address: 20.19.32.32
+      Interface address: 20.32.172.32
+      IS Neighbor          : h3c_19_CR16010E-F.00 Metric: 10
+        IPv4 Neighbor Address: 20.19.32.19
+        IPv4 Interface Address: 20.19.32.32
+        Adj-sid: 756647 flags: [L V] weight: 0x0
+        Adj-sid: 756648 flags: [L V B] weight: 0x0
+      IS Neighbor          : PE32-J2-172.00      Metric: 10
+        IPv4 Neighbor Address: 20.32.172.172
+        IPv4 Interface Address: 20.32.172.32
+        Adj-sid: 756653 flags: [L V B] weight: 0x0
+        Adj-sid: 756646 flags: [L V] weight: 0x0
+      Reachability         : 10.0.0.32/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 32 Flags: [N] Algorithm: 0
+      Reachability         : 20.19.32.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.32.172.0/24 Metric: 10 Type: 1 Up
+    Ericsson_47.00-00            83  60816   844    325 L2  0000.0000.0047.00-00  <>
+      Remaining lifetime received: 1199 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: Ericsson_47
+      Area addresses: 49
+      Interface address: 10.0.0.47
+      Interface address: 2002::47
+      IS Neighbor          : h3c_19_CR16010E-F.00 Metric: 10
+        IPv4 Neighbor Address: 20.19.47.19
+        IPv4 Interface Address: 20.19.47.47
+        Adj-sid: 983042 flags: [L V] weight: 0x0
+      IS Neighbor          : PE32-J2-172.00      Metric: 40
+        IPv4 Neighbor Address: 20.47.172.172
+        IPv4 Interface Address: 20.47.172.47
+        Adj-sid: 983041 flags: [L V] weight: 0x0
+      Reachability         : 10.0.0.47/32 Metric: 1 Type: 1 Up
+        SR Prefix-SID: 47 Flags: [N P] Algorithm: 0
+      Reachability         : 20.19.47.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.47.172.0/24 Metric: 40 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.47 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  8
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0
+ U  huawei_254_NetEngine_8000_F8.00-00      8982  64813   843    220 L2  0000.0000.0254.00-00  <>
+      Remaining lifetime received: 419 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: huawei_254_NetEngine_8000_F8
+      Area addresses: 49
+      Interface address: 10.0.0.254
+      Interface address: 20.57.254.254
+      Interface address: 20.179.254.254
+      Interface address: 20.149.254.254
+      IS Neighbor          : 0000.0001.7900.00   Metric: 10
+        IPv4 Neighbor Address: 20.179.254.179
+        IPv4 Interface Address: 20.179.254.254
+        Adj-sid: 48041 flags: [L V] weight: 0x0
+      IS Neighbor          : 0000.0000.0349.00   Metric: 10
+        IPv4 Neighbor Address: 20.149.254.149
+        IPv4 Interface Address: 20.149.254.254
+        Adj-sid: 48043 flags: [L V] weight: 0x0
+      Reachability         : 10.0.0.254/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 254 Flags: [N] Algorithm: 0
+      Reachability         : 20.57.254.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.179.254.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.149.254.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.254 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  10
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+ U  PE31-J2-171.00-00           553  37534   843    275 L2  0100.0000.0171.00-00  <>
+      Remaining lifetime received: 1199 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: PE31-J2-171
+      Area addresses: 49.0000
+      Interface address: 20.171.172.171
+      Interface address: 20.57.171.171
+      Interface address: 10.0.0.171
+      IS Neighbor          : PE32-J2-172.00      Metric: 10
+        IPv4 Neighbor Address: 20.171.172.172
+        IPv4 Interface Address: 20.171.172.171
+        Adj-sid: 362146 flags: [L V] weight: 0x0
+      Reachability         : 20.171.172.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 10.0.0.171/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 171 Flags: [N] Algorithm: 0
+        SR Prefix-SID: 1171 Flags: [N] Algorithm: 128
+        SR Prefix-SID: 1271 Flags: [N] Algorithm: 129
+        SR Prefix-SID: 1371 Flags: [N] Algorithm: 130
+        SR Prefix-SID: 1471 Flags: [N] Algorithm: 131
+      Reachability         : 20.57.171.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.171 Flags: []
+        SR Local Block:
+          SRLB Base: 965536 Range: 65536
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 128, 129, 130, 131
+        Flex Algo: Algorithm: 131 Metric: IGP Metric (0) Calc: SPF (0) Prio: 237
+          Exclude admin groups: 127
+        Flex Algo: Algorithm: 130 Metric: IGP Metric (0) Calc: SPF (0) Prio: 237
+          Exclude admin groups: 1
+        Flex Algo: Algorithm: 129 Metric: TE Metric (2) Calc: SPF (0) Prio: 237
+        Flex Algo: Algorithm: 128 Metric: Min Unidirectional Delay Metric (1) Calc: SPF (0) Prio: 237
+    PE32-J2-172.00-00            77   3911  1181    310 L2  0100.0000.0172.00-00  <>
+      LSP generation remaining wait time: 0 ms
+      Time remaining until refresh: 881 s
+      NLPID: 0xCC(IPv4)
+      Hostname: PE32-J2-172
+      Area addresses: 49.0000
+      Interface address: 20.32.172.172
+      Interface address: 20.47.172.172
+      Interface address: 10.0.0.172
+      IS Neighbor          : Ribbon-32.00        Metric: 10
+        IPv4 Neighbor Address: 20.32.172.32
+        IPv4 Interface Address: 20.32.172.172
+        Adj-sid: 394917 flags: [L V B] weight: 0x0
+      IS Neighbor          : Ericsson_47.00      Metric: 30
+        IPv4 Neighbor Address: 20.47.172.47
+        IPv4 Interface Address: 20.47.172.172
+        Adj-sid: 394916 flags: [L V B] weight: 0x0
+      Reachability         : 20.32.172.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.47.172.0/24 Metric: 30 Type: 1 Up
+      Reachability         : 10.0.0.172/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 172 Flags: [N] Algorithm: 0
+        SR Prefix-SID: 1272 Flags: [N] Algorithm: 129
+        SR Prefix-SID: 1372 Flags: [N] Algorithm: 130
+        SR Prefix-SID: 1472 Flags: [N] Algorithm: 131
+      Router Capabilities: Router Id: 10.0.0.172 Flags: []
+        SR Local Block:
+          SRLB Base: 965536 Range: 65536
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 129, 130, 131
+        Flex Algo: Algorithm: 131 Metric: IGP Metric (0) Calc: SPF (0) Prio: 237
+          Exclude admin groups: 127
+        Flex Algo: Algorithm: 130 Metric: IGP Metric (0) Calc: SPF (0) Prio: 237
+          Exclude admin groups: 1
+        Flex Algo: Algorithm: 129 Metric: TE Metric (2) Calc: SPF (0) Prio: 237
