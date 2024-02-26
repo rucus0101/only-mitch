@@ -1,0 +1,6 @@
+ 
+Instance  VRF      System Id        Type Interface          SNPA              State Hold time   Circuit Id          
+OPTION-C- default  h49-N540-24Q8L2DD L2   Ethernet25         P2P               UP    27          00                  
+ 
+Instance  VRF      System Id        Type Interface          SNPA              State Hold time   Circuit Id          
+OPTION-C- default  Spine3-J-170     L2   Ethernet52/1       P2P               UP    29          1F                  

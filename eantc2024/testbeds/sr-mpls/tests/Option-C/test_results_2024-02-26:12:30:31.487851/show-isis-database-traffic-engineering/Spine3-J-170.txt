@@ -1,0 +1,356 @@
+Legend:
+H - hostname conflict
+U - node unreachable
+
+IS-IS Instance: IGP VRF: default
+  IS-IS Level 2 Link State Database
+    LSPID                   Seq Num  Cksum  Life Length IS  Received LSPID        Flags
+    Ribbon-32.00-00              22  13864   695     79 L2  0000.0000.0032.00-00  <>
+      NLPID: 0xCC(IPv4)
+      TE IPv4 router ID: 10.0.0.32
+      Area addresses: 49.0001
+      Router Capabilities: Router Id: 10.0.0.32 Flags: []
+        SR Local Block:
+          SRLB Base: 16 Range: 15344
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  10
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+      Unsupported TLV: Type: 14 Length: 2
+    Ribbon-32.00-01              22  29628   752     38 L2  0000.0000.0032.00-01  <>
+      Hostname: Ribbon-32
+    Ribbon-32.00-02              26    878   584    179 L2  0000.0000.0032.00-02  <>
+      Interface address: 10.0.0.32
+      Interface address: 20.32.170.32
+      IS Neighbor          : Spine3-J-170.00     Metric: 10
+        IPv4 Neighbor Address: 20.32.170.170
+        IPv4 Interface Address: 20.32.170.32
+        Adj-sid: 756642 flags: [L V] weight: 0x0
+        Adj-sid: 756643 flags: [L V B] weight: 0x0
+        TE default metric: 10
+        Maximum link BW: 10.00 Gbps
+        Maximum reservable link BW: 10.00 Gbps
+        Unreserved BW:
+            TE class 0: 10.00 Gbps	TE class 1: 10.00 Gbps	TE class 2: 10.00 Gbps
+            TE class 3: 10.00 Gbps	TE class 4: 10.00 Gbps	TE class 5: 10.00 Gbps
+            TE class 6: 10.00 Gbps	TE class 7: 10.00 Gbps
+        Min/Max unidirectional link delay: 11/11 us
+      Reachability         : 10.0.0.32/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 32 Flags: [N] Algorithm: 0
+      Reachability         : 20.32.170.0/24 Metric: 10 Type: 1 Up
+    Ericsson_47.00-00            40  18601  1124    166 L2  0000.0000.0047.00-00  <>
+      Remaining lifetime received: 1199 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: Ericsson_47
+      TE IPv4 router ID: 10.0.0.47
+      Area addresses: 49.0001
+      Interface address: 10.0.0.47
+      Interface address: 2002::47
+      IS Neighbor          : Spine3-J-170.00     Metric: 10
+        IPv4 Interface Address: 20.47.170.47
+      Reachability         : 10.0.0.47/32 Metric: 10 Type: 1 Up
+        SR Prefix-SID: 47 Flags: [N P] Algorithm: 0
+      Reachability         : 20.47.170.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.47 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  8
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0
+    R6676-50.00-00               40  33286  1176    145 L2  0000.0000.0050.00-00  <>
+      Remaining lifetime received: 1199 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: R6676-50
+      TE IPv4 router ID: 10.0.0.50
+      Area addresses: 49.0001
+      Interface address: 10.0.0.50
+      IS Neighbor          : Spine3-J-170.00     Metric: 10
+        IPv4 Interface Address: 20.50.170.50
+      Reachability         : 10.0.0.50/32 Metric: 10 Type: 1 Up
+        SR Prefix-SID: 50 Flags: [N P] Algorithm: 0
+      Reachability         : 20.50.170.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.50 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  8
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0
+    h3c_27_S12500R-2L.00-00        55  38189  1186    187 L2  0000.0001.0027.00-00  <>
+      Remaining lifetime received: 1199 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: h3c_27_S12500R-2L
+      Area addresses: 49.0001
+      Interface address: 31.9.1.1
+      Interface address: 100.0.1.27
+      IS Neighbor          : h3c_19_CR16010E-F-2.00 Metric: 10
+        IPv4 Neighbor Address: 31.9.1.2
+        IPv4 Interface Address: 31.9.1.1
+        Adj-sid: 56260 flags: [L V] weight: 0x0
+      Reachability         : 20.27.180.0/24 Metric: 0 Type: 1 Up
+      Reachability         : 31.9.1.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 100.0.0.27/32 Metric: 0 Type: 1 Up
+      Reachability         : 100.0.1.27/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 270 Flags: [N P] Algorithm: 0
+      Reachability         : 192.168.20.0/23 Metric: 0 Type: 1 Up
+      Router Capabilities: Router Id: 100.0.1.27 Flags: []
+        SR Local Block:
+          SRLB Base: 15000 Range: 1000
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  10
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+    juniper_379_MX304.00-00        36  29966   561    211 L2  0000.0001.7900.00-00  <>
+      Remaining lifetime received: 1198 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4) 0x8E(IPv6)
+      Hostname: juniper_379_MX304
+      TE IPv4 router ID: 10.0.0.179
+      Area addresses: 49.0001.00
+      Interface address: 10.0.0.179
+      Interface address: 10.1.0.179
+      IS Neighbor          : Spine3-J-170.00     Metric: 10
+        IPv4 Neighbor Address: 20.170.179.170
+        IPv4 Interface Address: 20.170.179.179
+        Adj-sid: 24 flags: [L V] weight: 0x0
+        Maximum link BW: 10.00 Gbps
+      Reachability         : 10.0.0.179/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 379 Flags: [N] Algorithm: 0
+      Reachability         : 10.1.0.179/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 79 Flags: [N] Algorithm: 0
+      Reachability         : 20.170.179.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.179 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  4
+        SR Capability: Flags: [I V]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 1
+      Unsupported TLV: Type: 14 Length: 2
+    JNPR-312-ACX7100-48L.00-00        34  39037  1162    178 L2  0000.0003.1200.00-00  <>
+      Remaining lifetime received: 1198 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4) 0x8E(IPv6)
+      Hostname: JNPR-312-ACX7100-48L
+      TE IPv4 router ID: 10.0.0.212
+      Area addresses: 49.0001.00
+      Interface address: 10.0.0.212
+      IS Neighbor          : Spine3-J-170.00     Metric: 10
+        IPv4 Neighbor Address: 20.170.212.170
+        IPv4 Interface Address: 20.170.212.212
+        Adj-sid: 16 flags: [L V] weight: 0x0
+      Reachability         : 10.0.0.212/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 212 Flags: [N] Algorithm: 0
+      Reachability         : 20.170.212.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.212 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  4
+        SR Capability: Flags: [I V]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 1
+      Unsupported TLV: Type: 14 Length: 2
+    h3c_19_CR16010E-F-2.00-00        37   8636   707    295 L2  0001.0000.0019.00-00  <>
+      Remaining lifetime received: 1199 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: h3c_19_CR16010E-F-2
+      TE IPv4 router ID: 10.0.0.19
+      Area addresses: 49
+      Interface address: 20.19.170.19
+      Interface address: 31.9.1.2
+      IS Neighbor          : h3c_27_S12500R-2L.00 Metric: 10
+        IPv4 Neighbor Address: 31.9.1.1
+        IPv4 Interface Address: 31.9.1.2
+        Adj-sid: 1147 flags: [L V] weight: 0x0
+      IS Neighbor          : Spine3-J-170.00     Metric: 10
+        IPv4 Neighbor Address: 20.19.170.170
+        IPv4 Interface Address: 20.19.170.19
+        Adj-sid: 1146 flags: [L V] weight: 0x0
+        TE default metric: 10
+        Maximum link BW: 0.00 bps
+        Maximum reservable link BW: 0.00 bps
+        Unreserved BW:
+            TE class 0: 0.00 bps	TE class 1: 0.00 bps	TE class 2: 0.00 bps
+            TE class 3: 0.00 bps	TE class 4: 0.00 bps	TE class 5: 0.00 bps
+            TE class 6: 0.00 bps	TE class 7: 0.00 bps
+      Reachability         : 10.0.0.19/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 19 Flags: [R P] Algorithm: 0
+      Reachability         : 20.19.170.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 31.9.1.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.19 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  13
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+    h55-8201-24H8FH.00-00        31  50083   860    193 L2  0001.0000.0355.00-00  <>
+      NLPID: 0xCC(IPv4)
+      Hostname: h55-8201-24H8FH
+      TE IPv4 router ID: 10.0.1.55
+      Area addresses: 49
+      Interface address: 10.0.1.55
+      IS Neighbor          : Spine3-J-170.00     Metric: 10
+        IPv4 Neighbor Address: 20.155.170.170
+        IPv4 Interface Address: 20.155.170.155
+        Adj-sid: 24007 flags: [L V] weight: 0x0
+        Maximum link BW: 100.00 Gbps
+      Reachability         : 10.0.1.55/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 355 Flags: [N] Algorithm: 0
+      Reachability         : 20.155.170.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.1.55 Flags: []
+        SR Local Block:
+          SRLB Base: 15000 Range: 1000
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  8
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 1
+      Unsupported TLV: Type: 14 Length: 2
+    NOKIA-SR2-57.00-00           35  64400   958    271 L2  0100.0000.0057.00-00  <>
+      NLPID: 0xCC(IPv4) 0x8E(IPv6)
+      Hostname: NOKIA-SR2-57
+      TE IPv4 router ID: 10.0.0.57
+      TE IPv6 router ID: 2002::57
+      Area addresses: 49.0001.0000.0057.00
+      Interface address: 10.0.0.57
+      Interface address: 20.57.170.57
+      Interface address: 2002::57
+      IS Neighbor (Narrow metrics, unsupported): Spine3-J-170.00     Metric: 10
+      IS Neighbor          : Spine3-J-170.00     Metric: 10
+        IPv4 Neighbor Address: 20.57.170.170
+        IPv4 Interface Address: 20.57.170.57
+        Adj-sid: 30170 flags: [L V B] weight: 0x0
+      Reachability (Narrow metrics, unsupported): 10.0.0.57/32 Metric: 0 Type: 1
+      Reachability (Narrow metrics, unsupported): 20.57.170.0/24 Metric: 10 Type: 1
+      Reachability         : 10.0.0.57/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 57 Flags: [N P] Algorithm: 0
+      Reachability         : 20.57.170.0/24 Metric: 10 Type: 1 Up
+      Reachability          : 2002::57/128 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 157 Flags: [N P] Algorithm: 0
+      Router Capabilities: Router Id: 10.0.0.57 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+        SR Capability: Flags: [I V]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0
+    Nokia-59-IXRe2.00-00         35  34505   652    271 L2  0100.0000.0059.00-00  <>
+      NLPID: 0xCC(IPv4) 0x8E(IPv6)
+      Hostname: Nokia-59-IXRe2
+      TE IPv4 router ID: 10.0.0.59
+      TE IPv6 router ID: 2002::59
+      Area addresses: 49.0001.0000.0057.00
+      Interface address: 10.0.0.59
+      Interface address: 20.59.170.59
+      Interface address: 2002::59
+      IS Neighbor (Narrow metrics, unsupported): Spine3-J-170.00     Metric: 10
+      IS Neighbor          : Spine3-J-170.00     Metric: 10
+        IPv4 Neighbor Address: 20.59.170.170
+        IPv4 Interface Address: 20.59.170.59
+        Adj-sid: 30170 flags: [L V B] weight: 0x0
+      Reachability (Narrow metrics, unsupported): 20.59.170.0/24 Metric: 10 Type: 1
+      Reachability (Narrow metrics, unsupported): 10.0.0.59/32 Metric: 0 Type: 1
+      Reachability         : 20.59.170.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 10.0.0.59/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 59 Flags: [N P] Algorithm: 0
+      Reachability          : 2002::59/128 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 159 Flags: [N P] Algorithm: 0
+      Router Capabilities: Router Id: 10.0.0.59 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  9
+        SR Capability: Flags: [I V]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0
+    Spine3-J-170.00-00           63  55232  1017    537 L2  0100.0000.0170.00-00  <>
+      LSP generation remaining wait time: 0 ms
+      Time remaining until refresh: 717 s
+      NLPID: 0xCC(IPv4)
+      Hostname: Spine3-J-170
+      Area addresses: 49.0000
+      Interface address: 20.32.170.170
+      Interface address: 20.57.170.170
+      Interface address: 20.47.170.170
+      Interface address: 20.50.170.170
+      Interface address: 20.59.170.170
+      Interface address: 20.19.170.170
+      Interface address: 20.170.179.170
+      Interface address: 20.170.172.170
+      Interface address: 20.170.212.170
+      Interface address: 20.155.170.170
+      Interface address: 10.0.0.170
+      IS Neighbor          : Ribbon-32.00        Metric: 10
+        IPv4 Neighbor Address: 20.32.170.32
+        IPv4 Interface Address: 20.32.170.170
+        Adj-sid: 362153 flags: [L V] weight: 0x0
+      IS Neighbor          : h3c_19_CR16010E-F-2.00 Metric: 10
+        IPv4 Neighbor Address: 20.19.170.19
+        IPv4 Interface Address: 20.19.170.170
+        Adj-sid: 362148 flags: [L V] weight: 0x0
+      IS Neighbor          : NOKIA-SR2-57.00     Metric: 10
+        IPv4 Neighbor Address: 20.57.170.57
+        IPv4 Interface Address: 20.57.170.170
+        Adj-sid: 362152 flags: [L V] weight: 0x0
+      IS Neighbor          : Ericsson_47.00      Metric: 10
+        IPv4 Neighbor Address: 20.47.170.47
+        IPv4 Interface Address: 20.47.170.170
+        Adj-sid: 362151 flags: [L V] weight: 0x0
+      IS Neighbor          : R6676-50.00         Metric: 10
+        IPv4 Neighbor Address: 20.50.170.50
+        IPv4 Interface Address: 20.50.170.170
+        Adj-sid: 362150 flags: [L V] weight: 0x0
+      IS Neighbor          : Nokia-59-IXRe2.00   Metric: 10
+        IPv4 Neighbor Address: 20.59.170.59
+        IPv4 Interface Address: 20.59.170.170
+        Adj-sid: 362149 flags: [L V] weight: 0x0
+      IS Neighbor          : juniper_379_MX304.00 Metric: 10
+        IPv4 Neighbor Address: 20.170.179.179
+        IPv4 Interface Address: 20.170.179.170
+        Adj-sid: 362147 flags: [L V] weight: 0x0
+      IS Neighbor          : PE32-J2-172.00      Metric: 10
+        IPv4 Neighbor Address: 20.170.172.172
+        IPv4 Interface Address: 20.170.172.170
+        Adj-sid: 362146 flags: [L V] weight: 0x0
+      IS Neighbor          : JNPR-312-ACX7100-48L.00 Metric: 10
+        IPv4 Neighbor Address: 20.170.212.212
+        IPv4 Interface Address: 20.170.212.170
+        Adj-sid: 362145 flags: [L V] weight: 0x0
+      IS Neighbor          : h55-8201-24H8FH.00  Metric: 10
+        IPv4 Neighbor Address: 20.155.170.155
+        IPv4 Interface Address: 20.155.170.170
+        Adj-sid: 362144 flags: [L V] weight: 0x0
+      Reachability         : 20.32.170.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.57.170.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.47.170.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.50.170.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.59.170.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.19.170.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.170.179.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.170.172.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.170.212.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.155.170.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 10.0.0.170/32 Metric: 10 Type: 1 Up
+        SR Prefix-SID: 170 Flags: [N] Algorithm: 0
+      Router Capabilities: Router Id: 10.0.0.170 Flags: []
+        SR Local Block:
+          SRLB Base: 965536 Range: 65536
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  6
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+    PE32-J2-172.00-00            28   7422   768    162 L2  0100.0000.0172.00-00  <>
+      Remaining lifetime received: 1199 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: PE32-J2-172
+      Area addresses: 49.0000
+      Interface address: 20.170.172.172
+      Interface address: 10.0.0.172
+      IS Neighbor          : Spine3-J-170.00     Metric: 10
+        IPv4 Neighbor Address: 20.170.172.170
+        IPv4 Interface Address: 20.170.172.172
+        Adj-sid: 362145 flags: [L V] weight: 0x0
+      Reachability         : 20.170.172.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 10.0.0.172/32 Metric: 10 Type: 1 Up
+        SR Prefix-SID: 172 Flags: [N] Algorithm: 0
+      Router Capabilities: Router Id: 10.0.0.172 Flags: []
+        SR Local Block:
+          SRLB Base: 965536 Range: 65536
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+      Instance ID: 2 supported_instance_ids: 0

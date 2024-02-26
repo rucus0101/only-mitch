@@ -1,0 +1,555 @@
+Legend:
+H - hostname conflict
+U - node unreachable
+
+IS-IS Instance: IGP VRF: default
+  IS-IS Level 2 Link State Database
+    LSPID                   Seq Num  Cksum  Life Length IS  Received LSPID        Flags
+    h3c_19_CR16010E-F.00-00        58   9987  1023    275 L2  0000.0000.0019.00-00  <>
+      NLPID: 0xCC(IPv4)
+      Hostname: h3c_19_CR16010E-F
+      TE IPv4 router ID: 10.0.0.19
+      Area addresses: 49
+      Interface address: 10.0.0.19
+      Interface address: 20.19.149.19
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.19.149.149
+        IPv4 Interface Address: 20.19.149.19
+        Adj-sid: 1148 flags: [L V] weight: 0x0
+        TE default metric: 100
+        Maximum link BW: 0.00 bps
+        Maximum reservable link BW: 0.00 bps
+        Unreserved BW:
+            TE class 0: 0.00 bps	TE class 1: 0.00 bps	TE class 2: 0.00 bps
+            TE class 3: 0.00 bps	TE class 4: 0.00 bps	TE class 5: 0.00 bps
+            TE class 6: 0.00 bps	TE class 7: 0.00 bps
+      Reachability         : 10.0.0.19/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 19 Flags: [N] Algorithm: 0
+      Reachability         : 20.19.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.19.170.0/24 Metric: 0 Type: 1 Up
+      Reachability         : 31.9.1.0/24 Metric: 0 Type: 1 Up
+      Reachability         : 192.168.0.0/19 Metric: 0 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.19 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  13
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+    h3c_24_S12500R-48C6D.00-00        59  14027   998    279 L2  0000.0000.0024.00-00  <>
+      NLPID: 0xCC(IPv4)
+      Hostname: h3c_24_S12500R-48C6D
+      TE IPv4 router ID: 10.0.0.24
+      Area addresses: 49
+      Interface address: 10.0.0.24
+      Interface address: 20.24.149.24
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.24.149.149
+        IPv4 Interface Address: 20.24.149.24
+        Adj-sid: 56127 flags: [L V] weight: 0x0
+        TE default metric: 10
+        Maximum link BW: 0.00 bps
+        Maximum reservable link BW: 0.00 bps
+        Unreserved BW:
+            TE class 0: 0.00 bps	TE class 1: 0.00 bps	TE class 2: 0.00 bps
+            TE class 3: 0.00 bps	TE class 4: 0.00 bps	TE class 5: 0.00 bps
+            TE class 6: 0.00 bps	TE class 7: 0.00 bps
+      Reachability         : 10.0.0.24/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 24 Flags: [N P] Algorithm: 0
+      Reachability         : 20.24.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 192.168.20.0/23 Metric: 0 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.24 Flags: []
+        SR Local Block:
+          SRLB Base: 15000 Range: 1000
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  10
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+    R6676-50.00-00               39  11183   357    145 L2  0000.0000.0050.00-00  <>
+      NLPID: 0xCC(IPv4)
+      Hostname: R6676-50
+      TE IPv4 router ID: 10.0.0.50
+      Area addresses: 49.0000
+      Interface address: 10.0.0.50
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Interface Address: 20.50.149.50
+      Reachability         : 10.0.0.50/32 Metric: 10 Type: 1 Up
+        SR Prefix-SID: 50 Flags: [N P] Algorithm: 0
+      Reachability         : 20.50.149.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.50 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  8
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0
+    huawei_254_NetEngine_8000_F8.00-00        26  48015  1185    156 L2  0000.0000.0254.00-00  <>
+      NLPID: 0xCC(IPv4)
+      Hostname: huawei_254_NetEngine_8000_F8
+      Area addresses: 49
+      Interface address: 10.0.0.254
+      Interface address: 20.149.254.254
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.149.254.149
+        IPv4 Interface Address: 20.149.254.254
+        Adj-sid: 48001 flags: [L V] weight: 0x0
+      Reachability         : 10.0.0.254/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 254 Flags: [N] Algorithm: 0
+      Reachability         : 20.149.254.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.254 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  10
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+    h43-9901.00-00               31  40444   625    186 L2  0000.0000.0343.00-00  <>
+      NLPID: 0xCC(IPv4)
+      Hostname: h43-9901
+      TE IPv4 router ID: 10.0.1.43
+      Area addresses: 49
+      Interface address: 10.0.1.43
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.143.149.149
+        IPv4 Interface Address: 20.143.149.143
+        Adj-sid: 24001 flags: [L V] weight: 0x0
+        Maximum link BW: 10.00 Gbps
+      Reachability         : 10.0.1.43/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 343 Flags: [N] Algorithm: 0
+      Reachability         : 20.143.149.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.1.43 Flags: []
+        SR Local Block:
+          SRLB Base: 15000 Range: 1000
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  10
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 1
+      Unsupported TLV: Type: 14 Length: 2
+    h49-N540-24Q8L2DD.00-00        60  15348  1082   1343 L2  0000.0000.0349.00-00  <>
+      NLPID: 0xCC(IPv4)
+      Hostname: h49-N540-24Q8L2DD
+      TE IPv4 router ID: 10.0.1.49
+      Area addresses: 49
+      Interface address: 10.0.1.49
+      IS Neighbor          : h3c_19_CR16010E-F.00 Metric: 10
+        IPv4 Neighbor Address: 20.19.149.19
+        IPv4 Interface Address: 20.19.149.149
+        Adj-sid: 24015 flags: [L V] weight: 0x0
+        Maximum link BW: 10.00 Gbps
+        Min/Max unidirectional link delay: 11/11 us
+        Average unidirectional link delay: 11 us
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+          User-defined applications: APP3
+            TE default metric: 12
+            Maximum link BW: 10.00 Gbps
+            Min/Max unidirectional link delay: 11/11 us
+      IS Neighbor          : h3c_24_S12500R-48C6D.00 Metric: 10
+        IPv4 Neighbor Address: 20.24.149.24
+        IPv4 Interface Address: 20.24.149.149
+        Adj-sid: 24005 flags: [L V] weight: 0x0
+        Maximum link BW: 100.00 Gbps
+        Min/Max unidirectional link delay: 11/11 us
+        Average unidirectional link delay: 11 us
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+          User-defined applications: APP3
+            TE default metric: 12
+            Maximum link BW: 100.00 Gbps
+            Min/Max unidirectional link delay: 11/11 us
+      IS Neighbor          : R6676-50.00         Metric: 10
+        IPv4 Neighbor Address: 20.50.149.50
+        IPv4 Interface Address: 20.50.149.149
+        Adj-sid: 24017 flags: [L V] weight: 0x0
+        Maximum link BW: 10.00 Gbps
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+          User-defined applications: APP3
+            Maximum link BW: 10.00 Gbps
+      IS Neighbor          : h43-9901.00         Metric: 10
+        IPv4 Neighbor Address: 20.143.149.143
+        IPv4 Interface Address: 20.143.149.149
+        Adj-sid: 24011 flags: [L V] weight: 0x0
+        Maximum link BW: 10.00 Gbps
+        Min/Max unidirectional link delay: 11/11 us
+        Average unidirectional link delay: 11 us
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+          User-defined applications: APP3
+            TE default metric: 12
+            Maximum link BW: 10.00 Gbps
+            Min/Max unidirectional link delay: 11/11 us
+      IS Neighbor          : h55-8201-24H8FH.00  Metric: 10
+        IPv4 Neighbor Address: 20.149.155.155
+        IPv4 Interface Address: 20.149.155.149
+        Adj-sid: 24001 flags: [L V] weight: 0x0
+        Maximum link BW: 100.00 Gbps
+        Min/Max unidirectional link delay: 2/2 us
+        Average unidirectional link delay: 2 us
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+          User-defined applications: APP3
+            TE default metric: 12
+            Maximum link BW: 100.00 Gbps
+            Min/Max unidirectional link delay: 2/2 us
+      IS Neighbor          : juniper_379_MX304.00 Metric: 10
+        IPv4 Neighbor Address: 20.149.179.179
+        IPv4 Interface Address: 20.149.179.149
+        Adj-sid: 24013 flags: [L V] weight: 0x0
+        Maximum link BW: 10.00 Gbps
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+          User-defined applications: APP3
+            Maximum link BW: 10.00 Gbps
+      IS Neighbor          : 0010.0010.0005.00   Metric: 10
+        IPv4 Neighbor Address: 20.5.149.5
+        IPv4 Interface Address: 20.5.149.149
+        Adj-sid: 24003 flags: [L V] weight: 0x0
+        Maximum link BW: 10.00 Gbps
+        Min/Max unidirectional link delay: 11/11 us
+        Average unidirectional link delay: 11 us
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+          User-defined applications: APP3
+            TE default metric: 12
+            Maximum link BW: 10.00 Gbps
+            Min/Max unidirectional link delay: 11/11 us
+      IS Neighbor          : NOKIA-SR2-57.00     Metric: 10
+        IPv4 Neighbor Address: 20.57.149.57
+        IPv4 Interface Address: 20.57.149.149
+        Adj-sid: 24019 flags: [L V] weight: 0x0
+        Maximum link BW: 10.00 Gbps
+        Min/Max unidirectional link delay: 11/11 us
+        Average unidirectional link delay: 11 us
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+          User-defined applications: APP3
+            Administrative group (Color): 127
+            TE default metric: 12
+            Maximum link BW: 10.00 Gbps
+            Min/Max unidirectional link delay: 11/11 us
+      IS Neighbor          : PE31-J2-171.00      Metric: 10
+        IPv4 Neighbor Address: 20.149.171.171
+        IPv4 Interface Address: 20.149.171.149
+        Adj-sid: 24009 flags: [L V] weight: 0x0
+        Maximum link BW: 10.00 Gbps
+        Min/Max unidirectional link delay: 1/1 us
+        Average unidirectional link delay: 1 us
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+          User-defined applications: APP3
+            Administrative group (Color): 127
+            TE default metric: 12
+            Maximum link BW: 10.00 Gbps
+            Min/Max unidirectional link delay: 1/1 us
+      IS Neighbor          : PE32-J2-172.00      Metric: 10
+        IPv4 Neighbor Address: 20.149.172.172
+        IPv4 Interface Address: 20.149.172.149
+        Adj-sid: 24007 flags: [L V] weight: 0x0
+        Maximum link BW: 10.00 Gbps
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+          User-defined applications: APP3
+            Maximum link BW: 10.00 Gbps
+      Reachability         : 10.0.1.49/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 349 Flags: [N] Algorithm: 0
+        SR Prefix-SID: 1449 Flags: [N] Algorithm: 129
+        SR Prefix-SID: 1549 Flags: [N] Algorithm: 130
+        SR Prefix-SID: 1649 Flags: [N] Algorithm: 131
+        SR Prefix-SID: 1749 Flags: [N] Algorithm: 132
+        SR Prefix-SID: 449 Flags: [N] Algorithm: 140
+        SR Prefix-SID: 549 Flags: [N] Algorithm: 141
+        SR Prefix-SID: 649 Flags: [N] Algorithm: 142
+      Reachability         : 20.5.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.19.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.24.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.50.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.57.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.111.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.143.149.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.149.155.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.149.171.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.149.172.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.149.179.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.149.254.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.1.49 Flags: []
+        SR Local Block:
+          SRLB Base: 15000 Range: 1000
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 1, 128, 129, 130, 131, 132, 140, 141, 142
+        Flex Algo: Algorithm: 129 Metric: TE Metric (2) Calc: SPF (0) Prio: 255
+        Flex Algo: Algorithm: 130 Metric: IGP Metric (0) Calc: SPF (0) Prio: 255
+          Exclude admin groups: 1
+        Flex Algo: Algorithm: 131 Metric: IGP Metric (0) Calc: SPF (0) Prio: 255
+          Exclude admin groups: 127
+        Flex Algo: Algorithm: 132 Metric: IGP Metric (0) Calc: SPF (0) Prio: 255
+          Exclude admin groups: 255
+        Flex Algo: Algorithm: 140 Metric: IGP Metric (0) Calc: SPF (0) Prio: 255
+        Flex Algo: Algorithm: 141 Metric: IGP Metric (0) Calc: SPF (0) Prio: 255
+        Flex Algo: Algorithm: 142 Metric: IGP Metric (0) Calc: SPF (0) Prio: 255
+      Unsupported TLV: Type: 14 Length: 2
+    h49-N540-24Q8L2DD.00-01        33   5379   490    219 L2  0000.0000.0349.00-01  <>
+      IS Neighbor          : huawei_254_NetEngine_8000_F8.00 Metric: 10
+        IPv4 Neighbor Address: 20.149.254.254
+        IPv4 Interface Address: 20.149.254.149
+        Adj-sid: 24021 flags: [L V] weight: 0x0
+        Maximum link BW: 10.00 Gbps
+        Min/Max unidirectional link delay: 11/11 us
+        Average unidirectional link delay: 11 us
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+          User-defined applications: APP3
+            TE default metric: 12
+            Maximum link BW: 10.00 Gbps
+            Min/Max unidirectional link delay: 11/11 us
+      IS Neighbor          : 3800.0000.4111.00   Metric: 10
+        IPv4 Neighbor Address: 20.111.149.1
+        IPv4 Interface Address: 20.111.149.149
+        Adj-sid: 24023 flags: [L V] weight: 0x0
+        Maximum link BW: 10.00 Gbps
+        Min/Max unidirectional link delay: 11/11 us
+        Average unidirectional link delay: 11 us
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+          User-defined applications: APP3
+            TE default metric: 12
+            Maximum link BW: 10.00 Gbps
+            Min/Max unidirectional link delay: 11/11 us
+    h55-8201-24H8FH.00-00        34  32951   567    482 L2  0000.0000.0355.00-00  <>
+      NLPID: 0xCC(IPv4)
+      Hostname: h55-8201-24H8FH
+      TE IPv4 router ID: 10.0.1.55
+      Area addresses: 49
+      Interface address: 10.0.1.55
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.149.155.149
+        IPv4 Interface Address: 20.149.155.155
+        Adj-sid: 24001 flags: [L V] weight: 0x0
+        Maximum link BW: 100.00 Gbps
+        Min/Max unidirectional link delay: 2/2 us
+        Average unidirectional link delay: 2 us
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+          User-defined applications: APP3
+            TE default metric: 12
+            Maximum link BW: 100.00 Gbps
+            Min/Max unidirectional link delay: 2/2 us
+      Reachability         : 10.0.1.55/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 355 Flags: [N] Algorithm: 0
+        SR Prefix-SID: 1355 Flags: [N] Algorithm: 128
+        SR Prefix-SID: 1455 Flags: [N] Algorithm: 129
+        SR Prefix-SID: 1555 Flags: [N] Algorithm: 130
+        SR Prefix-SID: 1655 Flags: [N] Algorithm: 131
+        SR Prefix-SID: 1755 Flags: [N] Algorithm: 132
+        SR Prefix-SID: 455 Flags: [N] Algorithm: 140
+        SR Prefix-SID: 555 Flags: [N] Algorithm: 141
+        SR Prefix-SID: 655 Flags: [N] Algorithm: 142
+      Reachability         : 20.32.155.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.57.155.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 20.149.155.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 209.209.209.209/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 1999 Flags: [] Algorithm: 0
+      Router Capabilities: Router Id: 10.0.1.55 Flags: []
+        SR Local Block:
+          SRLB Base: 15000 Range: 1000
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  8
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 1, 128, 129, 130, 131, 132, 140, 141, 142
+        Flex Algo: Algorithm: 128 Metric: Min Unidirectional Delay Metric (1) Calc: SPF (0) Prio: 10
+        Flex Algo: Algorithm: 129 Metric: TE Metric (2) Calc: SPF (0) Prio: 10
+        Flex Algo: Algorithm: 130 Metric: IGP Metric (0) Calc: SPF (0) Prio: 10
+          Exclude admin groups: 1
+        Flex Algo: Algorithm: 131 Metric: IGP Metric (0) Calc: SPF (0) Prio: 10
+          Exclude admin groups: 127
+        Flex Algo: Algorithm: 132 Metric: IGP Metric (0) Calc: SPF (0) Prio: 10
+          Exclude admin groups: 255
+        Flex Algo: Algorithm: 140 Metric: IGP Metric (0) Calc: SPF (0) Prio: 10
+        Flex Algo: Algorithm: 141 Metric: IGP Metric (0) Calc: SPF (0) Prio: 10
+        Flex Algo: Algorithm: 142 Metric: IGP Metric (0) Calc: SPF (0) Prio: 10
+      Unsupported TLV: Type: 14 Length: 2
+    juniper_379_MX304.00-00        41  10812   661    246 L2  0000.0001.7900.00-00  <>
+      NLPID: 0xCC(IPv4) 0x8E(IPv6)
+      Hostname: juniper_379_MX304
+      TE IPv4 router ID: 10.0.0.179
+      Area addresses: 49.0001.00
+      Interface address: 10.0.0.179
+      Interface address: 10.1.0.179
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.149.179.149
+        IPv4 Interface Address: 20.149.179.179
+        Adj-sid: 23 flags: [L V B] weight: 0x0
+        Maximum link BW: 10.00 Gbps
+      Reachability         : 20.57.179.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 10.0.0.179/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 379 Flags: [N] Algorithm: 0
+        SR Prefix-SID: 1379 Flags: [N] Algorithm: 130
+        SR Prefix-SID: 1279 Flags: [N] Algorithm: 129
+        SR Prefix-SID: 1179 Flags: [N] Algorithm: 128
+      Reachability         : 10.1.0.179/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 79 Flags: [N] Algorithm: 0
+      Reachability         : 20.149.179.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.179 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  4
+        SR Capability: Flags: [I V]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 1, 128, 129, 130
+      Unsupported TLV: Type: 14 Length: 2
+    0010.0010.0005.00-00         28  48405   380    268 L2  0010.0010.0005.00-00  <>
+      NLPID: 0xCC(IPv4)
+      TE IPv4 router ID: 10.0.0.5
+      Area addresses: 49.0005
+      Interface address: 20.5.149.5
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.5.149.149
+        IPv4 Interface Address: 20.5.149.5
+        Adj-sid: 16000 flags: [L V] weight: 0x0
+        TE default metric: 12
+        Maximum link BW: 10.00 Gbps
+        Maximum reservable link BW: 10.00 Gbps
+        Unreserved BW:
+            TE class 0: 10.00 Gbps	TE class 1: 10.00 Gbps	TE class 2: 10.00 Gbps
+            TE class 3: 10.00 Gbps	TE class 4: 10.00 Gbps	TE class 5: 10.00 Gbps
+            TE class 6: 10.00 Gbps	TE class 7: 10.00 Gbps
+        Min/Max unidirectional link delay: 11/11 us
+        Average unidirectional link delay: 11 us
+        Application Specific Link Attributes:
+          Standard applications: RSVP-TE SR-TE LFA Flex-Algo
+            TE default metric: 12
+            Min/Max unidirectional link delay: 11/11 us
+            Average unidirectional link delay: 11 us
+      Reachability         : 10.0.0.5/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 5 Flags: [N] Algorithm: 0
+      Reachability         : 20.5.149.0/24 Metric: 10 Type: 1 Up
+      Reachability          : 2002::5/128 Metric: 0 Type: 1 Up
+      Router Capabilities: Router Id: 10.0.0.5 Flags: []
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0
+    NOKIA-SR2-57.00-00          780  46767  1190    325 L2  0100.0000.0057.00-00  <>
+      NLPID: 0xCC(IPv4) 0x8E(IPv6)
+      Hostname: NOKIA-SR2-57
+      TE IPv4 router ID: 10.0.0.57
+      TE IPv6 router ID: 2002::57
+      Area addresses: 49.0000.0000.0057.00
+      Interface address: 10.0.0.57
+      Interface address: 20.57.149.57
+      Interface address: 2002::57
+      IS Neighbor (Narrow metrics, unsupported): h49-N540-24Q8L2DD.00 Metric: 10
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.57.149.149
+        IPv4 Interface Address: 20.57.149.57
+        Adj-sid: 30149 flags: [L V B] weight: 0x0
+        Application Specific Link Attributes:
+          Standard applications: SR-TE
+            TE default metric: 12
+            Maximum link BW: 10.00 Gbps
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+            Administrative group (Color): 127
+            TE default metric: 12
+            Min/Max unidirectional link delay: 9/9 us
+      Reachability (Narrow metrics, unsupported): 10.0.0.57/32 Metric: 0 Type: 1
+      Reachability (Narrow metrics, unsupported): 20.57.149.0/24 Metric: 10 Type: 1
+      Reachability         : 10.0.0.57/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 57 Flags: [N P] Algorithm: 0
+      Reachability         : 20.57.149.0/24 Metric: 10 Type: 1 Up
+      Reachability          : 2002::57/128 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 157 Flags: [N P] Algorithm: 0
+      Router Capabilities: Router Id: 10.0.0.57 Flags: []
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+        SR Capability: Flags: [I V]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0
+    PE31-J2-171.00-00            30  56548  1173    287 L2  0100.0000.0171.00-00  <>
+      LSP generation remaining wait time: 0 ms
+      Time remaining until refresh: 873 s
+      NLPID: 0xCC(IPv4)
+      Hostname: PE31-J2-171
+      Area addresses: 49.0000
+      Interface address: 20.149.171.171
+      Interface address: 10.0.0.171
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.149.171.149
+        IPv4 Interface Address: 20.149.171.171
+        Adj-sid: 362144 flags: [L V] weight: 0x0
+        Application Specific Link Attributes:
+          Standard applications: Flex-Algo
+            Administrative group (Color): 127
+            TE default metric: 12
+            Min/Max unidirectional link delay: 2/12 us
+      Reachability         : 20.149.171.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 10.0.0.171/32 Metric: 0 Type: 1 Up
+        SR Prefix-SID: 171 Flags: [N] Algorithm: 0
+        SR Prefix-SID: 1171 Flags: [N] Algorithm: 128
+        SR Prefix-SID: 1271 Flags: [N] Algorithm: 129
+        SR Prefix-SID: 1371 Flags: [N] Algorithm: 130
+        SR Prefix-SID: 1471 Flags: [N] Algorithm: 131
+      Router Capabilities: Router Id: 10.0.0.171 Flags: []
+        SR Local Block:
+          SRLB Base: 965536 Range: 65536
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0, 128, 129, 130, 131
+        Flex Algo: Algorithm: 131 Metric: IGP Metric (0) Calc: SPF (0) Prio: 237
+          Exclude admin groups: 127
+        Flex Algo: Algorithm: 130 Metric: IGP Metric (0) Calc: SPF (0) Prio: 237
+          Exclude admin groups: 1
+        Flex Algo: Algorithm: 129 Metric: TE Metric (2) Calc: SPF (0) Prio: 237
+        Flex Algo: Algorithm: 128 Metric: Min Unidirectional Delay Metric (1) Calc: SPF (0) Prio: 237
+    PE32-J2-172.00-00            29  31484  1039    156 L2  0100.0000.0172.00-00  <>
+      NLPID: 0xCC(IPv4)
+      Hostname: PE32-J2-172
+      Area addresses: 49.0000
+      Interface address: 20.149.172.172
+      Interface address: 10.0.0.172
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+        IPv4 Neighbor Address: 20.149.172.149
+        IPv4 Interface Address: 20.149.172.172
+        Adj-sid: 362144 flags: [L V B] weight: 0x0
+      Reachability         : 20.149.172.0/24 Metric: 10 Type: 1 Up
+      Reachability         : 10.0.0.172/32 Metric: 10 Type: 1 Up
+        SR Prefix-SID: 172 Flags: [N] Algorithm: 0
+      Router Capabilities: Router Id: 10.0.0.172 Flags: []
+        SR Local Block:
+          SRLB Base: 965536 Range: 65536
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+        SR Capability: Flags: [I]
+          SRGB Base: 20000 Range: 2000
+    3800.0000.4111.00-00          6  17730   981    115 L2  3800.0000.4111.00-00  <DefaultAtt>
+      NLPID: 0xCC(IPv4) 0x8E(IPv6) 0x81(CLNP)
+      Area addresses: 49
+      Interface address: 20.111.149.1
+      IS Neighbor          : h49-N540-24Q8L2DD.00 Metric: 10
+      Reachability         : 100.0.1.111/32 Metric: 10 Type: 1 Up
+        SR Prefix-SID: 411 Flags: [N] Algorithm: 0
+      Reachability         : 20.111.149.0/24 Metric: 10 Type: 1 Up
+      Router Capabilities: Router Id: 100.0.1.111 Flags: []
+        SR Capability: Flags: [I V]
+          SRGB Base: 20000 Range: 2000
+        Algorithms:  0
+Legend:
+H - hostname conflict
+U - node unreachable
+
+IS-IS Instance: IPV6 VRF: default
+  IS-IS Level 2 Link State Database
+    LSPID                   Seq Num  Cksum  Life Length IS  Received LSPID        Flags
+    anet-PE31-J2-171.00-00        25  39831   802     75 L2  0100.0000.0171.00-00  <>
+      LSP generation remaining wait time: 0 ms
+      Time remaining until refresh: 502 s
+      NLPID: 0x8E(IPv6)
+      Hostname: anet-PE31-J2-171
+      Area addresses: 49.0000
+      Router Capabilities: Router Id: 10.0.0.171 Flags: []
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  12
+      Instance ID: 1 supported_instance_ids: 0

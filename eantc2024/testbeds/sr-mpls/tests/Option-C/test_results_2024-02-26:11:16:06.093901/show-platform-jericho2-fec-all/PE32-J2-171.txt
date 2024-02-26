@@ -1,0 +1,51 @@
+Tunnel Type: Mpop(mpls pop), Mpush(mpls push), Mswap(mpls swap),
+             MoG(mpls-over-gre), T(IPv4 tunnels GRE/GUE/VXLAN),
+             N(Ipsec tunnel NAT-T [IP,SPORT,DPORT])
+CW  - Control word
+FL  - Flow label
+EL  - Entropy label
+ELI - Entropy label indicator
+D   - ECMP is divergent across switching chips
+ -----------------------------------------------------------------------------------------------
+|                                              FEC Entry                                        |
+ -----------------------------------------------------------------------------------------------
+|     |      |     |                    |     |        |                   |
+| ECMP|  FEC |     |                    |     |        |                   |
+|Index| Index| Cmd |     Destination    | VID | Outlif |   MAC / CPU Code  |    Tunnel Value
+ -----------------------------------------------------------------------------------------------
+|  -  |288360|ROUTE| FEC 528492         |   - |2097151 |                 - |Mpush 20379 20032
+|  -  |288362|ROUTE| FEC 528492         |   - |2097150 |                 - |Mpush 20379 20212
+|  -  |288364|ROUTE| FEC 528492         |   - |2097149 |                 - |Mswap 20379 20032
+|  -  |288366|ROUTE| FEC 528492         |   - |2097148 |                 - |Mpush 20379 20032 756641
+|  -  |288368|ROUTE| FEC 528492         |   - |2097147 |                 - |Mswap 20379 20212
+|  -  |288370|ROUTE| FEC 528492         |   - |2097146 |                 - |Mpush 20379 20212 17
+|  -  |288372|ROUTE| FEC 528492         |   - |2097145 |                 - |Mpush 20379 20059
+|  -  |288374|ROUTE| FEC 528492         |   - |2097144 |                 - |Mswap 20379 20059
+|  -  |288376|ROUTE| FEC 528492         |   - |2097142 |                 - |Mpush 20379 20059 1048568
+|  -  |288378|ROUTE| FEC 528492         |   - |2097143 |                 - |Mpush 20379 20047
+|  -  |288380|ROUTE| FEC 528492         |   - |2097141 |                 - |Mswap 20379 20047
+|  -  |288382|ROUTE| FEC 528492         |   - |2097140 |                 - |Mpush 20379 20047 720896
+|  -  |524288|TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |   -   
+|  -  |524291|TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |   -   
+|  -  |524292|TRAP | CoppSystemL3LpmOver|0    |  -     | SlowReceive       |   -   
+|  -  |524294|TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |   -   
+|  -  |525301|TRAP | CoppSystemL3DstMiss|1007 |1007    | ArpTrap           |   -   
+|  -  |525303|TRAP | CoppSystemL3DstMiss|1009 |1009    | ArpTrap           |   -   
+|  -  |525309|TRAP | CoppSystemL3DstMiss|1015 |1015    | ArpTrap           |   -   
+|  -  |525310|TRAP | CoppSystemL3DstMiss|1016 |1016    | ArpTrap           |   -   
+|  -  |525312|TRAP | CoppSystemL3DstMiss|1018 |1018    | ArpTrap           |   -   
+|  -  |525314|TRAP | CoppSystemL3DstMiss|1020 |1020    | ArpTrap           |   -   
+|  -  |528482|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |528484|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |528486|ROUTE| Et24               |1015 |103421  | c0:f8:7f:6a:4e:1c |   -   
+|  -  |528488|ROUTE| Et5                |1020 |103422  | 00:14:01:00:00:01 |   -   
+|  -  |528490|ROUTE| Et24               |1015 |103421  | c0:f8:7f:6a:4e:1c |   -   
+|  -  |528492|ROUTE| Et24               |1015 |103421  | c0:f8:7f:6a:4e:1c |   -   
+|  -  |528494|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |528496|ROUTE| Et24               |1015 |103421  | c0:f8:7f:6a:4e:1c |   -   
+|  -  |528498|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |528500|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |528502|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |528504|DROP | DROP               |0    |  -     |                   |   -   
+|  -  |528506|DROP | DROP               |0    |  -     |                   |   -   
+

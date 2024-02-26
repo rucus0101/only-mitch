@@ -1,0 +1,118 @@
+MPLS forwarding table (Label [metric] Vias) - 28 routes 
+MPLS next-hop resolution allow default route: False
+Metric Codes:
+          A - Active metric
+Via Type Codes:
+          M - MPLS via, P - Pseudowire via,
+          I - IP lookup via, V - VLAN via,
+          VA - EVPN VLAN aware via, ES - EVPN ethernet segment via,
+          VF - EVPN VLAN flood via, AF - EVPN VLAN aware flood via,
+          NG - Nexthop group via
+
+ 20005   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 20019   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 20024   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 20032   A[1]
+                via M, ::, swap 20032
+                    EgressACL: bypass
+                  via IS-IS SR tunnel index 7
+                    via 20.149.171.149, Ethernet24, label 20379
+ 20047   A[1]
+                via M, ::, swap 20047
+                    EgressACL: bypass
+                  via IS-IS SR tunnel index 7
+                    via 20.149.171.149, Ethernet24, label 20379
+ 20050   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 20057   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 20059   A[1]
+                via M, ::, swap 20059
+                    EgressACL: bypass
+                  via IS-IS SR tunnel index 7
+                    via 20.149.171.149, Ethernet24, label 20379
+ 20079   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 20172   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 20212   A[1]
+                via M, ::, swap 20212
+                    EgressACL: bypass
+                  via IS-IS SR tunnel index 7
+                    via 20.149.171.149, Ethernet24, label 20379
+ 20254   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 20343   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 20349   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 20355   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 20379   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 21355   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 21379   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 21449   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 21455   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 21549   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 21555   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 362144  A[1]
+                via M, 20.149.171.149, pop
+                    EgressACL: apply
+                    directly connected, Ethernet24
+                    c0:f8:7f:6a:4e:1c, vlan 1015
+ 378528   [0]
+                via I, ipv4, vrf ISIS-SR-FLEXALGO-MIN-IGP-ADMIN
+ 378529   [0]
+                via I, ipv4, vrf ISIS-SR-FLEXALGO-MIN-IGP
+ 378530   [0]
+                via I, ipv4, vrf ISIS-SR-FLEXALGO-MIN-DELAY
+ 378531   [0]
+                via I, ipv4, vrf ISIS-SR-FLEXALGO-MIN-TE
+ 378532   [0]
+                via I, ipv4, vrf ISIS-SR-L3VPN

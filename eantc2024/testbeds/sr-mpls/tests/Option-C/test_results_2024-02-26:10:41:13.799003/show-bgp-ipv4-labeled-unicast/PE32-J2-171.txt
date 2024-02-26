@@ -1,0 +1,18 @@
+BGP routing table information for VRF default
+Router identifier 10.0.0.171, local AS number 65000
+Route status codes: s - suppressed contributor, * - valid, > - active, E - ECMP head, e - ECMP
+                    S - Stale, c - Contributing to ECMP, b - backup, L - labeled-unicast
+                    % - Pending best path selection
+Origin codes: i - IGP, e - EGP, ? - incomplete
+AS Path Attributes: Or-ID - Originator ID, C-LST - Cluster List, LL Nexthop - Link Local Nexthop
+
+          Network                Next Hop              Metric  AIGP       LocPref Weight  Path
+ * >  L   10.0.0.5/32            10.0.1.55             0       -          100     0       i Or-ID: 10.0.0.5 C-LST: 10.0.1.55 
+ * >  L   10.0.0.24/32           10.0.1.55             0       -          100     0       i Or-ID: 10.0.0.24 C-LST: 10.0.1.55 
+ * >  L   10.0.0.32/32           10.0.1.55             0       -          100     0       65001 i Or-ID: 10.0.0.32 C-LST: 10.0.1.55 
+ * >  L   10.0.0.47/32           10.0.1.55             0       -          100     0       65001 i Or-ID: 10.0.0.47 C-LST: 10.0.1.55 
+ * >  L   10.0.0.59/32           10.0.1.55             0       -          100     0       65001 i Or-ID: 10.0.0.59 C-LST: 10.0.1.55 
+ * >  L   10.0.0.171/32          -                     -       -          -       0       i
+ * >  L   10.0.0.212/32          10.0.1.55             0       -          100     0       65001 i Or-ID: 10.0.0.212 C-LST: 10.0.1.55 
+ * >  L   10.0.0.254/32          10.0.1.55             0       -          100     0       i Or-ID: 10.0.0.254 C-LST: 10.0.1.55 
+ * >  L   10.0.1.43/32           10.0.1.55             0       -          100     0       i Or-ID: 10.0.1.43 C-LST: 10.0.1.55 
