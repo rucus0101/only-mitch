@@ -1,0 +1,98 @@
+MPLS forwarding table (Label [metric] Vias) - 19 routes 
+MPLS next-hop resolution allow default route: False
+Metric Codes:
+          A - Active metric
+Via Type Codes:
+          M - MPLS via, P - Pseudowire via,
+          I - IP lookup via, V - VLAN via,
+          VA - EVPN VLAN aware via, ES - EVPN ethernet segment via,
+          VF - EVPN VLAN flood via, AF - EVPN VLAN aware flood via,
+          NG - Nexthop group via
+
+ 20005   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.5.170.5 Ethernet50/1
+ 20032   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.32.170.32 Ethernet43
+ 20047   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.47.170.47 Ethernet3
+ 20057   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.57.170.57 Ethernet45
+ 20059   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.59.170.59 Ethernet54/1
+ 20172   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.170.172.172 Ethernet52/1
+ 20209   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 2
+                    via 20.170.172.172, Ethernet52/1, label imp-null(3)
+                    backup via 20.32.170.32, Ethernet43, label imp-null(3)
+ 20212   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.170.212.212 Ethernet49/2
+ 20355   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.155.170.155 Ethernet51/1
+ 20379   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.170.179.179 Ethernet49/1
+ 362144  A[1]
+                via M, 20.155.170.155, pop
+                    EgressACL: apply
+                    directly connected, Ethernet51/1
+                    34:88:18:bf:4a:3c, vlan 1011
+ 362146  A[1]
+                via M, 20.59.170.59, pop
+                    EgressACL: apply
+                    directly connected, Ethernet54/1
+                    8c:7a:00:e7:f5:47, vlan 1008
+ 362148  A[1]
+                via M, 20.47.170.47, pop
+                    EgressACL: apply
+                    directly connected, Ethernet3
+                    58:70:7f:9f:ca:04, vlan 1009
+ 362149  A[1]
+                via M, 20.170.212.212, pop
+                    EgressACL: apply
+                    directly connected, Ethernet49/2
+                    68:22:8e:16:e3:10, vlan 1016
+ 362150  A[1]
+                via M, 20.170.179.179, pop
+                    EgressACL: apply
+                    directly connected, Ethernet49/1
+                    60:c7:8d:2d:3c:c7, vlan 1012
+ 362151  A[1]
+                via M, 20.170.172.172, pop
+                    EgressACL: apply
+                    directly connected, Ethernet52/1
+                    2c:dd:e9:96:3a:bb, vlan 1014
+ 362152  A[1]
+                via M, 20.32.170.32, pop
+                    EgressACL: apply
+                    directly connected, Ethernet43
+                    30:c5:07:1f:33:0c, vlan 1010
+ 362153  A[1]
+                via M, 20.5.170.5, pop
+                    EgressACL: apply
+                    directly connected, Ethernet50/1
+                    e4:6d:7f:d7:36:04, vlan 1007
+ 362155  A[1]
+                via M, 20.57.170.57, pop
+                    EgressACL: apply
+                    directly connected, Ethernet45
+                    c0:14:b8:21:ca:74, vlan 1015

@@ -1,0 +1,33 @@
+Tunnel RIB: system-tunnel-rib
+Endpoint           Tunnel Type    Index(es)  Tunnel Preference  IGP Preference 
+------------------ -------------- ---------- ------------------ ---------------
+10.0.0.5/32        IS-IS SR IPv4  9          10                 115            
+10.0.0.19/32       IS-IS SR IPv4  3          10                 115            
+10.0.0.24/32       IS-IS SR IPv4  8          10                 115            
+10.0.0.32/32       IS-IS SR IPv4  14         10                 115            
+10.0.0.50/32       IS-IS SR IPv4  5          10                 115            
+10.0.0.57/32       IS-IS SR IPv4  13         10                 115            
+10.0.0.172/32      IS-IS SR IPv4  12         10                 115            
+10.0.0.179/32      IS-IS SR IPv4  7          10                 115            
+10.0.0.212/32      BGP LU         45         200                200            
+10.0.1.43/32       IS-IS SR IPv4  2          10                 115            
+10.0.1.49/32       IS-IS SR IPv4  1          10                 115            
+10.0.1.55/32       IS-IS SR IPv4  4          10                 115            
+209.209.209.209/32 IS-IS SR IPv4  10         10                 115            
+
+   IGP Metric    Metric Type
+---------------- -----------
+   20            metric     
+   20            metric     
+   20            metric     
+   20            metric     
+   30            metric     
+   20            metric     
+   30            metric     
+   20            metric     
+   0             MED        
+   20            metric     
+   10            metric     
+   20            metric     
+   20            metric     
+

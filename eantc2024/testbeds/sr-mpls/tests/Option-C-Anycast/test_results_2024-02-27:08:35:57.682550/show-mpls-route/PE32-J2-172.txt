@@ -1,0 +1,84 @@
+MPLS forwarding table (Label [metric] Vias) - 17 routes 
+MPLS next-hop resolution allow default route: False
+Metric Codes:
+          A - Active metric
+Via Type Codes:
+          M - MPLS via, P - Pseudowire via,
+          I - IP lookup via, V - VLAN via,
+          VA - EVPN VLAN aware via, ES - EVPN ethernet segment via,
+          VF - EVPN VLAN flood via, AF - EVPN VLAN aware flood via,
+          NG - Nexthop group via
+
+ 20005   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.172.149 Ethernet25
+ 20019   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.172.149 Ethernet25
+ 20024   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.172.149 Ethernet25
+ 20032   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.170.172.170 Ethernet52/1
+ 20047   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.170.172.170 Ethernet52/1
+ 20050   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.172.149 Ethernet25
+ 20057   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.172.149 Ethernet25
+ 20059   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.170.172.170 Ethernet52/1
+ 20170   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.170.172.170 Ethernet52/1
+ 20171   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via IS-IS SR tunnel index 12
+                    via 20.149.172.149, Ethernet25, label 20171
+ 20212   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via IS-IS SR tunnel index 17
+                    via 20.170.172.170, Ethernet52/1, label 20212
+ 20343   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via IS-IS SR tunnel index 2
+                    via 20.149.172.149, Ethernet25, label 20343
+ 20349   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.149.172.149 Ethernet25
+ 20355   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.172.149 Ethernet25
+ 20379   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.172.149 Ethernet25
+ 362144  A[1]
+                via M, 20.149.172.149, pop
+                    EgressACL: apply
+                    directly connected, Ethernet25
+                    c0:f8:7f:6a:4e:2a, vlan 1011
+ 362145  A[1]
+                via M, 20.170.172.170, pop
+                    EgressACL: apply
+                    directly connected, Ethernet52/1
+                    28:99:3a:06:b4:e1, vlan 1013
