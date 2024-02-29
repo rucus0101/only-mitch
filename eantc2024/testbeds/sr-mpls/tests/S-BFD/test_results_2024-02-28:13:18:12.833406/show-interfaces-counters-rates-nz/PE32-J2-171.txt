@@ -1,0 +1,5 @@
+Port      Name             Intvl  In Mbps      %  In Kpps Out Mbps      %
+Et24      Cisco_Spine_349   0:01      0.1   0.0%        0      0.0   0.0%
+Ma1                         0:01      0.0   0.0%        0      0.2   0.0%
+
+Port      Out Kpps

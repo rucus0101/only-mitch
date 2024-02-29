@@ -1,0 +1,4 @@
+ 
+Instance  VRF      System Id        Type Interface          SNPA              State Hold time   Circuit Id          
+IPV6      default  juniper_303_mx204 L2   Ethernet55/1       P2P               UP    23          01                  
+IPV6      default  NOKIA-SR2-57     L2   Ethernet53/1       P2P               UP    22          00                  

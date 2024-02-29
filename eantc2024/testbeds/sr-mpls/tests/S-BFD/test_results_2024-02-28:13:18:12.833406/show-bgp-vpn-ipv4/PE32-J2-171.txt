@@ -1,0 +1,83 @@
+BGP routing table information for VRF default
+Router identifier 10.0.0.171, local AS number 65000
+Route status codes: s - suppressed contributor, * - valid, > - active, E - ECMP head, e - ECMP
+                    S - Stale, c - Contributing to ECMP, b - backup, L - labeled-unicast
+                    % - Pending best path selection
+Origin codes: i - IGP, e - EGP, ? - incomplete
+AS Path Attributes: Or-ID - Originator ID, C-LST - Cluster List, LL Nexthop - Link Local Nexthop
+
+          Network                Next Hop              Metric  LocPref Weight  Path
+ * >      RD: 65000:1 IPv4 prefix 20.32.111.0/24
+                                 10.0.0.32             -       100     0       i
+ * >      RD: 10.0.0.57:10000 IPv4 prefix 20.54.1.0/24
+                                 10.0.0.57             -       100     0       i
+ * >      RD: 10.0.0.57:1 IPv4 prefix 20.57.111.0/24
+                                 10.0.0.57             -       100     0       i
+ * >      RD: 10.0.0.57:128 IPv4 prefix 20.57.111.0/24
+                                 10.0.0.57             -       100     0       i
+ * >      RD: 10.0.0.57:129 IPv4 prefix 20.57.111.0/24
+                                 10.0.0.57             -       100     0       i
+ * >      RD: 10.0.0.57:130 IPv4 prefix 20.57.111.0/24
+                                 10.0.0.57             -       100     0       i
+ * >      RD: 10.0.0.57:131 IPv4 prefix 20.57.111.0/24
+                                 10.0.0.57             -       100     0       i
+ * >      RD: 10.0.0.57:132 IPv4 prefix 20.57.111.0/24
+                                 10.0.0.57             -       100     0       i
+ * >      RD: 10.0.0.57:211 IPv4 prefix 20.57.111.0/24
+                                 10.0.0.57             -       100     0       i
+ * >      RD: 65000:140 IPv4 prefix 20.111.155.0/24
+                                 10.0.1.55             0       100     0       ?
+ * >      RD: 65000:141 IPv4 prefix 20.111.155.0/24
+                                 10.0.1.55             0       100     0       ?
+ * >      RD: 65000:142 IPv4 prefix 20.111.155.0/24
+                                 10.0.1.55             0       100     0       ?
+ * >      RD: 10.0.1.55:128 IPv4 prefix 20.111.155.0/24
+                                 10.0.1.55             0       100     0       ?
+ * >      RD: 10.0.1.55:129 IPv4 prefix 20.111.155.0/24
+                                 10.0.1.55             0       100     0       ?
+ * >      RD: 10.0.1.55:130 IPv4 prefix 20.111.155.0/24
+                                 10.0.1.55             0       100     0       ?
+ * >      RD: 10.0.1.55:131 IPv4 prefix 20.111.155.0/24
+                                 10.0.1.55             0       100     0       ?
+ * >      RD: 10.0.1.55:132 IPv4 prefix 20.111.155.0/24
+                                 10.0.1.55             0       100     0       ?
+ * >      RD: 10.0.1.55:211 IPv4 prefix 20.111.155.0/24
+                                 10.0.1.55             0       100     0       ?
+ * >      RD: 10.0.0.171:1 IPv4 prefix 20.111.171.0/24
+                                 -                     -       -       0       i
+ * >      RD: 10.0.0.171:128 IPv4 prefix 20.111.171.0/24
+                                 -                     -       -       0       i
+ * >      RD: 10.0.0.171:129 IPv4 prefix 20.111.171.0/24
+                                 -                     -       -       0       i
+ * >      RD: 10.0.0.171:130 IPv4 prefix 20.111.171.0/24
+                                 -                     -       -       0       i
+ * >      RD: 10.0.0.171:131 IPv4 prefix 20.111.171.0/24
+                                 -                     -       -       0       i
+          RD: 10.0.0.179:1812 IPv4 prefix 20.111.179.0/24
+                                 10.0.0.179            -       100     0       i
+          RD: 10.0.0.179:1813 IPv4 prefix 20.111.179.0/24
+                                 10.0.0.179            -       100     0       i
+          RD: 10.0.0.179:1814 IPv4 prefix 20.111.179.0/24
+                                 10.0.0.179            -       100     0       i
+          RD: 10.0.0.179:1815 IPv4 prefix 20.111.179.0/24
+                                 10.0.0.179            -       100     0       i
+          RD: 10.0.0.179:1816 IPv4 prefix 20.111.179.0/24
+                                 10.0.0.179            -       100     0       i
+          RD: 10.0.0.179:1817 IPv4 prefix 20.111.179.0/24
+                                 10.0.0.179            -       100     0       i
+          RD: 10.0.0.179:1823 IPv4 prefix 20.111.179.0/24
+                                 10.0.0.179            -       100     0       i
+ * >      RD: 10.0.0.212:51 IPv4 prefix 20.111.212.0/24
+                                 10.0.0.212            -       100     0       65001 i
+ * >      RD: 65000:20254 IPv4 prefix 20.111.254.0/24
+                                 10.0.0.254            0       100     0       ?
+ * >      RD: 10.0.1.55:130 IPv4 prefix 55.55.55.130/32
+                                 10.0.1.55             0       100     0       ?
+ * >      RD: 10.0.0.57:6001 IPv4 prefix 57.1.0.0/24
+                                 10.0.0.57             -       100     0       i
+ * >      RD: 65000:140 IPv4 prefix 155.155.155.140/32
+                                 10.0.1.55             0       100     0       ?
+ * >      RD: 65000:141 IPv4 prefix 155.155.155.141/32
+                                 10.0.1.55             0       100     0       ?
+ * >      RD: 65000:142 IPv4 prefix 155.155.155.142/32
+                                 10.0.1.55             0       100     0       ?

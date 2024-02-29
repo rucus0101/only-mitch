@@ -1,0 +1,17 @@
+Arista DCS-7280SR3-48YC8-F
+Hardware version: 12.01
+Serial number: JPE21210788
+Hardware MAC address: 2cdd.e996.3abb
+System MAC address: 2cdd.e996.3abb
+
+Software image version: 4.31.2F
+Architecture: i686
+Internal build version: 4.31.2F-35442146.4312F
+Internal build ID: 635a071a-386e-447f-942c-bcc34d9ffd3c
+Image format version: 3.0
+Image optimization: Default
+
+Uptime: 1 day, 22 hours and 21 minutes
+Total memory: 8099732 kB
+Free memory: 5465816 kB
+

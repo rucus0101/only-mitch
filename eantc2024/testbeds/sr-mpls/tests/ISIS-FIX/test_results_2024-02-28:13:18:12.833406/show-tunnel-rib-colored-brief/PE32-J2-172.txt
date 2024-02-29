@@ -1,0 +1,4 @@
+Tunnel RIB: system-colored-tunnel-rib
+ Endpoint     Color     Tunnel Type     Index(es)     Tunnel Preference     IGP Preference     IGP Metric   Metric Type
+----------- --------- --------------- ------------- --------------------- ------------------ -------------- -----------
+

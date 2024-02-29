@@ -1,0 +1,33 @@
+          Mac Address Table
+------------------------------------------------------------------
+
+Vlan    Mac Address       Type        Ports      Moves   Last Move
+----    -----------       ----        -----      -----   ---------
+   1    c014.b821.ca73    DYNAMIC     Et45       1       1 day, 3:14:15 ago
+   1    c0f8.7f6a.4e23    DYNAMIC     Et45       1       1 day, 20:13:52 ago
+   1    c0f8.7f6a.4e25    DYNAMIC     Et45       1       1 day, 3:14:07 ago
+   1    c0f8.7f6a.4e2a    DYNAMIC     Et45       1       1 day, 3:10:30 ago
+   1    e46d.7fd7.3604    DYNAMIC     Et45       1       1 day, 20:13:54 ago
+   5    0020.0100.0001    DYNAMIC     Et23       1       5:06:25 ago
+   5    e46d.7fd7.3604    DYNAMIC     Po21       1       20:19:03 ago
+  19    c407.7858.809a    DYNAMIC     Et46       1       1 day, 22:16:40 ago
+  24    001a.0100.0001    DYNAMIC     Et23       1       0:01:01 ago
+  24    6c87.2089.ed81    DYNAMIC     Et54/1     1       1 day, 22:16:40 ago
+  32    001f.0100.0001    DYNAMIC     Et23       1       0:45:51 ago
+  32    30c5.071f.330a    DYNAMIC     Et41       1       0:45:51 ago
+  57    001d.0100.0001    DYNAMIC     Et23       1       0:01:01 ago
+  57    c014.b821.ca75    DYNAMIC     Et44       1       1 day, 22:16:40 ago
+  83    7850.7c46.5421    DYNAMIC     Et40       1       1 day, 22:16:38 ago
+ 254    e00c.e5fc.7e49    DYNAMIC     Et48       1       1 day, 3:30:33 ago
+ 333    20ed.4789.436a    DYNAMIC     Et31       1       20:55:46 ago
+ 343    6026.aaa9.69b9    DYNAMIC     Et43       1       1 day, 22:16:40 ago
+ 355    3488.18bf.4a18    DYNAMIC     Et49/1     1       1 day, 0:46:24 ago
+ 379    60c7.8d2d.3cce    DYNAMIC     Et25       1       23:23:39 ago
+Total Mac Addresses for this criterion: 20
+
+          Multicast Mac Address Table
+------------------------------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       ----        -----
+Total Mac Addresses for this criterion: 0

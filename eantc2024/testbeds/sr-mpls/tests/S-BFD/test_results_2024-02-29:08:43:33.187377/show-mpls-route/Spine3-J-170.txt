@@ -1,0 +1,175 @@
+MPLS forwarding table (Label [metric] Vias) - 31 routes 
+MPLS next-hop resolution allow default route: False
+Metric Codes:
+          A - Active metric
+Via Type Codes:
+          M - MPLS via, P - Pseudowire via,
+          I - IP lookup via, V - VLAN via,
+          VA - EVPN VLAN aware via, ES - EVPN ethernet segment via,
+          VF - EVPN VLAN flood via, AF - EVPN VLAN aware flood via,
+          NG - Nexthop group via
+
+ 20005   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 3
+                    via 20.5.170.5, Ethernet50/1, label imp-null(3)
+                    backup via 20.57.170.57, Ethernet45, label 20349
+ 20019   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via 20.19.170.19, Ethernet25, label imp-null(3)
+                    backup via 20.57.170.57, Ethernet45, label 20349 20019
+ 20024   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 12
+                    via 20.57.170.57, Ethernet45, label imp-null(3)
+                    backup via 20.19.170.19, Ethernet25, label imp-null(3)
+ 20032   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 4
+                    via 20.32.170.32, Ethernet43, label imp-null(3)
+                    backup via 20.57.170.57, Ethernet45, label 20032
+ 20057   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 15
+                    via 20.57.170.57, Ethernet45, label imp-null(3)
+                    backup via 20.19.170.19, Ethernet25, label 20349
+ 20171   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 17
+                    via 20.170.171.171, Ethernet1, label imp-null(3)
+                    backup via 20.57.170.57, Ethernet45, label 20349 20171
+ 20209   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 0
+                    via 20.170.179.179, Ethernet49/1, label imp-null(3)
+                    backup via 20.155.170.155, Ethernet51/1, label imp-null(3)
+ 20212   A[1]
+                via M, 20.170.212.212, swap 0
+                    EgressACL: apply
+                    directly connected, Ethernet49/2
+                    68:22:8e:16:e3:10, vlan 1016
+ 20343   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 12
+                    via 20.57.170.57, Ethernet45, label imp-null(3)
+                    backup via 20.19.170.19, Ethernet25, label imp-null(3)
+ 20349   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 12
+                    via 20.57.170.57, Ethernet45, label imp-null(3)
+                    backup via 20.19.170.19, Ethernet25, label imp-null(3)
+ 20355   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 13
+                    via 20.155.170.155, Ethernet51/1, label imp-null(3)
+                    backup via 20.57.170.57, Ethernet45, label 20355
+ 20379   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 5
+                    via 20.170.179.179, Ethernet49/1, label imp-null(3)
+                    backup via 20.57.170.57, Ethernet45, label 20349 20379
+ 21271   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.170.171.171 Ethernet1
+ 21371   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 2
+                    via 20.170.171.171, Ethernet1, label imp-null(3)
+                    backup via 20.155.170.155, Ethernet51/1, label 21549 21371
+ 21379   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 8
+                    via 20.170.179.179, Ethernet49/1, label imp-null(3)
+                    backup via 20.170.171.171, Ethernet1, label 21379
+ 21449   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.170.171.171 Ethernet1
+ 21455   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.170.171.171 Ethernet1
+ 21471   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.170.171.171 Ethernet1
+ 21549   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 10
+                    via 20.170.171.171, Ethernet1, label imp-null(3)
+                    backup via 20.155.170.155, Ethernet51/1, label imp-null(3)
+ 21555   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 9
+                    via 20.155.170.155, Ethernet51/1, label imp-null(3)
+                    backup via 20.170.171.171, Ethernet1, label 21555
+ 21649   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.155.170.155 Ethernet51/1
+ 21655   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.155.170.155 Ethernet51/1
+ 362144  A[1]
+                via M, 20.155.170.155, pop
+                    EgressACL: apply
+                    directly connected, Ethernet51/1
+                    34:88:18:bf:4a:3c, vlan 1011
+ 362149  A[1]
+                via M, 20.170.212.212, pop
+                    EgressACL: apply
+                    directly connected, Ethernet49/2
+                    68:22:8e:16:e3:10, vlan 1016
+ 362152  A[1]
+                via M, 20.32.170.32, pop
+                    EgressACL: apply
+                    directly connected, Ethernet43
+                    30:c5:07:1f:33:09, vlan 1010
+ 362153  A[1]
+                via M, 20.5.170.5, pop
+                    EgressACL: apply
+                    directly connected, Ethernet50/1
+                    e4:6d:7f:d7:36:04, vlan 1007
+ 362154  A[1]
+                via M, 20.24.170.24, pop
+                    EgressACL: apply
+                    directly connected, Ethernet53/1
+                    6c:87:20:89:ed:81, vlan 1017
+ 362156  A[1]
+                via M, 20.170.171.171, pop
+                    EgressACL: apply
+                    directly connected, Ethernet1
+                    2c:dd:e9:96:1a:b3, vlan 1006
+ 362158  A[1]
+                via M, 20.19.170.19, pop
+                    EgressACL: apply
+                    directly connected, Ethernet25
+                    c4:07:78:58:80:99, vlan 1018
+ 362163  A[1]
+                via M, 20.57.170.57, pop
+                    EgressACL: apply
+                    directly connected, Ethernet45
+                    c0:14:b8:21:ca:74, vlan 1015
+ 362291  A[1]
+                via M, 20.170.179.179, pop
+                    EgressACL: apply
+                    directly connected, Ethernet49/1
+                    60:c7:8d:2d:3c:c7, vlan 1012

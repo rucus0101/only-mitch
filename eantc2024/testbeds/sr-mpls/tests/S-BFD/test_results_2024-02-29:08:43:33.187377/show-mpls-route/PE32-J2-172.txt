@@ -1,0 +1,46 @@
+MPLS forwarding table (Label [metric] Vias) - 6 routes 
+MPLS next-hop resolution allow default route: False
+Metric Codes:
+          A - Active metric
+Via Type Codes:
+          M - MPLS via, LP - LDP pseudowire via,
+          I - IP lookup via, V - VLAN via,
+          VA - EVPN VLAN aware via, ES - EVPN ethernet segment via,
+          VF - EVPN VLAN flood via, AF - EVPN VLAN aware flood via,
+          NG - Nexthop group via, BP - BGP pseudowire via,
+          VP - VPWS pseudowire via, MSP - Static pseudowire via
+
+ 20157   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via fe80::7a50:7cff:fe46:541d, Ethernet55/1, label imp-null(3)
+                    backup via fe80::c214:b8ff:fe21:ca6d, Ethernet53/1, label imp-null(3)
+ 20159   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via fe80::7a50:7cff:fe46:541d, Ethernet55/1, label imp-null(3)
+                    backup via fe80::c214:b8ff:fe21:ca6d, Ethernet53/1, label imp-null(3)
+ 20303   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 2
+                    via fe80::7a50:7cff:fe46:541d, Ethernet55/1, label imp-null(3)
+                    backup via fe80::c214:b8ff:fe21:ca6d, Ethernet53/1, label 20303
+ 20304   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via fe80::7a50:7cff:fe46:541d, Ethernet55/1, label imp-null(3)
+                    backup via fe80::c214:b8ff:fe21:ca6d, Ethernet53/1, label imp-null(3)
+ 362144  A[1]
+                via M, fe80::c214:b8ff:fe21:ca6d, pop
+                    EgressACL: apply
+                    directly connected, Ethernet53/1
+                    c0:14:b8:21:ca:6e, vlan 1011
+ 362145  A[1]
+                via M, fe80::7a50:7cff:fe46:541d, pop
+                    EgressACL: apply
+                    directly connected, Ethernet55/1
+                    78:50:7c:46:54:1d, vlan 1009

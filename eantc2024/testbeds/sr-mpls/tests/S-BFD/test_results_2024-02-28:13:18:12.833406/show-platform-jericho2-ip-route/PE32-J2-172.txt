@@ -1,0 +1,103 @@
+Tunnel Type: M(mpls), G(gre), MoG(mpls-over-gre), MoU(mpls-over-udp), IPoU(ip-over-udp)
+             vxlan-o(vxlan outer-rewrite info), vxlan-i(vxlan inner-rewrite info)
+CW  - Control word
+FL  - Flow label
+EL  - Entropy label
+ELI - Entropy label indicator
+*   - Routes in LEM
+D   - ECMP is divergent across switching chips
+ ----------------------------------------------------------------------------------------------------------
+|                                 Routing Table                                            |              |
+|----------------------------------------------------------------------------------------------------------
+|VRF|   Destination    |     |                    |     |        |                   | ECMP|  FEC | Tunnel
+| ID|      Subnet      | Cmd |     Destination    | VID | Outlif |   MAC / CPU Code  |Index| Index|T Value
+ ----------------------------------------------------------------------------------------------------------
+|0  |0.0.0.0/8         |DROP | DROP               |0    |  -     |                   |  -  |288360|   -   
+|0  |10.0.0.58/32      |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |10.0.0.59/32      |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |10.0.1.36/32      |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |20.3.180.0/24     |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |20.21.180.0/24    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |20.26.180.0/24    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |20.31.180.0/24    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |20.34.180.0/24    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |20.56.180.0/24    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |20.149.172.0/32   |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|0  |20.149.172.149/32 |ROUTE| Et25               |1011 |103421  | c0:f8:7f:6a:4e:2a |  -  |288368|   -   
+|0  |20.149.172.172/32 |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|0  |20.149.172.255/32 |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|0  |20.149.172.0/24   |TRAP | CoppSystemL3DstMiss|1011 |1011    | ArpTrap           |  -  |525305|   -   
+|0  |20.161.180.0/24   |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |20.170.172.0/32   |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|0  |20.170.172.170/32 |ROUTE| Et52/1             |1013 |103422  | 28:99:3a:06:b4:e1 |  -  |288378|   -   
+|0  |20.170.172.172/32 |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|0  |20.170.172.255/32 |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|0  |20.170.172.0/24   |TRAP | CoppSystemL3DstMiss|1013 |1013    | ArpTrap           |  -  |525307|   -   
+|0  |20.180.181.0/24   |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |20.180.182.0/32   |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|0  |20.180.182.180/32 |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288364|   -   
+|0  |20.180.182.182/32 |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|0  |20.180.182.255/32 |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|0  |20.180.182.0/24   |TRAP | CoppSystemL3DstMiss|1007 |1007    | ArpTrap           |  -  |525301|   -   
+|0  |20.180.183.0/24   |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |20.180.184.0/24   |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |30.9.180.0/24     |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |30.14.180.0/24    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |30.41.180.0/24    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |30.45.180.0/24    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |30.58.180.0/24    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |30.60.180.0/24    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |30.79.180.0/24    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.0.3/32      |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.0.21/32     |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.0.26/32     |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.0.31/32     |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.0.34/32     |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.0.56/32     |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.0.161/32    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.0.180/32    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.0.181/32    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.0.182/32    |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|0  |100.0.0.183/32    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.0.184/32    |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.3.41/32     |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.3.45/32     |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.3.58/32     |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.3.60/32     |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.30.9/32     |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |100.0.37.9/32     |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |127.0.0.0/8       |TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |  -  |524294|   -   
+|0  |192.168.20.0/23   |ROUTE| Et2                |1007 |103423  | 44:4c:a8:73:9c:0d |  -  |288374|   -   
+|0  |209.209.209.209/32|TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|0  |0.0.0.0/0         |TRAP | CoppSystemL3LpmOver|0    |  -     | SlowReceive       |  -  |524292|   -   
+|1  |0.0.0.0/8         |DROP | DROP               |0    |  -     |                   |  -  |288372|   -   
+|1  |127.0.0.0/8       |TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |  -  |524294|   -   
+|1  |0.0.0.0/0         |TRAP | CoppSystemL3LpmOver|0    |  -     | SlowReceive       |  -  |524292|   -   
+|2  |0.0.0.0/8         |DROP | DROP               |0    |  -     |                   |  -  |288366|   -   
+|2  |127.0.0.0/8       |TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |  -  |524294|   -   
+|2  |192.168.20.0/32   |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|2  |192.168.20.172/32 |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|2  |192.168.21.255/32 |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|2  |192.168.20.0/23   |TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |  -  |524294|   -   
+|2  |0.0.0.0/0         |TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |  -  |524294|   -   
+|6  |0.0.0.0/8         |DROP | DROP               |0    |  -     |                   |  -  |288370|   -   
+|6  |127.0.0.0/8       |TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |  -  |524294|   -   
+|6  |0.0.0.0/0         |TRAP | CoppSystemL3LpmOver|0    |  -     | SlowReceive       |  -  |524292|   -   
+|8  |0.0.0.0/8         |DROP | DROP               |0    |  -     |                   |  -  |288362|   -   
+|8  |20.10.56.0/24     |ROUTE| FEC 288414         |0    |2097135 | 00:00:00:00:00:00 |  -  |91762 |M 524281
+|8  |20.30.1.0/24      |ROUTE| FEC 288414         |0    |2097135 | 00:00:00:00:00:00 |  -  |91762 |M 524281
+|8  |20.30.2.0/32      |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|8  |20.30.2.254/32    |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|8  |20.30.2.255/32    |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|8  |20.30.2.0/24      |TRAP | CoppSystemL3DstMiss|2302 |2302    | ArpTrap           |  -  |526596|   -   
+|8  |20.30.3.0/32      |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|8  |20.30.3.254/32    |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|8  |20.30.3.255/32    |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|8  |20.30.3.0/24      |TRAP | CoppSystemL3DstMiss|2303 |2303    | ArpTrap           |  -  |526597|   -   
+|8  |20.30.4.0/32      |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|8  |20.30.4.254/32    |TRAP | CoppSystemIpUcast  |0    |  -     | Receive           |  -  |524291|   -   
+|8  |20.30.4.255/32    |TRAP | CoppSystemIpBcast  |0    |  -     | BcastReceive      |  -  |524288|   -   
+|8  |20.30.4.0/24      |TRAP | CoppSystemL3DstMiss|2304 |2304    | ArpTrap           |  -  |526598|   -   
+|8  |127.0.0.0/8       |TRAP | CoppSystemL3DstMiss|0    |  -     | ArpTrap           |  -  |524294|   -   
+|8  |0.0.0.0/0         |TRAP | CoppSystemL3LpmOver|0    |  -     | SlowReceive       |  -  |524292|   -   
+

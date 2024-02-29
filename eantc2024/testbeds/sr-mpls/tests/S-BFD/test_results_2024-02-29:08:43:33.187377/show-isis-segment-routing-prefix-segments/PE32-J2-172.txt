@@ -1,0 +1,22 @@
+
+System ID: PE32-J2-172			Instance: 'IPV6'
+SR supported Data-plane: MPLS			SR Router ID: 10.0.0.172
+
+Node: 10     Proxy-Node: 0      Prefix: 0       Total Segments: 10
+
+Flag Descriptions: R: Re-advertised, N: Node Segment, P: no-PHP
+                   E: Explicit-NULL, V: Value, L: Local
+Segment status codes: * - Self originated Prefix, L1 - level 1, L2 - level 2, ! - SR-unreachable,
+                      # - Some IS-IS next-hops are SR-unreachable
+   Prefix                      SID   Label Type       Flags                        System ID       Level Protection  Algorithm   
+   ------------------------- ----- ------- ---------- ---------------------------- --------------- ----- ----------- -------------
+   10.0.0.57/32                 57   20057 Node       R:0 N:1 P:1 E:0 V:0 L:0      NOKIA-SR2-57    L2    unprotected SPF         
+   2002::57/128                157   20157 Node       R:0 N:1 P:1 E:0 V:0 L:0      NOKIA-SR2-57    L2    node        SPF         
+   2002::57/128                728   20728 Node       R:0 N:1 P:1 E:0 V:0 L:0      NOKIA-SR2-57    L2    unprotected 128         
+   2002::59/128                159   20159 Node       R:0 N:1 P:1 E:0 V:0 L:0      Nokia-59-IXRe2  L2    node        SPF         
+   2002::59/128                928   20928 Node       R:0 N:1 P:1 E:0 V:0 L:0      Nokia-59-IXRe2  L2    unprotected 128         
+*  2002::172/128              1172   21172 Node       R:0 N:1 P:0 E:0 V:0 L:0      PE32-J2-172     L2    unprotected SPF         
+   2002::303/128               303   20303 Node       R:0 N:1 P:0 E:0 V:0 L:0      juniper_303_mx204 L2    node        SPF         
+   2002::303/128              1103   21103 Node       R:0 N:1 P:0 E:0 V:0 L:0      juniper_303_mx204 L2    unprotected 128         
+   2002::304/128               304   20304 Node       R:0 N:1 P:0 E:0 V:0 L:0      juniper_304_mx204 L2    node        SPF         
+   2002::304/128              1104   21104 Node       R:0 N:1 P:0 E:0 V:0 L:0      juniper_304_mx204 L2    unprotected 128         

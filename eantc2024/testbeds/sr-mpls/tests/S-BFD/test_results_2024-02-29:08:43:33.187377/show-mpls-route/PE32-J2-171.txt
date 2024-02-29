@@ -1,0 +1,183 @@
+MPLS forwarding table (Label [metric] Vias) - 33 routes 
+MPLS next-hop resolution allow default route: False
+Metric Codes:
+          A - Active metric
+Via Type Codes:
+          M - MPLS via, P - Pseudowire via,
+          I - IP lookup via, V - VLAN via,
+          VA - EVPN VLAN aware via, ES - EVPN ethernet segment via,
+          VF - EVPN VLAN flood via, AF - EVPN VLAN aware flood via,
+          NG - Nexthop group via
+
+ 20005   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label imp-null(3)
+ 20019   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label imp-null(3)
+ 20024   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 0
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label 362154
+ 20032   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label imp-null(3)
+ 20057   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label imp-null(3)
+ 20170   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 5
+                    via 20.170.171.170, Ethernet1, label imp-null(3)
+                    backup via 20.149.171.149, Ethernet24, label 20170
+ 20209   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label imp-null(3)
+ 20212   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 8
+                    via 20.170.171.170, Ethernet1, label imp-null(3)
+                    backup via 20.149.171.149, Ethernet24, label imp-null(3)
+ 20343   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label imp-null(3)
+ 20349   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 4
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label 20349
+ 20355   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label imp-null(3)
+ 20379   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label imp-null(3)
+ 21355   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 21379   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label imp-null(3)
+ 21449   A[1]
+                via M, pop
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 21455   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.149.171.149 Ethernet24
+ 21549   A[1]
+                via M, ::, pop
+                    EgressACL: apply
+                  via TI-LFA tunnel index 2
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label 21555 21549
+ 21555   A[1]
+                via M, ::, forward
+                    EgressACL: apply
+                  via TI-LFA tunnel index 1
+                    via 20.149.171.149, Ethernet24, label imp-null(3)
+                    backup via 20.170.171.170, Ethernet1, label imp-null(3)
+ 21649   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.170.171.170 Ethernet1
+ 21655   A[1]
+                via M, forward
+                    EgressACL: apply
+                    20.170.171.170 Ethernet1
+ 362144  A[1]
+                via M, 20.149.171.149, pop
+                    EgressACL: apply
+                    directly connected, Ethernet24
+                    c0:f8:7f:6a:4e:1c, vlan 1007
+ 362145  A[1]
+                via M, 20.170.171.170, pop
+                    EgressACL: apply
+                    directly connected, Ethernet1
+                    28:99:3a:06:b4:e1, vlan 1006
+ 378528   [0]
+                via I, ipv4, vrf ISIS-SR-FLEXALGO-MIN-IGP-ADMIN
+ 378530   [0]
+                via I, ipv4, vrf ISIS-SR-FLEXALGO-MIN-TE
+ 378531   [0]
+                via I, ipv4, vrf ISIS-SR-FLEXALGO-MIN-DELAY
+ 378532   [0]
+                via I, ipv4, vrf ISIS-SR-FLEXALGO-MIN-IGP
+ 378533   [0]
+                via I, ipv4, vrf ISIS-SR-L3VPN
+ 1000001 A[1]
+                SR-TE Policy 10.0.1.55, color 10, pop
+                    EgressACL: apply
+                  via SR-TE tunnel index 5
+                    via TI-LFA tunnel index 5, label 20355
+                       via 20.170.171.170, Ethernet1, label imp-null(3)
+                       backup via 20.149.171.149, Ethernet24, label 20170
+ 1000004 A[1]
+                SR-TE Policy 10.0.0.32, color 211, pop
+                    EgressACL: apply
+                  via SR-TE tunnel index 1
+                    via TI-LFA tunnel index 5, label 20032
+                       via 20.170.171.170, Ethernet1, label imp-null(3)
+                       backup via 20.149.171.149, Ethernet24, label 20170
+ 1000006 A[1]
+                SR-TE Policy 10.0.0.9, color 19, pop
+                    EgressACL: apply
+                  via SR-TE tunnel index 12
+                    via TI-LFA tunnel index 5, label 20379
+                       via 20.170.171.170, Ethernet1, label imp-null(3)
+                       backup via 20.149.171.149, Ethernet24, label 20170
+ 1000009 A[1]
+                SR-TE Policy 10.0.0.5, color 211, pop
+                    EgressACL: apply
+                  via SR-TE tunnel index 14
+                    via TI-LFA tunnel index 5, label 20005
+                       via 20.170.171.170, Ethernet1, label imp-null(3)
+                       backup via 20.149.171.149, Ethernet24, label 20170
+ 1000011 A[1]
+                SR-TE Policy 10.0.1.55, color 20, pop
+                    EgressACL: apply
+                  via SR-TE tunnel index 16
+                    via TI-LFA tunnel index 4, label 20355
+                       via 20.149.171.149, Ethernet24, label imp-null(3)
+                       backup via 20.170.171.170, Ethernet1, label 20349
+ 1000019 A[1]
+                SR-TE Policy 10.0.0.57, color 40, pop
+                    EgressACL: apply
+                  via SR-TE tunnel index 18
+                    via TI-LFA tunnel index 5, label 20057
+                       via 20.170.171.170, Ethernet1, label imp-null(3)
+                       backup via 20.149.171.149, Ethernet24, label 20170

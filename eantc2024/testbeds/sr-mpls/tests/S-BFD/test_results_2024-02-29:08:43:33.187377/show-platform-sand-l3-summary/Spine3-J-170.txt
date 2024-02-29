@@ -1,0 +1,121 @@
+Number of vrfs: 2
+
+Ipv4:
+  Routes:       84  backlog:  0  unprogrammed:  0
+  Adjacencies:  81  backlog:  0  unprogrammed:  0
+Ipv6:
+  Routes:       4   backlog:  0  unprogrammed:  0
+  Adjacencies:  81  backlog:  0  unprogrammed:  0
+Mpls:
+  Routes:       31  backlog:  0  unprogrammed:  0
+  Adjacencies:  10  backlog:  0  unprogrammed:  0
+
+Jericho Ip Fecs:
+  Non-ecmp fecs:  4131  ecmp fecs:  1  fec entries:  4133
+Jericho Mpls Fecs:
+  Non-ecmp fecs:  10  ecmp fecs:  0  fec entries:  10
+Jericho Vxlan Overlay Fecs:
+  Non-ecmp fecs:  0  ecmp fecs:  0  fec entries:  0
+Jericho Vxlan Tunnel Fecs:
+  Non-ecmp fecs:  0  ecmp fecs:  0  fec entries:  0
+  Number of vxlan tunnels configured: 0
+
+Jericho Lpm Routes:
+  Routes:   75  unprogrammed:   0   
+  Routes6:  4   unprogrammed6:  0   
+  Backlog:  0 
+
+Jericho Lpm:
+  TCAM pivots used:  3   Percent free:  99
+  Buckets used:      14  Rows used:     2   Entries Per Bucket:  5     Percent free:  99  
+
+Lem:
+  IPv4  Host in Lem:            enabled
+  IPv4  Hosts:                  9      
+  IPv4  Prefix-lengths in Lem:  None   
+  IPv6  Host in Lem:            enabled
+  IPv6  Hosts:                  0      
+  IPv6  Prefix-lengths in Lem:  None   
+  Number of downloads:        0
+  Number of overflow events:  0
+
+Ipv6 Host Tcam Status:
+  Compression Tcam banks:             None
+  Number of host routes:              0   
+  Number of compression map entries:  0   
+
+  Arp Egress Banks in use:                        0   
+  Arp Remote Egress Banks in use:                 None
+  Ip tunnel Egress Banks in use:                  None
+  MPLS (for outer 2 labels) Egress Banks in use:  None
+  MPLS (for inner 2 labels) Egress Banks in use:  1,3 
+  SVI egress counters Egress Banks in use:        None
+  
+
+Egress Arp rewrite entries in use (in each fap):
+  FixedSystem: 17
+Egress Arp remote rewrite entries in use (in each fap):
+  FixedSystem: 0
+Egress Ip tunnel rewrite entries in use (in each fap):
+  FixedSystem: 0
+Egress Mpls (for outer 2 labels) rewrite entries in use (in each fap):
+  FixedSystem: 0
+Egress Mpls (for inner 2 labels) rewrite entries in use (in each fap):
+  FixedSystem: 14
+Egress Sflow rewrite entries in use (in each fap):
+  FixedSystem: 0
+
+Egress rewrite chains in backlog: resource-full 0, no-interface 0
+
+Glem is disabled
+
+Route Update State:
+  v4 route update suspended:  False
+  v6 route update suspended:  False
+
+Jericho Fec:
+  Maximum FEC hierarchy levels:  2
+  Used:                     45  ecmp:                 2   reusedEcmp:  6     allocs:  1420  frees:  1376  shuffles:  0     cmds:  0   
+  Non-ecmp (Percent free):  99  ecmp (Percent free):  99
+  Zombies:     0    purges:    0
+  Quarantine:  0/6  shuffles:  1  deletes:  6   
+  Fec insertion failures:  0
+  Banks in use (level, used, Percent free):
+     2 (2, 45, 99%)
+
+Lpm Detail:
+  Requests:  22424  cleanses:  1781  batches:  1781  avg batch size:  12
+
+Lem Cmds:
+  Adds:  1343  dels:  1303  mods:  4797  fails:  0  cmds:  7443
+
+Ipv6 Host Routes Status Detail
+  Number of host route add:              0
+  Number of host route del:              0
+  Number of host compression map add:    0
+  Number of host compression map del:    0
+  Number of host tcam entry add:         0
+  Number of host tcam entry del:         0
+  Number of host lem entry add:          0
+  Number of host lem entry del:          0
+  Number of host tcam bank alloc req:    0
+  Number of host tcam bank release req:  0
+  Number of host routes recovered after restart:           0
+  Number of host compression map recovered after restart:  0
+
+Jericho Arp:
+  ArpTable writes:      1938   queued      0   
+  IngressTable writes:  25677  queued      0   
+  Coprocessors:         1      in CmdRing
+
+TopBank To EedbBank Mapping:
+None
+
+Tunnel Counter Status
+  Number of MPLS tunnels:                  14   
+  Number of uncountable MPLS tunnels:      1    
+  Number of MPLSoGRE tunnels:              0    
+  Number of uncountable MPLSoGRE tunnels:  0    
+  Number of IP tunnels:                    0    
+  Number of uncountable IP tunnels:        0    
+  Shuffle tunnel enabled:                  False
