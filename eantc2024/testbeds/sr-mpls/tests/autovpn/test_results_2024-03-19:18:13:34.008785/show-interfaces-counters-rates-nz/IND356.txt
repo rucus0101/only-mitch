@@ -1,0 +1,4 @@
+Port      Name      Intvl  In Mbps      %  In Kpps Out Mbps      % Out Kpps
+Et1/2     INET       0:01     90.5   0.9%       10     89.8   0.9%       10
+Et1/3                0:01     84.8   0.9%       10     84.8   0.9%       10
+Tu1                  0:01     80.0      -       10     79.9      -       10
