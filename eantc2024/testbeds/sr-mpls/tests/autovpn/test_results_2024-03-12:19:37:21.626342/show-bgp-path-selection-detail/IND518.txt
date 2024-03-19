@@ -1,0 +1,170 @@
+BGP routing table information for VRF default
+Router identifier 10.255.255.4, local AS number 65000
+Bgp routing table entry for ipv4Dps VTEP 10.255.255.5/32
+ Paths: 2 available
+  Local (Received from a RR-client)
+    :: from 10.255.255.5 (10.255.255.5)
+      Origin IGP, metric -, localpref 100, weight 0, received 04:29:27 ago, valid, internal
+      Tunnel encapsulation attribute: Dynamic path selection
+        Endpoint: 172.16.0.1, Path group name: VZ_OFF, WAN ID: 1, UDP port: 4500
+  Local (Received from a RR-client)
+    :: from 10.255.255.1 (10.255.255.1)
+      Origin IGP, metric -, localpref 100, weight 0, received 00:07:39 ago, valid, internal
+      Tunnel encapsulation attribute: Dynamic path selection
+        Endpoint: 172.16.0.1, Path group name: VZ_OFF, WAN ID: 1, UDP port: 4500
+Bgp routing table entry for ipv4Dps VTEP 10.255.255.6/32
+ Paths: 2 available
+  Local (Received from a RR-client)
+    :: from 10.255.255.6 (10.255.255.6)
+      Origin IGP, metric -, localpref 100, weight 0, received 04:23:35 ago, valid, internal
+      Tunnel encapsulation attribute: Dynamic path selection
+        Endpoint: 172.16.0.3, Path group name: VZ_OFF, WAN ID: 1, UDP port: 4500
+  Local (Received from a RR-client)
+    :: from 10.255.255.1 (10.255.255.1)
+      Origin IGP, metric -, localpref 100, weight 0, received 00:07:39 ago, valid, internal
+      Tunnel encapsulation attribute: Dynamic path selection
+        Endpoint: 172.16.0.3, Path group name: VZ_OFF, WAN ID: 1, UDP port: 4500
+Bgp routing table entry for ipv4Dps VTEP 10.255.255.8/32
+ Paths: 2 available
+  Local (Received from a RR-client)
+    :: from 10.255.255.8 (10.255.255.8)
+      Origin IGP, metric -, localpref 100, weight 0, received 03:44:50 ago, valid, internal
+      Tunnel encapsulation attribute: Dynamic path selection
+        Endpoint: 172.16.1.2, Path group name: VZ_NEAR, WAN ID: 1, UDP port: 4500
+  Local (Received from a RR-client)
+    :: from 10.255.255.1 (10.255.255.1)
+      Origin IGP, metric -, localpref 100, weight 0, received 00:07:39 ago, valid, internal
+      Tunnel encapsulation attribute: Dynamic path selection
+        Endpoint: 172.16.1.2, Path group name: VZ_NEAR, WAN ID: 1, UDP port: 4500
+Bgp routing table entry for ipv4Dps VTEP 10.255.255.10/32
+ Paths: 2 available
+  Local (Received from a RR-client)
+    :: from 10.255.255.10 (10.255.255.10)
+      Origin IGP, metric -, localpref 100, weight 0, received 02:26:27 ago, valid, internal
+      Tunnel encapsulation attribute: Dynamic path selection
+        Endpoint: 172.16.1.7, Path group name: VZ_NEAR, WAN ID: 1, UDP port: 4500
+  Local (Received from a RR-client)
+    :: from 10.255.255.1 (10.255.255.1)
+      Origin IGP, metric -, localpref 100, weight 0, received 00:07:39 ago, valid, internal
+      Tunnel encapsulation attribute: Dynamic path selection
+        Endpoint: 172.16.1.7, Path group name: VZ_NEAR, WAN ID: 1, UDP port: 4500
+Bgp routing table entry for ipv4Dps VTEP 10.255.255.11/32
+ Paths: 2 available
+  Local (Received from a RR-client)
+    :: from 10.255.255.11 (10.255.255.11)
+      Origin IGP, metric -, localpref 100, weight 0, received 03:38:59 ago, valid, internal
+      Tunnel encapsulation attribute: Dynamic path selection
+        Endpoint: 172.16.0.9, Path group name: VZ_OFF, WAN ID: 2, UDP port: 4500
+  Local (Received from a RR-client)
+    :: from 10.255.255.1 (10.255.255.1)
+      Origin IGP, metric -, localpref 100, weight 0, received 00:07:39 ago, valid, internal
+      Tunnel encapsulation attribute: Dynamic path selection
+        Endpoint: 172.16.0.9, Path group name: VZ_OFF, WAN ID: 2, UDP port: 4500
+Bgp routing table entry for ipv4Dps VTEP 10.255.255.12/32
+ Paths: 2 available
+  Local (Received from a RR-client)
+    :: from 10.255.255.12 (10.255.255.12)
+      Origin IGP, metric -, localpref 100, weight 0, received 03:34:36 ago, valid, internal
+      Tunnel encapsulation attribute: Dynamic path selection
+        Endpoint: 172.16.0.11, Path group name: VZ_OFF, WAN ID: 2, UDP port: 4500
+  Local (Received from a RR-client)
+    :: from 10.255.255.1 (10.255.255.1)
+      Origin IGP, metric -, localpref 100, weight 0, received 00:07:39 ago, valid, internal
+      Tunnel encapsulation attribute: Dynamic path selection
+        Endpoint: 172.16.0.11, Path group name: VZ_OFF, WAN ID: 2, UDP port: 4500
+Bgp routing table entry for ipv4Ipsec VTEP 10.255.255.5/32
+ Paths: 2 available
+  Local (Received from a RR-client)
+    :: from 10.255.255.5 (10.255.255.5)
+      Origin IGP, metric -, localpref 100, weight 0, received 04:29:27 ago, valid, internal
+      Tunnel encapsulation attribute: IP security
+        Initial contact: false, Rekey counter: 0, Nonce length: 32
+        DH group: 14, DH key length: 256
+        Encryption algo: aes256, Authentication algo: sha256
+  Local (Received from a RR-client)
+    :: from 10.255.255.1 (10.255.255.1)
+      Origin IGP, metric -, localpref 100, weight 0, received 00:07:39 ago, valid, internal
+      Tunnel encapsulation attribute: IP security
+        Initial contact: false, Rekey counter: 0, Nonce length: 32
+        DH group: 14, DH key length: 256
+        Encryption algo: aes256, Authentication algo: sha256
+Bgp routing table entry for ipv4Ipsec VTEP 10.255.255.6/32
+ Paths: 2 available
+  Local (Received from a RR-client)
+    :: from 10.255.255.6 (10.255.255.6)
+      Origin IGP, metric -, localpref 100, weight 0, received 02:05:11 ago, valid, internal
+      Tunnel encapsulation attribute: IP security
+        Initial contact: false, Rekey counter: 2, Nonce length: 32
+        DH group: 14, DH key length: 256
+        Encryption algo: aes256, Authentication algo: sha256
+  Local (Received from a RR-client)
+    :: from 10.255.255.1 (10.255.255.1)
+      Origin IGP, metric -, localpref 100, weight 0, received 00:07:39 ago, valid, internal
+      Tunnel encapsulation attribute: IP security
+        Initial contact: false, Rekey counter: 2, Nonce length: 32
+        DH group: 14, DH key length: 256
+        Encryption algo: aes256, Authentication algo: sha256
+Bgp routing table entry for ipv4Ipsec VTEP 10.255.255.8/32
+ Paths: 2 available
+  Local (Received from a RR-client)
+    :: from 10.255.255.8 (10.255.255.8)
+      Origin IGP, metric -, localpref 100, weight 0, received 03:44:50 ago, valid, internal
+      Tunnel encapsulation attribute: IP security
+        Initial contact: false, Rekey counter: 0, Nonce length: 32
+        DH group: 14, DH key length: 256
+        Encryption algo: aes256, Authentication algo: sha256
+  Local (Received from a RR-client)
+    :: from 10.255.255.1 (10.255.255.1)
+      Origin IGP, metric -, localpref 100, weight 0, received 00:07:39 ago, valid, internal
+      Tunnel encapsulation attribute: IP security
+        Initial contact: false, Rekey counter: 0, Nonce length: 32
+        DH group: 14, DH key length: 256
+        Encryption algo: aes256, Authentication algo: sha256
+Bgp routing table entry for ipv4Ipsec VTEP 10.255.255.10/32
+ Paths: 2 available
+  Local (Received from a RR-client)
+    :: from 10.255.255.10 (10.255.255.10)
+      Origin IGP, metric -, localpref 100, weight 0, received 02:26:27 ago, valid, internal
+      Tunnel encapsulation attribute: IP security
+        Initial contact: false, Rekey counter: 0, Nonce length: 32
+        DH group: 14, DH key length: 256
+        Encryption algo: aes256, Authentication algo: sha256
+  Local (Received from a RR-client)
+    :: from 10.255.255.1 (10.255.255.1)
+      Origin IGP, metric -, localpref 100, weight 0, received 00:07:39 ago, valid, internal
+      Tunnel encapsulation attribute: IP security
+        Initial contact: false, Rekey counter: 0, Nonce length: 32
+        DH group: 14, DH key length: 256
+        Encryption algo: aes256, Authentication algo: sha256
+Bgp routing table entry for ipv4Ipsec VTEP 10.255.255.11/32
+ Paths: 2 available
+  Local (Received from a RR-client)
+    :: from 10.255.255.11 (10.255.255.11)
+      Origin IGP, metric -, localpref 100, weight 0, received 03:38:59 ago, valid, internal
+      Tunnel encapsulation attribute: IP security
+        Initial contact: false, Rekey counter: 0, Nonce length: 32
+        DH group: 14, DH key length: 256
+        Encryption algo: aes256, Authentication algo: sha256
+  Local (Received from a RR-client)
+    :: from 10.255.255.1 (10.255.255.1)
+      Origin IGP, metric -, localpref 100, weight 0, received 00:07:39 ago, valid, internal
+      Tunnel encapsulation attribute: IP security
+        Initial contact: false, Rekey counter: 0, Nonce length: 32
+        DH group: 14, DH key length: 256
+        Encryption algo: aes256, Authentication algo: sha256
+Bgp routing table entry for ipv4Ipsec VTEP 10.255.255.12/32
+ Paths: 2 available
+  Local (Received from a RR-client)
+    :: from 10.255.255.12 (10.255.255.12)
+      Origin IGP, metric -, localpref 100, weight 0, received 03:34:36 ago, valid, internal
+      Tunnel encapsulation attribute: IP security
+        Initial contact: false, Rekey counter: 0, Nonce length: 32
+        DH group: 14, DH key length: 256
+        Encryption algo: aes256, Authentication algo: sha256
+  Local (Received from a RR-client)
+    :: from 10.255.255.1 (10.255.255.1)
+      Origin IGP, metric -, localpref 100, weight 0, received 00:07:39 ago, valid, internal
+      Tunnel encapsulation attribute: IP security
+        Initial contact: false, Rekey counter: 0, Nonce length: 32
+        DH group: 14, DH key length: 256
+        Encryption algo: aes256, Authentication algo: sha256

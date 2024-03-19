@@ -1,6 +1,0 @@
- 
-Instance  VRF      System Id        Type Interface          SNPA              State Hold time   Circuit Id          
-IGP       default  0000.0000.0032   L2   Ethernet7          P2P               INIT  85          00                  
-IGP       default  juniper_379_MX304 L2   Ethernet25         P2P               UP    25          01                  
-IGP       default  NOKIA-SR2-57     L2   Ethernet49/1       P2P               UP    24          00                  
-IGP       default  PE32-J2-172      L2   Ethernet47         P2P               UP    28          56                  

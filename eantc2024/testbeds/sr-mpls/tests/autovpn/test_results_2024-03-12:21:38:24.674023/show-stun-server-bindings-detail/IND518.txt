@@ -1,0 +1,78 @@
+Current System Time: Tue Mar 12 14:38:31 2024
+Transaction ID 000000010affff0500000000
+Public Address: 172.16.0.1:4500
+Number of Attributes: 3
+Timeout Interval: 0:00:40
+Timeout: 0:00:22
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            6 VZ_OFF          
+VTEP_IP               4 10.255.255.5    
+WAN_ID                4 1               
+
+Transaction ID 000000010affff0600000000
+Public Address: 172.16.0.3:4500
+Number of Attributes: 3
+Timeout Interval: 0:00:40
+Timeout: 0:00:06
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            6 VZ_OFF          
+VTEP_IP               4 10.255.255.6    
+WAN_ID                4 1               
+
+Transaction ID 000000010affff0800000000
+Public Address: 172.16.1.2:4500
+Number of Attributes: 3
+Timeout Interval: 0:00:40
+Timeout: 0:00:14
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            7 VZ_NEAR         
+VTEP_IP               4 10.255.255.8    
+WAN_ID                4 1               
+
+Transaction ID 000000010affff0a00000000
+Public Address: 172.16.1.7:4500
+Number of Attributes: 3
+Timeout Interval: 0:00:40
+Timeout: 0:00:05
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            7 VZ_NEAR         
+VTEP_IP               4 10.255.255.10   
+WAN_ID                4 1               
+
+Transaction ID 000000020affff0100000000
+Public Address: 172.16.1.0:4500
+Number of Attributes: 3
+Timeout Interval: 0:00:40
+Timeout: 0:00:32
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            7 VZ_NEAR         
+VTEP_IP               4 10.255.255.1    
+WAN_ID                4 2               
+
+Transaction ID 000000020affff0b00000000
+Public Address: 172.16.0.9:4500
+Number of Attributes: 3
+Timeout Interval: 0:00:40
+Timeout: 0:00:16
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            6 VZ_OFF          
+VTEP_IP               4 10.255.255.11   
+WAN_ID                4 2               
+
+Transaction ID 000000020affff0c00000000
+Public Address: 172.16.0.11:4500
+Number of Attributes: 3
+Timeout Interval: 0:00:40
+Timeout: 0:00:06
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            6 VZ_OFF          
+VTEP_IP               4 10.255.255.12   
+WAN_ID                4 2               
+

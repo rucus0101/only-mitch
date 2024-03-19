@@ -1,7 +1,0 @@
-Tunnel RIB: system-tunnel-rib
-Endpoint Tunnel Type  Index(es)  Tunnel Preference  IGP Preference  IGP Metric 
--------- ------------ ---------- ------------------ --------------- -----------
-
-Metric Type
------------
-

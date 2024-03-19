@@ -1,0 +1,4 @@
+Port      Name      Intvl  In Mbps      %  In Kpps Out Mbps      % Out Kpps
+Et1       ATT        0:01     86.7   0.9%       10     84.6   0.9%        9
+Et2                  0:01     78.4   0.8%        9     80.4   0.8%       10
+Ma1                  0:01      0.0   0.0%        0      0.1   0.0%        0

@@ -1,0 +1,294 @@
+path1:
+  Source address: 172.16.0.7, Destination address: 172.16.0.1
+  State: established
+  Uptime: 36 minutes, 52 seconds
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+  Inbound SPI: 0xcd0e90:
+    Request ID: 34, Mode: transport, Replay window size: 16384, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3779159765249, Hard byte limit: 6442450944000
+      Soft packet limit: 2900920738, Hard packet limit: 4000000000
+      Soft time limit: 2874 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 2321712
+      Current packets: 7324
+      SA add time: Tue Mar 12 14:01:37 2024
+      SA last use time: Tue Mar 12 14:35:03 2024
+  Outbound SPI: 0xcd0c98:
+    Request ID: 34, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3260370813749, Hard byte limit: 6442450944000
+      Soft packet limit: 2953987180, Hard packet limit: 4000000000
+      Soft time limit: 2952 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 3691959
+      Current packets: 15024
+      SA add time: Tue Mar 12 14:01:37 2024
+      SA last use time: Tue Mar 12 14:35:02 2024
+path2:
+  Source address: 172.16.1.5, Destination address: 172.16.0.1
+  State: idle
+  Uptime: N/A
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+path3:
+  Source address: 172.16.0.7, Destination address: 172.16.0.3
+  State: established
+  Uptime: 6 hours, 24 minutes, 49 seconds
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+  Inbound SPI: 0xc50294:
+    Request ID: 5, Mode: transport, Replay window size: 16384, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4548272511749, Hard byte limit: 6442450944000
+      Soft packet limit: 2374168726, Hard packet limit: 4000000000
+      Soft time limit: 2785 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 1856412
+      Current packets: 6483
+      SA add time: Tue Mar 12 14:05:36 2024
+      SA last use time: Tue Mar 12 14:35:03 2024
+  Outbound SPI: 0xc17f52:
+    Request ID: 5, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3602849670749, Hard byte limit: 6442450944000
+      Soft packet limit: 2819306823, Hard packet limit: 4000000000
+      Soft time limit: 2865 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 2828794
+      Current packets: 13232
+      SA add time: Tue Mar 12 14:05:36 2024
+      SA last use time: Tue Mar 12 14:35:02 2024
+path4:
+  Source address: 172.16.1.5, Destination address: 172.16.0.3
+  State: idle
+  Uptime: N/A
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+path5:
+  Source address: 172.16.0.7, Destination address: 172.16.1.2
+  State: idle
+  Uptime: N/A
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+path6:
+  Source address: 172.16.1.5, Destination address: 172.16.1.2
+  State: established
+  Uptime: 5 hours, 45 minutes, 53 seconds
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+  Inbound SPI: 0xccc323:
+    Request ID: 22, Mode: transport, Replay window size: 16384, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4196579582249, Hard byte limit: 6442450944000
+      Soft packet limit: 2753122581, Hard packet limit: 4000000000
+      Soft time limit: 2524 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 2355080
+      Current packets: 7622
+      SA add time: Tue Mar 12 13:59:59 2024
+      SA last use time: Tue Mar 12 14:35:03 2024
+  Outbound SPI: 0xcd148e:
+    Request ID: 22, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4698079031249, Hard byte limit: 6442450944000
+      Soft packet limit: 2276821377, Hard packet limit: 4000000000
+      Soft time limit: 2717 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 3705275
+      Current packets: 15616
+      SA add time: Tue Mar 12 13:59:59 2024
+      SA last use time: Tue Mar 12 14:35:03 2024
+path7:
+  Source address: 172.16.0.7, Destination address: 172.16.0.9
+  State: established
+  Uptime: 45 minutes, 58 seconds
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+  Inbound SPI: 0xc8216f:
+    Request ID: 31, Mode: transport, Replay window size: 16384, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4085881340999, Hard byte limit: 6442450944000
+      Soft packet limit: 2190322510, Hard packet limit: 4000000000
+      Soft time limit: 2834 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 260724
+      Current packets: 665
+      SA add time: Tue Mar 12 14:35:12 2024
+      SA last use time: Tue Mar 12 14:35:03 2024
+  Outbound SPI: 0xcc9f69:
+    Request ID: 31, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3767262726749, Hard byte limit: 6442450944000
+      Soft packet limit: 2214627136, Hard packet limit: 4000000000
+      Soft time limit: 2780 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 218906
+      Current packets: 1378
+      SA add time: Tue Mar 12 14:35:12 2024
+      SA last use time: Tue Mar 12 14:35:03 2024
+path8:
+  Source address: 172.16.1.5, Destination address: 172.16.0.9
+  State: idle
+  Uptime: N/A
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+path9:
+  Source address: 172.16.0.7, Destination address: 172.16.0.11
+  State: established
+  Uptime: 5 hours, 37 minutes, 18 seconds
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+  Inbound SPI: 0xc2401c:
+    Request ID: 25, Mode: transport, Replay window size: 16384, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3407052848249, Hard byte limit: 6442450944000
+      Soft packet limit: 2315943631, Hard packet limit: 4000000000
+      Soft time limit: 2709 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 1802420
+      Current packets: 6017
+      SA add time: Tue Mar 12 14:07:41 2024
+      SA last use time: Tue Mar 12 14:35:02 2024
+  Outbound SPI: 0xc78726:
+    Request ID: 25, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3511600210499, Hard byte limit: 6442450944000
+      Soft packet limit: 2370309335, Hard packet limit: 4000000000
+      Soft time limit: 3002 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 1448415
+      Current packets: 12320
+      SA add time: Tue Mar 12 14:07:41 2024
+      SA last use time: Tue Mar 12 14:35:02 2024
+path10:
+  Source address: 172.16.1.5, Destination address: 172.16.0.11
+  State: idle
+  Uptime: N/A
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+path11:
+  Source address: 172.16.0.7, Destination address: 172.16.1.7
+  State: idle
+  Uptime: N/A
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+path12:
+  Source address: 172.16.1.5, Destination address: 172.16.1.7
+  State: established
+  Uptime: 4 hours, 27 minutes, 30 seconds
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+  Inbound SPI: 0xc646b3:
+    Request ID: 27, Mode: transport, Replay window size: 16384, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4770552498749, Hard byte limit: 6442450944000
+      Soft packet limit: 2567089930, Hard packet limit: 4000000000
+      Soft time limit: 2773 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 158788
+      Current packets: 1165
+      SA add time: Tue Mar 12 14:32:28 2024
+      SA last use time: Tue Mar 12 14:35:02 2024
+  Outbound SPI: 0xc05281:
+    Request ID: 27, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4636793321999, Hard byte limit: 6442450944000
+      Soft packet limit: 2843911309, Hard packet limit: 4000000000
+      Soft time limit: 2971 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 253157
+      Current packets: 2408
+      SA add time: Tue Mar 12 14:32:28 2024
+      SA last use time: Tue Mar 12 14:35:03 2024
+path13:
+  Source address: 172.16.0.7, Destination address: 172.16.1.0
+  State: idle
+  Uptime: N/A
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+path14:
+  Source address: 172.16.1.5, Destination address: 172.16.1.0
+  State: established
+  Uptime: 3 hours, 4 minutes, 37 seconds
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.10
+  Role: responder
+  Inbound SPI: 0xc9c4dc:
+    Request ID: 29, Mode: transport, Replay window size: 16384, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3572189301749, Hard byte limit: 6442450944000
+      Soft packet limit: 2370428977, Hard packet limit: 4000000000
+      Soft time limit: 2995 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 376292
+      Current packets: 1653
+      SA add time: Tue Mar 12 14:29:57 2024
+      SA last use time: Tue Mar 12 14:35:02 2024
+  Outbound SPI: 0xc25a01:
+    Request ID: 29, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3795198388499, Hard byte limit: 6442450944000
+      Soft packet limit: 2813967348, Hard packet limit: 4000000000
+      Soft time limit: 2767 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 509726
+      Current packets: 3356
+      SA add time: Tue Mar 12 14:29:58 2024
+      SA last use time: Tue Mar 12 14:35:02 2024

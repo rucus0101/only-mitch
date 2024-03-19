@@ -1,0 +1,5 @@
+Port      Name      Intvl  In Mbps      %  In Kpps Out Mbps      % Out Kpps
+Et1/1     CE         5:00    120.9   1.2%       15    324.0   3.3%       40
+Et1/2     VZ_OFF     5:00    290.3   3.0%       33    261.0   2.7%       30
+Et1/3     VZ_NEAR    5:00    251.0   2.6%       29    184.7   1.9%       21
+Et1/15               5:00    312.8   3.2%       39    198.2   2.0%       24

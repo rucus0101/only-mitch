@@ -1,5 +1,0 @@
- 
-Instance  VRF      System Id        Type Interface          SNPA              State Hold time   Circuit Id          
-IGP       default  Ribbon-32        L2   Ethernet7          P2P               UP    70          00                  
-IGP       default  NOKIA-SR2-57     L2   Ethernet49/1       P2P               UP    20          00                  
-IGP       default  PE32-J2-172      L2   Ethernet47         P2P               UP    22          56                  

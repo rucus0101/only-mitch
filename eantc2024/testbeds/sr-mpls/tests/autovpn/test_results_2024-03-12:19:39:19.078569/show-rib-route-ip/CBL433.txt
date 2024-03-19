@@ -1,0 +1,66 @@
+VRF: default, Protocol: connected
+Codes: C - Connected, S - Static, P - Route Input, G - Gribi
+       B - BGP, O - Ospf, O3 - Ospf3, I - Isis, R - Rip, VL - VRF Leak
+       > - Best Route, * - Unresolved Next hop
+       EM - Exact match of the SR-TE Policy
+       NM - Null endpoint match of the SR-TE Policy
+       AM - Any endpoint match of the SR-TE Policy
+       L - Part of a recursive route resolution loop
+       A - Next hop not resolved in ARP/ND
+       NF - Not in FEC
+>C    10.255.255.6/32 [0 pref/0 metric] updated 17:35:58 ago
+         via Loopback0, directly connected
+>C    172.16.0.2/31 [0 pref/0 metric] updated 17:35:24 ago
+         via Ethernet1/7, directly connected
+>C    172.28.128.0/20 [0 pref/0 metric] updated 17:35:39 ago
+         via Management1/1, directly connected
+VRF: default, Protocol: static
+Codes: C - Connected, S - Static, P - Route Input, G - Gribi
+       B - BGP, O - Ospf, O3 - Ospf3, I - Isis, R - Rip, VL - VRF Leak
+       > - Best Route, * - Unresolved Next hop
+       EM - Exact match of the SR-TE Policy
+       NM - Null endpoint match of the SR-TE Policy
+       AM - Any endpoint match of the SR-TE Policy
+       L - Part of a recursive route resolution loop
+       A - Next hop not resolved in ARP/ND
+       NF - Not in FEC
+>S    10.80.0.0/12 [1 pref/0 metric] updated 17:35:39 ago
+         via 172.28.128.1 [0 pref/0 metric] type ipv4
+            via 172.28.128.1, Management1/1
+>S    10.224.0.0/12 [1 pref/0 metric] updated 17:35:39 ago
+         via 172.28.128.1 [0 pref/0 metric] type ipv4
+            via 172.28.128.1, Management1/1
+>S    10.240.0.0/12 [1 pref/0 metric] updated 17:35:39 ago
+         via 172.28.128.1 [0 pref/0 metric] type ipv4
+            via 172.28.128.1, Management1/1
+>S    172.16.0.0/12 [1 pref/0 metric] updated 17:35:39 ago
+         via 172.28.128.1 [0 pref/0 metric] type ipv4
+            via 172.28.128.1, Management1/1
+>S    172.16.0.0/24 [1 pref/0 metric] updated 17:35:19 ago
+         via 172.16.0.2 [0 pref/0 metric] type ipv4
+            via 172.16.0.2, Ethernet1/7
+VRF: default, Protocol: route-input
+Codes: C - Connected, S - Static, P - Route Input, G - Gribi
+       B - BGP, O - Ospf, O3 - Ospf3, I - Isis, R - Rip, VL - VRF Leak
+       > - Best Route, * - Unresolved Next hop
+       EM - Exact match of the SR-TE Policy
+       NM - Null endpoint match of the SR-TE Policy
+       AM - Any endpoint match of the SR-TE Policy
+       L - Part of a recursive route resolution loop
+       A - Next hop not resolved in ARP/ND
+       NF - Not in FEC
+>P    0.0.0.0/8 [1 pref/0 metric] updated 17:35:58 ago
+         via Null0, directly connected [NF]
+>P    10.255.255.1/32 [1 pref/0 metric] updated 17:35:18 ago
+         via 10.255.255.1, Dps1
+>P    10.255.255.4/32 [1 pref/0 metric] updated 04:25:50 ago
+         via 10.255.255.4, Dps1
+>P    10.255.255.5/32 [1 pref/0 metric] updated 04:36:51 ago
+         via 10.255.255.5, Dps1
+>P    10.255.255.11/32 [1 pref/0 metric] updated 03:40:59 ago
+         via 10.255.255.11, Dps1
+>P    10.255.255.12/32 [1 pref/0 metric] updated 03:36:33 ago
+         via 10.255.255.12, Dps1
+>P    127.0.0.0/8 [1 pref/0 metric] updated 17:35:58 ago
+         via :: [1 pref/1 metric] type ipv4
+            via , directly connected

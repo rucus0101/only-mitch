@@ -1,0 +1,264 @@
+BGP neighbor is 10.255.255.1, remote AS 65000, internal link
+  BGP version 4, remote router ID 10.255.255.1, VRF default
+  Inherits configuration from and member of peer-group PATHFINDER
+  Last read 00:00:18, last write 00:00:14
+  Hold time is 180, keepalive interval is 60 seconds
+  Configured hold time is 180, keepalive interval is 60 seconds
+  Effective minimum hold time is 3 seconds
+  Send failure hold time is 0 seconds
+  Hold timer is active, time left: 00:02:42
+  Keepalive timer is active, time left: 00:00:34
+  Connect timer is inactive
+  Idle-restart timer is inactive
+  BGP state is Established, up for 01:08:28
+  Number of transitions to established: 38
+  Last state was OpenConfirm
+  Last event was RecvUpdate
+  Last sent notification:Hold Timer Expired Error/None, Last time 01:09:32, First time 03:03:58, Repeats 7
+  Last rcvd notification:Cease/connection collision resolution, Last time 02:58:35
+  Last sent socket-error:Connect (No route to host), Last time 02:19:28
+  Types of communities advertised: standard extended large
+  Enhanced route refresh stale path removal disabled
+  Outbound enhanced route refresh enabled
+  Neighbor Capabilities:
+    Multiprotocol Dps: advertised and received and negotiated
+    Multiprotocol L2VPN EVPN: advertised and received and negotiated
+    Four Octet ASN: advertised and received and negotiated
+    Route Refresh: advertised and received and negotiated
+    Enhanced route refresh: advertised and received and negotiated
+    Send End-of-RIB messages: advertised and received and negotiated
+    Additional-paths recv capability:
+      Dps: negotiated
+      L2VPN EVPN: advertised
+    Additional-paths send capability:
+      Dps: negotiated
+      L2VPN EVPN: received
+  Restart timer is inactive
+  End of rib timer is inactive
+    Dps End-of-RIB received: Yes
+      Received 01:08:27
+      Number of stale paths removed after graceful restart: 0
+      Number of paths received before End-of-RIB: 18
+    L2VPN EVPN End-of-RIB received: Yes
+      Received 01:08:27
+      Number of stale paths removed after graceful restart: 0
+      Number of paths received before End-of-RIB: 17
+  AIGP attribute send and receive for IPv4 Unicast are enabled
+  AIGP attribute send and receive for IPv4 with MPLS Labels are enabled
+  AIGP attribute send and receive for IPv6 Unicast are enabled
+  AIGP attribute send and receive for IPv6 with MPLS Labels are enabled
+  BGP session driven failover for IPv6 Unicast is disabled
+  BGP session driven failover for IPv4 Unicast is disabled
+  Message Statistics:
+                                  Sent      Rcvd
+    Opens:                          40        38
+    Notifications:                  33         6
+    Updates:                       305     61501
+    Keepalives:                   3396      3218
+    Enhanced Route Refresh:          0         0
+    Begin of Route Refresh:          0         0
+    End of Route Refresh:            0         0
+    Total messages:               3774     64763
+  Prefix Statistics:
+                                   Sent      Rcvd     Best Paths     Best ECMP Paths
+    IPv4 Unicast:                     0         0              0                   0
+    IPv4 Dps:                         2        10             10                  10
+    IPv6 Unicast:                     0         0              0                   0
+    EVPN:                             3        22             20                  20
+  Configured maximum total number of routes is 12000
+  Inbound updates dropped by reason:
+    AS path loop detection: 0
+    Cluster ID loop detection: 0
+    Enforced First AS: 0
+    Malformed MPBGP routes: 0
+    Originator ID matches local router ID: 26
+    Nexthop matches local IP address: 2
+    Unexpected IPv6 nexthop for IPv4 routes: 0
+  Inbound updates with attribute errors:
+    Resulting in removal of all paths in update (treat as withdraw): 2
+    Resulting in AFI/SAFI disable: 0
+    Resulting in attribute ignore: 0
+    Disabled AFI/SAFIs: None
+    Last treat-as-withdraw attribute error: Nexthop is local address
+    Last update with error received at: 01:08:27
+  Inbound paths dropped by reason:
+    IPv4 unicast NLRIs dropped due to martian prefix: 0
+    IPv6 unicast NLRIs dropped due to martian prefix: 0
+    IPv4 labeled-unicast NLRIs dropped due to excessive labels: 0
+    IPv4 labeled-unicast NLRIs dropped due to martian prefix: 0
+    IPv6 labeled-unicast NLRIs dropped due to excessive labels: 0
+    IPv6 labeled-unicast NLRIs dropped due to martian prefix: 0
+    VPN-IPv4 NLRIs dropped due to route import match failure: 0
+    VPN-IPv6 NLRIs dropped due to route import match failure: 0
+    L2VPN EVPN NLRIs dropped due to route import match failure: 0
+    L2VPN EVPN NLRIs dropped due to unsupported route type: 0
+    L2VPN EVPN NLRIs dropped due to maximum route limit violation: 0
+    Link-state NLRIs dropped because reception is unsupported: 0
+    RT Membership NLRIs dropped due to local origin ASN received from external peer: 0
+  Outbound paths dropped by reason:
+    IPv4 local address not available: 0
+    IPv6 local address not available: 0
+  Inbound route map for L2VPN EVPN is DENY-SOO
+  Additional-paths send mode:
+    Dps: any
+Local AS is 65000, local router ID 10.255.255.12
+TTL is 255
+Local TCP address is 10.255.255.12, local port is 40095
+Remote TCP address is 10.255.255.1, remote port is 179
+Local next hop for next hop self:
+  Dps: 10.255.255.12
+  L2VPN EVPN: 10.255.255.12
+BFD is enabled with configured transmit interval 1000ms, receive interval 1000ms, multiplier 3 and state is Down
+TCP Socket Information:
+  TCP state is ESTABLISHED
+  Recv-Q: 0/32768
+  Send-Q: 0/46080
+  Outgoing Maximum Segment Size (MSS): 1448
+  Total Number of TCP retransmissions: 14
+  Options:
+    Timestamps enabled: yes
+    Selective Acknowledgments enabled: yes
+    Window Scale enabled: yes
+    Explicit Congestion Notification (ECN) enabled: no
+  Socket Statistics:
+    Window Scale (wscale): 7,7
+    Retransmission Timeout (rto): 204.0ms
+    Round-trip Time (rtt/rtvar): 3.4ms/1.0ms
+    Delayed Ack Timeout (ato): 40.0ms
+    Congestion Window (cwnd): 2
+    Slow-start Threshold (ssthresh): 2
+    TCP Throughput: 6.87 Mbps
+    Recv Round-trip Time (rcv_rtt): 834.0ms
+    Advertised Recv Window (rcv_space): 14480
+
+BGP neighbor is 10.255.255.4, remote AS 65000, internal link
+  BGP version 4, remote router ID 10.255.255.4, VRF default
+  Inherits configuration from and member of peer-group PATHFINDER
+  Last read 00:00:01, last write 00:00:02
+  Hold time is 180, keepalive interval is 60 seconds
+  Configured hold time is 180, keepalive interval is 60 seconds
+  Effective minimum hold time is 3 seconds
+  Send failure hold time is 0 seconds
+  Hold timer is active, time left: 00:02:59
+  Keepalive timer is active, time left: 00:00:48
+  Connect timer is inactive
+  Idle-restart timer is inactive
+  BGP state is Established, up for 00:00:02
+  Number of transitions to established: 40
+  Last state was OpenConfirm
+  Last event was RecvUpdate
+  Last sent notification:Cease/BFD down, Last time 00:02:11, First time 00:11:26, Repeats 9
+  Last rcvd notification:Cease/BFD down, Last time 00:02:47, First time 03:46:37, Repeats 5
+  Last sent socket-error:Connect (No route to host), Last time 02:13:02
+  Types of communities advertised: standard extended large
+  Enhanced route refresh stale path removal disabled
+  Outbound enhanced route refresh enabled
+  Neighbor Capabilities:
+    Multiprotocol Dps: advertised and received and negotiated
+    Multiprotocol L2VPN EVPN: advertised and received and negotiated
+    Four Octet ASN: advertised and received and negotiated
+    Route Refresh: advertised and received and negotiated
+    Enhanced route refresh: advertised and received and negotiated
+    Send End-of-RIB messages: advertised and received and negotiated
+    Additional-paths recv capability:
+      Dps: negotiated
+      L2VPN EVPN: advertised
+    Additional-paths send capability:
+      Dps: negotiated
+      L2VPN EVPN: received
+  Restart timer is inactive
+  End of rib timer is inactive
+    Dps End-of-RIB received: Yes
+      Received 00:00:01
+      Number of stale paths removed after graceful restart: 0
+      Number of paths received before End-of-RIB: 14
+    L2VPN EVPN End-of-RIB received: Yes
+      Received 00:00:01
+      Number of stale paths removed after graceful restart: 0
+  AIGP attribute send and receive for IPv4 Unicast are enabled
+  AIGP attribute send and receive for IPv4 with MPLS Labels are enabled
+  AIGP attribute send and receive for IPv6 Unicast are enabled
+  AIGP attribute send and receive for IPv6 with MPLS Labels are enabled
+  BGP session driven failover for IPv6 Unicast is disabled
+  BGP session driven failover for IPv4 Unicast is disabled
+  Message Statistics:
+                                  Sent      Rcvd
+    Opens:                          42        40
+    Notifications:                  33         8
+    Updates:                       276     76239
+    Keepalives:                   3382      3211
+    Enhanced Route Refresh:          0         0
+    Begin of Route Refresh:          0         0
+    End of Route Refresh:            0         0
+    Total messages:               3733     79498
+  Prefix Statistics:
+                                   Sent      Rcvd     Best Paths     Best ECMP Paths
+    IPv4 Unicast:                     0         0              0                   0
+    IPv4 Dps:                         2        14             14                   0
+    IPv6 Unicast:                     0         0              0                   0
+    EVPN:                             3         0             20                   0
+  Configured maximum total number of routes is 12000
+  Inbound updates dropped by reason:
+    AS path loop detection: 0
+    Cluster ID loop detection: 0
+    Enforced First AS: 0
+    Malformed MPBGP routes: 0
+    Originator ID matches local router ID: 2
+    Nexthop matches local IP address: 2
+    Unexpected IPv6 nexthop for IPv4 routes: 0
+  Inbound updates with attribute errors:
+    Resulting in removal of all paths in update (treat as withdraw): 2
+    Resulting in AFI/SAFI disable: 0
+    Resulting in attribute ignore: 0
+    Disabled AFI/SAFIs: None
+    Last treat-as-withdraw attribute error: Nexthop is local address
+    Last update with error received at: 00:00:01
+  Inbound paths dropped by reason:
+    IPv4 unicast NLRIs dropped due to martian prefix: 0
+    IPv6 unicast NLRIs dropped due to martian prefix: 0
+    IPv4 labeled-unicast NLRIs dropped due to excessive labels: 0
+    IPv4 labeled-unicast NLRIs dropped due to martian prefix: 0
+    IPv6 labeled-unicast NLRIs dropped due to excessive labels: 0
+    IPv6 labeled-unicast NLRIs dropped due to martian prefix: 0
+    VPN-IPv4 NLRIs dropped due to route import match failure: 0
+    VPN-IPv6 NLRIs dropped due to route import match failure: 0
+    L2VPN EVPN NLRIs dropped due to route import match failure: 0
+    L2VPN EVPN NLRIs dropped due to unsupported route type: 0
+    L2VPN EVPN NLRIs dropped due to maximum route limit violation: 0
+    Link-state NLRIs dropped because reception is unsupported: 0
+    RT Membership NLRIs dropped due to local origin ASN received from external peer: 0
+  Outbound paths dropped by reason:
+    IPv4 local address not available: 0
+    IPv6 local address not available: 0
+  Inbound route map for L2VPN EVPN is DENY-SOO
+  Additional-paths send mode:
+    Dps: any
+Local AS is 65000, local router ID 10.255.255.12
+TTL is 255
+Local TCP address is 10.255.255.12, local port is 33783
+Remote TCP address is 10.255.255.4, remote port is 179
+Local next hop for next hop self:
+  Dps: 10.255.255.12
+  L2VPN EVPN: 10.255.255.12
+BFD is enabled with configured transmit interval 1000ms, receive interval 1000ms, multiplier 3 and state is Up
+TCP Socket Information:
+  TCP state is ESTABLISHED
+  Recv-Q: 0/32768
+  Send-Q: 0/46080
+  Outgoing Maximum Segment Size (MSS): 1448
+  Total Number of TCP retransmissions: 4
+  Options:
+    Timestamps enabled: yes
+    Selective Acknowledgments enabled: yes
+    Window Scale enabled: yes
+    Explicit Congestion Notification (ECN) enabled: no
+  Socket Statistics:
+    Window Scale (wscale): 7,7
+    Retransmission Timeout (rto): 208.0ms
+    Round-trip Time (rtt/rtvar): 7.6ms/8.7ms
+    Delayed Ack Timeout (ato): 40.0ms
+    Congestion Window (cwnd): 2
+    TCP Throughput: 3.03 Mbps
+    Recv Round-trip Time (rcv_rtt): 953.0ms
+    Advertised Recv Window (rcv_space): 14480
+

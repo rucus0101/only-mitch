@@ -1,13 +1,63 @@
 ---
-PE32-J2-171:
+CBL386:
   groups: [SNAPSHOT]
-  hostname: 192.168.20.171
-PE32-J2-172:
+  hostname: 172.28.138.71
+CBL433:
   groups: [SNAPSHOT]
-  hostname: 192.168.20.172
-Harness3-J-175:
+  hostname: 172.28.138.220
+IND355:
   groups: [SNAPSHOT]
-  hostname: 192.168.20.175
-Spine3-J-170:
+  hostname: 172.28.137.226
+IND356:
   groups: [SNAPSHOT]
-  hostname: 192.168.20.170
+  hostname: 172.28.137.227
+MRV443:
+  groups: [SNAPSHOT]
+  hostname: 172.28.135.175
+MRV425:
+  groups: [SNAPSHOT]
+  hostname: 172.28.129.213
+CBL434:
+  groups: [SNAPSHOT]
+  hostname: 172.28.138.221
+CBL435:
+  groups: [SNAPSHOT]
+  hostname: 172.28.138.222
+MRV444:
+  groups: [SNAPSHOT]
+  hostname: 172.28.135.176
+VM3:
+  groups: [SNAPSHOT]
+  hostname: 172.28.138.242
+VM4:
+  groups: [SNAPSHOT]
+  hostname: 172.28.138.243
+MRV306:
+  groups: [SNAPSHOT]
+  hostname: 172.28.136.228
+IND517:
+  groups: [SNAPSHOT]
+  hostname: 172.28.138.223
+IND518:
+  groups: [SNAPSHOT]
+  hostname: 172.28.138.224
+mrv305:
+  groups: [SNAPSHOT]
+  hostname: 172.28.136.227
+VM1:
+  groups: [SNAPSHOT]
+  hostname: 172.28.138.240
+VM2:
+  groups: [SNAPSHOT]
+  hostname: 172.28.138.241
+
+
+
+
+
+
+
+
+
+
+

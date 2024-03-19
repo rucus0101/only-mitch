@@ -1,3 +1,0 @@
-
-IS-IS Instance: IPV6 VRF: default
-

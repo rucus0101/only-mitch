@@ -1,0 +1,225 @@
+path3:
+  Source address: 172.16.0.9, Destination address: 172.16.0.4
+  State: established
+  Uptime: 4 hours, 48 minutes, 37 seconds
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.12
+  Role: initiator
+  Inbound SPI: 0xc63e21:
+    Request ID: 3, Mode: transport, Replay window size: 16384, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4794537063749, Hard byte limit: 6442450944000
+      Soft packet limit: 2817809463, Hard packet limit: 4000000000
+      Soft time limit: 2907 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 591728
+      Current packets: 4196
+      SA add time: Tue Mar 12 20:54:41 2024
+      SA last use time: Tue Mar 12 21:16:15 2024
+  Outbound SPI: 0xc81f55:
+    Request ID: 3, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4448582551499, Hard byte limit: 6442450944000
+      Soft packet limit: 2145996223, Hard packet limit: 4000000000
+      Soft time limit: 2914 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 982851
+      Current packets: 8734
+      SA add time: Tue Mar 12 20:54:41 2024
+      SA last use time: Tue Mar 12 21:16:15 2024
+path4:
+  Source address: 172.16.0.9, Destination address: 172.16.0.7
+  State: established
+  Uptime: 4 hours, 48 minutes, 37 seconds
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.12
+  Role: initiator
+  Inbound SPI: 0xc12546:
+    Request ID: 4, Mode: transport, Replay window size: 16384, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3438706552499, Hard byte limit: 6442450944000
+      Soft packet limit: 2097545404, Hard packet limit: 4000000000
+      Soft time limit: 2827 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 696312
+      Current packets: 4874
+      SA add time: Tue Mar 12 20:51:14 2024
+      SA last use time: Tue Mar 12 21:16:15 2024
+  Outbound SPI: 0xc04cd7:
+    Request ID: 4, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3273657440249, Hard byte limit: 6442450944000
+      Soft packet limit: 2861211854, Hard packet limit: 4000000000
+      Soft time limit: 2738 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 1203410
+      Current packets: 10164
+      SA add time: Tue Mar 12 20:51:14 2024
+      SA last use time: Tue Mar 12 21:16:15 2024
+path5:
+  Source address: 172.16.0.9, Destination address: 172.16.0.3
+  State: established
+  Uptime: 4 hours, 48 minutes, 29 seconds
+  VRF: default
+  Type: dynamic
+  Remote IP: 10.255.255.6
+  Role: initiator
+  Packets in: 33308, Packets out: 70904
+  Last known rekey count: 0
+  Dynamic state: established
+  Last established time: Tue Mar 12 20:56:04 2024
+  DH crypto:
+    Local rekey: 0, Peer rekey: 1, In SPI: 0x30837655, Out SPI: 0xf8c82d62
+    Local rekey: 0, Peer rekey: 2, In SPI: 0x531d4554, Out SPI: 0xf002df05
+  DH state:
+    Local rekey: 0, Peer rekey: 2, DH rekey state: not rekeying, Role: not rekeying
+  SA crypto:
+    Local rekey: 0, Peer rekey: 2, In SPI 0x1f3d0dd, Out SPI 0x6253df11
+  SA rekey role: not rekeying
+  SA state:
+    SA type: egress , SPI: 0xdf3f035
+      Role: initiator, SA rekey state: initial, Peer nonce type: init
+      Add time: Tue Mar 12 20:54:45 2024, Packets: 5676, Pair SPI: 0x6e53ff69
+    SA type: ingress , SPI: 0x6e53ff69
+      Role: initiator, SA rekey state: initial, Peer nonce type: init
+      Add time: Tue Mar 12 20:54:45 2024, Packets: 2674, Pair SPI: 0xdf3f035
+  Inbound SPI: 0x6e53ff69:
+    Request ID: 5, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4768965116925, Hard byte limit: 6442450944000
+      Soft packet limit: 2908944584, Hard packet limit: 4000000000
+      Soft time limit: 2558 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 391632
+      Current packets: 2684
+      SA add time: Tue Mar 12 20:54:45 2024
+      SA last use time: Tue Mar 12 21:16:15 2024
+  Outbound SPI: 0xdf3f035:
+    Request ID: 5, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4810324230075, Hard byte limit: 6442450944000
+      Soft packet limit: 2942439988, Hard packet limit: 4000000000
+      Soft time limit: 2550 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 848976
+      Current packets: 5696
+      SA add time: Tue Mar 12 20:54:45 2024
+      SA last use time: Tue Mar 12 21:16:15 2024
+path6:
+  Source address: 172.16.0.9, Destination address: 172.16.0.1
+  State: established
+  Uptime: 4 hours, 48 minutes, 29 seconds
+  VRF: default
+  Type: dynamic
+  Remote IP: 10.255.255.5
+  Role: initiator
+  Packets in: 32081, Packets out: 68514
+  Last known rekey count: 0
+  Dynamic state: established
+  Last established time: Tue Mar 12 20:48:04 2024
+  DH crypto:
+    Local rekey: 0, Peer rekey: 0, In SPI: 0x9177baa3, Out SPI: 0x726f70d7
+  DH state:
+    Local rekey: 0, Peer rekey: 0, DH rekey state: not rekeying, Role: not rekeying
+  SA crypto:
+    Local rekey: 0, Peer rekey: 0, In SPI 0xe4df87d7, Out SPI 0xa7f0a9bf
+  SA rekey role: not rekeying
+  SA state:
+    SA type: egress , SPI: 0xeedfa72f
+      Role: initiator, SA rekey state: initial, Peer nonce type: init
+      Add time: Tue Mar 12 20:46:19 2024, Packets: 7944, Pair SPI: 0xb1f0c917
+    SA type: ingress , SPI: 0xb1f0c917
+      Role: initiator, SA rekey state: initial, Peer nonce type: init
+      Add time: Tue Mar 12 20:46:11 2024, Packets: 3722, Pair SPI: 0xeedfa72f
+  Inbound SPI: 0xb1f0c917:
+    Request ID: 6, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4731607248300, Hard byte limit: 6442450944000
+      Soft packet limit: 2963075868, Hard packet limit: 4000000000
+      Soft time limit: 2521 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 538944
+      Current packets: 3732
+      SA add time: Tue Mar 12 20:46:11 2024
+      SA last use time: Tue Mar 12 21:16:15 2024
+  Outbound SPI: 0xeedfa72f:
+    Request ID: 6, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4724076179925, Hard byte limit: 6442450944000
+      Soft packet limit: 2990731324, Hard packet limit: 4000000000
+      Soft time limit: 2668 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 1257756
+      Current packets: 7964
+      SA add time: Tue Mar 12 20:46:19 2024
+      SA last use time: Tue Mar 12 21:16:15 2024
+path7:
+  Source address: 172.16.0.9, Destination address: 172.16.0.11
+  State: established
+  Uptime: 4 hours, 44 minutes, 3 seconds
+  VRF: default
+  Type: dynamic
+  Remote IP: 10.255.255.12
+  Role: initiator
+  Packets in: 31825, Packets out: 67836
+  Last known rekey count: 0
+  Dynamic state: established
+  Last established time: Tue Mar 12 20:53:04 2024
+  DH crypto:
+    Local rekey: 0, Peer rekey: 0, In SPI: 0x145448d7, Out SPI: 0x3841219c
+  DH state:
+    Local rekey: 0, Peer rekey: 0, DH rekey state: not rekeying, Role: not rekeying
+  SA crypto:
+    Local rekey: 0, Peer rekey: 0, In SPI 0x8a483790, Out SPI 0xa1b45f5f
+  SA rekey role: not rekeying
+  SA state:
+    SA type: ingress , SPI: 0xb5b47fb7
+      Role: initiator, SA rekey state: initial, Peer nonce type: init
+      Add time: Tue Mar 12 20:51:26 2024, Packets: 3016, Pair SPI: 0x9e4857e8
+    SA type: egress , SPI: 0x9e4857e8
+      Role: initiator, SA rekey state: initial, Peer nonce type: init
+      Add time: Tue Mar 12 20:51:35 2024, Packets: 6466, Pair SPI: 0xb5b47fb7
+  Inbound SPI: 0xb5b47fb7:
+    Request ID: 7, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4754903782200, Hard byte limit: 6442450944000
+      Soft packet limit: 2935467630, Hard packet limit: 4000000000
+      Soft time limit: 2599 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 428968
+      Current packets: 3026
+      SA add time: Tue Mar 12 20:51:26 2024
+      SA last use time: Tue Mar 12 21:16:15 2024
+  Outbound SPI: 0x9e4857e8:
+    Request ID: 7, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4739347768275, Hard byte limit: 6442450944000
+      Soft packet limit: 2983700286, Hard packet limit: 4000000000
+      Soft time limit: 2677 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 1043686
+      Current packets: 6486
+      SA add time: Tue Mar 12 20:51:35 2024
+      SA last use time: Tue Mar 12 21:16:15 2024

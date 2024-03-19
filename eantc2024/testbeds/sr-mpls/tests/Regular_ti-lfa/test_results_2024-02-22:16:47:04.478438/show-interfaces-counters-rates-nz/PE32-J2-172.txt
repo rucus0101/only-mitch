@@ -1,5 +1,0 @@
-Port      Name        Intvl  In Mbps      %  In Kpps Out Mbps      % Out Kpps
-Et5                    0:05     79.7   0.8%        9     79.6   0.8%        9
-Et50/1    Ribbon_32    0:05     76.7   0.8%        9     76.8   0.8%        9
-Et51/1    ERIKSON_47   0:05      3.0   0.0%        0      2.9   0.0%        0
-Ma1                    0:05      0.1   0.0%        0     22.8   2.3%        1

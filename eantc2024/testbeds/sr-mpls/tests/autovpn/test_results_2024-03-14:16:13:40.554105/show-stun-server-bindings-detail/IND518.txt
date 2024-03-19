@@ -1,0 +1,67 @@
+Current System Time: Thu Mar 14 09:13:46 2024
+Transaction ID 000000010affff0500000000
+Public Address: 172.16.0.1:4500
+Number of Attributes: 3
+Timeout Interval: 0:10:00
+Timeout: 0:09:45
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            6 VZ_OFF          
+VTEP_IP               4 10.255.255.5    
+WAN_ID                4 1               
+
+Transaction ID 000000010affff0800000000
+Public Address: 172.16.1.2:4500
+Number of Attributes: 3
+Timeout Interval: 0:10:00
+Timeout: 0:09:46
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            7 VZ_NEAR         
+VTEP_IP               4 10.255.255.8    
+WAN_ID                4 1               
+
+Transaction ID 000000020affff0100000000
+Public Address: 172.16.1.0:4500
+Number of Attributes: 3
+Timeout Interval: 0:10:00
+Timeout: 0:09:44
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            7 VZ_NEAR         
+VTEP_IP               4 10.255.255.1    
+WAN_ID                4 2               
+
+Transaction ID 000000020affff0b00000000
+Public Address: 172.16.0.9:4500
+Number of Attributes: 3
+Timeout Interval: 0:10:00
+Timeout: 0:09:44
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            6 VZ_OFF          
+VTEP_IP               4 10.255.255.11   
+WAN_ID                4 2               
+
+Transaction ID 000000020affff0c00000000
+Public Address: 172.16.0.11:4500
+Number of Attributes: 3
+Timeout Interval: 0:10:00
+Timeout: 0:09:45
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            6 VZ_OFF          
+VTEP_IP               4 10.255.255.12   
+WAN_ID                4 2               
+
+Transaction ID 000000080affff0300000000
+Public Address: 172.16.255.0:4500
+Number of Attributes: 3
+Timeout Interval: 0:10:00
+Timeout: 0:09:51
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            4 PEER            
+VTEP_IP               4 10.255.255.3    
+WAN_ID                4 8               
+

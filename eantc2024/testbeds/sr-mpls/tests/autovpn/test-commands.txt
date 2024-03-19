@@ -1,0 +1,17 @@
+show version
+show mac address-table 
+show ip interface brief | exclude una
+show interfaces counters rates | nz
+show ip route
+show ip route vrf all
+show ipv6 route
+show bgp evpn
+show ip security connection detail
+show stun client translations detail
+show stun server bindings detail 
+show path-selection paths detail 
+show bgp neighbors
+show bgp path-selection detail 
+show rib route ip
+show rib route ipv6
+show platform sfe worker summary  

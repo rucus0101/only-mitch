@@ -1,0 +1,4 @@
+Port      Name      Intvl  In Mbps      %  In Kpps Out Mbps      % Out Kpps
+Et1/1                5:00     21.8   0.2%        2     10.9   0.1%        1
+Et1/3     VZ_NEAR    5:00     12.9   0.1%        1     13.8   0.1%        1
+Et1/4     VZ_OFF     5:00      0.1   0.0%        0      0.1   0.0%        0

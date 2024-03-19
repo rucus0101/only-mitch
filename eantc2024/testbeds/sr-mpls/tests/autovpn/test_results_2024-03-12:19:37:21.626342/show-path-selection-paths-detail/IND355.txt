@@ -1,0 +1,63 @@
+Peer: 10.255.255.4, Path group VZ_NEAR
+Path name: path13, static, Label: 13
+Source: 172.16.1.0, Port: 4500, WAN ID: 2
+Destination: 172.16.1.5, Port: 4500, WAN ID: 2886729989
+Local interface: Ethernet1/3
+Route state: IPsec established
+Traffic class 0: active (1:03:32)
+MTU: 8914
+
+Peer: 10.255.255.5, Path group VZ_OFF
+Path name: path3, dynamic, Label: 3
+Source: 172.16.0.4, Port: 4500, WAN ID: 1
+Destination: 172.16.0.1, Port: 4500, WAN ID: 1
+Local interface: Ethernet1/2
+Route state: IPsec established
+Traffic class 0: active (3:56:00)
+MTU: 8914
+
+Peer: 10.255.255.6, Path group VZ_OFF
+Path name: path1, dynamic, Label: 1
+Source: 172.16.0.4, Port: 4500, WAN ID: 1
+Destination: 172.16.0.3, Port: 4500, WAN ID: 1
+Local interface: Ethernet1/2
+Route state: IPsec established
+Traffic class 0: active (3:56:02)
+MTU: 8914
+
+Peer: 10.255.255.8, Path group VZ_NEAR
+Path name: path5, dynamic, Label: 5
+Source: 172.16.1.0, Port: 4500, WAN ID: 2
+Destination: 172.16.1.2, Port: 4500, WAN ID: 1
+Local interface: Ethernet1/3
+Route state: IPsec established
+Traffic class 0: active (3:43:55)
+MTU: 8914
+
+Peer: 10.255.255.10, Path group VZ_NEAR
+Path name: path11, dynamic, Label: 11
+Source: 172.16.1.0, Port: 4500, WAN ID: 2
+Destination: 172.16.1.7, Port: 4500, WAN ID: 1
+Local interface: Ethernet1/3
+Route state: IPsec established
+Traffic class 0: active (2:26:23)
+MTU: 1414
+
+Peer: 10.255.255.11, Path group VZ_OFF
+Path name: path8, dynamic, Label: 8
+Source: 172.16.0.4, Port: 4500, WAN ID: 1
+Destination: 172.16.0.9, Port: 4500, WAN ID: 2
+Local interface: Ethernet1/2
+Route state: IPsec established
+Traffic class 0: active (3:38:59)
+MTU: 1424
+
+Peer: 10.255.255.12, Path group VZ_OFF
+Path name: path10, dynamic, Label: 10
+Source: 172.16.0.4, Port: 4500, WAN ID: 1
+Destination: 172.16.0.11, Port: 4500, WAN ID: 2
+Local interface: Ethernet1/2
+Route state: IPsec established
+Traffic class 0: active (3:36:08)
+MTU: 1424
+

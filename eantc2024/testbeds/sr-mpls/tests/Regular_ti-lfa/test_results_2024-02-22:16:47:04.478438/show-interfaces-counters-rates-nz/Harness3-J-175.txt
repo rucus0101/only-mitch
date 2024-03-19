@@ -1,5 +1,0 @@
-Port      Name           Intvl  In Mbps      %  In Kpps Out Mbps      % Out Kpps
-Et2       ARISTA_172      0:01     79.7   0.8%        9     79.7   0.8%        9
-Et23      Ixia_111        0:01    160.0   1.6%       19    160.0   1.6%       19
-Et41      Ribbon          0:01     79.7   0.8%        9     79.7   0.8%        9
-Ma1                       0:01      0.0   0.0%        0      0.1   0.0%        0

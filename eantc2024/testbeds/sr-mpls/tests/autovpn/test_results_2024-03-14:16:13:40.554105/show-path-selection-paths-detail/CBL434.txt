@@ -1,0 +1,18 @@
+Peer: 10.255.255.2, Path group ATT
+Path name: path1, static, Label: 20481
+Source: 172.16.2.2, Port: 4500, WAN ID: 1
+Destination: 172.16.2.0, Port: 4500, WAN ID: 2886730240
+Local interface: Ethernet1/7
+Route state: IPsec established
+Traffic class 0: active (0:00:00)
+MTU: 8914
+
+Peer: 10.255.255.3, Path group ATT
+Path name: path3, static, Label: 20483
+Source: 172.16.2.2, Port: 4500, WAN ID: 1
+Destination: 172.16.2.5, Port: 4500, WAN ID: 2886730245
+Local interface: Ethernet1/7
+Route state: IPsec established
+Traffic class 0: active (0:00:00)
+MTU: 8914
+

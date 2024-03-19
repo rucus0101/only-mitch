@@ -1,0 +1,17 @@
+Arista AWE-5310-F
+Hardware version: 11.01
+Serial number: WTW23341340
+Hardware MAC address: ec8a.4804.2bda
+System MAC address: ec8a.4804.2bda
+
+Software image version: 4.31.2F-36028628.gangesA1rel (engineering build)
+Architecture: x86_64
+Internal build version: 4.31.2F-36028628.gangesA1rel
+Internal build ID: da266e39-7d88-46c7-a67b-d8bbbe31ee51
+Image format version: 3.0
+Image optimization: Default
+
+Uptime: 2 days, 8 hours and 29 minutes
+Total memory: 32470188 kB
+Free memory: 21182320 kB
+

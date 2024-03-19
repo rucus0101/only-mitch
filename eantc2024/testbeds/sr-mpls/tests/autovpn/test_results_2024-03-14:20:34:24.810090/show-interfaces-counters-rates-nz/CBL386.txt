@@ -1,0 +1,4 @@
+Port      Name      Intvl  In Mbps      %  In Kpps Out Mbps      % Out Kpps
+Et1/5                0:01    149.2   1.5%       18    179.0   1.8%       22
+Et1/7     VZ_OFF     0:01    193.0   2.0%       22    160.9   1.6%       18
+Ma1/1                0:01      0.0   0.0%        0      0.1   0.0%        0

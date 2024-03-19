@@ -1,0 +1,14 @@
+Current System Time: Tue Mar 12 20:06:47 2024
+Transaction ID 000000020affff0c00000000
+Agent Name: dps
+Source Address: 172.16.0.11:4500
+Public Address: 172.16.0.11:4500
+Number of Attributes: 3
+Timeout Interval: 0:03:00
+Last Refreshed: 0:00:19 ago
+Attribute Type   Length Value           
+---------------- ------ ----------------
+PATH_GROUP            6 VZ_OFF          
+VTEP_IP               4 10.255.255.12   
+WAN_ID                4 2               
+

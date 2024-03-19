@@ -1,5 +1,0 @@
- 
-Instance  VRF      System Id        Type Interface          SNPA              State Hold time   Circuit Id          
-IGP       default  Ribbon-32        L2   Ethernet43         P2P               UP    69          00                  
-IGP       default  SR1-SRMPLS       L2   Ethernet45         P2P               UP    25          00                  
-IGP       default  PE31-J2-171      L2   Ethernet1          P2P               UP    24          50                  

@@ -1,0 +1,102 @@
+path5:
+  Source address: 172.16.2.5, Destination address: 172.16.2.7
+  State: established
+  Uptime: 2 days, 8 hours, 25 minutes, 22 seconds
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.7
+  Role: initiator
+  Inbound SPI: 0xcc37bc:
+    Request ID: 1, Mode: transport, Replay window size: 16384, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3543587300249, Hard byte limit: 6442450944000
+      Soft packet limit: 2610278139, Hard packet limit: 4000000000
+      Soft time limit: 2729 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 2375356
+      Current packets: 7795
+      SA add time: Sun Mar 17 16:56:19 2024
+      SA last use time: Sun Mar 17 17:34:26 2024
+  Outbound SPI: 0xc040f7:
+    Request ID: 1, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3878395351499, Hard byte limit: 6442450944000
+      Soft packet limit: 2486353618, Hard packet limit: 4000000000
+      Soft time limit: 3029 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 1914178
+      Current packets: 15934
+      SA add time: Sun Mar 17 16:56:19 2024
+      SA last use time: Sun Mar 17 17:34:26 2024
+path6:
+  Source address: 172.16.2.5, Destination address: 172.16.2.2
+  State: established
+  Uptime: 2 days, 8 hours, 24 minutes, 20 seconds
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.7
+  Role: initiator
+  Inbound SPI: 0xc5d094:
+    Request ID: 4, Mode: transport, Replay window size: 16384, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4650432872249, Hard byte limit: 6442450944000
+      Soft packet limit: 2074738702, Hard packet limit: 4000000000
+      Soft time limit: 2682 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 1232192
+      Current packets: 4272
+      SA add time: Sun Mar 17 17:13:50 2024
+      SA last use time: Sun Mar 17 17:34:26 2024
+  Outbound SPI: 0xcbea81:
+    Request ID: 4, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3280958036249, Hard byte limit: 6442450944000
+      Soft packet limit: 2611472335, Hard packet limit: 4000000000
+      Soft time limit: 3017 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 1882965
+      Current packets: 8734
+      SA add time: Sun Mar 17 17:13:50 2024
+      SA last use time: Sun Mar 17 17:34:26 2024
+path10:
+  Source address: 172.16.2.5, Destination address: 172.16.2.0
+  State: established
+  Uptime: 1 hour, 20 minutes, 14 seconds
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.7
+  Role: initiator
+  Inbound SPI: 0xc28ed0:
+    Request ID: 243, Mode: transport, Replay window size: 16384, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 3785543471249, Hard byte limit: 6442450944000
+      Soft packet limit: 2020013078, Hard packet limit: 4000000000
+      Soft time limit: 2562 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 2344644
+      Current packets: 7533
+      SA add time: Sun Mar 17 16:57:41 2024
+      SA last use time: Sun Mar 17 17:34:26 2024
+  Outbound SPI: 0xcd4a26:
+    Request ID: 243, Mode: transport, Replay window size: 0, Seq: 0x0
+    Errors:
+      Packets outside replay window: 0, Replay: 0, Integrity failed: 0
+    Lifetime config:
+      Soft byte limit: 4746661949999, Hard byte limit: 6442450944000
+      Soft packet limit: 2082961664, Hard packet limit: 4000000000
+      Soft time limit: 2543 secs, Hard time limit: 3600 secs
+    Lifetime current:
+      Current bytes: 3697781
+      Current packets: 15436
+      SA add time: Sun Mar 17 16:57:41 2024
+      SA last use time: Sun Mar 17 17:34:26 2024

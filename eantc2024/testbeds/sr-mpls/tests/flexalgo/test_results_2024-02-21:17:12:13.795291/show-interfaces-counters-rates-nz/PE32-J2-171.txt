@@ -1,5 +1,0 @@
-Port      Name             Intvl  In Mbps      %  In Kpps Out Mbps      %
-Et5                         0:01      7.9   0.1%        0      0.0   0.0%
-Et46                        0:01      0.0   0.0%        0      7.6   0.1%
-
-Port      Out Kpps

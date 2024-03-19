@@ -1,0 +1,10 @@
+BGP routing table information for VRF default
+Router identifier 10.255.255.7, local AS number 65000
+Route status codes: * - valid, > - active, S - Stale, E - ECMP head, e - ECMP
+                    c - Contributing to ECMP, % - Pending best path selection
+Origin codes: i - IGP, e - EGP, ? - incomplete
+AS Path Attributes: Or-ID - Originator ID, C-LST - Cluster List, LL Nexthop - Link Local Nexthop
+
+          Network                Next Hop              Metric  LocPref Weight  Path
+ * >      RD: 10.255.255.7:1 ip-prefix 10.2.255.0/31
+                                 -                     -       -       0       i

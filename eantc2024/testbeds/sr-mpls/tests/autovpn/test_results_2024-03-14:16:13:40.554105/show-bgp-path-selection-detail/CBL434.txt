@@ -1,0 +1,18 @@
+BGP routing table information for VRF default
+Router identifier 10.255.255.7, local AS number 65000
+Bgp routing table entry for ipv4Dps VTEP 10.255.255.7/32
+ Paths: 1 available
+  Local
+    - from - (0.0.0.0)
+      Origin IGP, metric -, localpref -, weight 0, received 00:07:50 ago, valid, local
+      Tunnel encapsulation attribute: Dynamic path selection
+        Endpoint: 172.16.2.2, Path group name: ATT, WAN ID: 1, UDP port: 4500
+Bgp routing table entry for ipv4Ipsec VTEP 10.255.255.7/32
+ Paths: 1 available
+  Local
+    - from - (0.0.0.0)
+      Origin IGP, metric -, localpref -, weight 0, received 1d18h ago, valid, local
+      Tunnel encapsulation attribute: IP security
+        Initial contact: false, Rekey counter: 5, Nonce length: 32
+        DH group: 14, DH key length: 256
+        Encryption algo: aes256, Authentication algo: sha256

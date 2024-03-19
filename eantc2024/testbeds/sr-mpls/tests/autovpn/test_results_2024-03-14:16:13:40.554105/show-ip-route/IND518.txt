@@ -1,0 +1,53 @@
+
+VRF: default
+Source Codes:
+       C - connected, S - static, K - kernel,
+       O - OSPF, IA - OSPF inter area, E1 - OSPF external type 1,
+       E2 - OSPF external type 2, N1 - OSPF NSSA external type 1,
+       N2 - OSPF NSSA external type2, B - Other BGP Routes,
+       B I - iBGP, B E - eBGP, R - RIP, I L1 - IS-IS level 1,
+       I L2 - IS-IS level 2, O3 - OSPFv3, A B - BGP Aggregate,
+       A O - OSPF Summary, NG - Nexthop Group Static Route,
+       V - VXLAN Control Service, M - Martian,
+       DH - DHCP client installed default route,
+       DP - Dynamic Policy Route, L - VRF Leaked,
+       G  - gRIBI, RC - Route Cache Route,
+       CL - CBF Leaked Route
+
+Gateway of last resort is not set
+
+ S        10.80.0.0/12 [1/0]
+           via 172.28.128.1, Management1/1
+ S        10.224.0.0/12 [1/0]
+           via 172.28.128.1, Management1/1
+ S        10.255.255.1/32
+           directly connected, Dps1
+ S        10.255.255.3/32
+           directly connected, Dps1
+ C        10.255.255.4/32
+           directly connected, Loopback0
+ S        10.255.255.5/32
+           directly connected, Dps1
+ S        10.255.255.8/32
+           directly connected, Dps1
+ S        10.255.255.11/32
+           directly connected, Dps1
+ S        10.255.255.12/32
+           directly connected, Dps1
+ S        10.240.0.0/12 [1/0]
+           via 172.28.128.1, Management1/1
+ C        172.16.0.6/31
+           directly connected, Ethernet1/4
+ S        172.16.0.0/24 [1/0]
+           via 172.16.0.6, Ethernet1/4
+ C        172.16.1.4/31
+           directly connected, Ethernet1/3
+ S        172.16.1.0/24 [1/0]
+           via 172.16.1.4, Ethernet1/3
+ C        172.16.255.0/31
+           directly connected, Ethernet1/2
+ C        172.28.128.0/20
+           directly connected, Management1/1
+ S        172.16.0.0/12 [1/0]
+           via 172.28.128.1, Management1/1
+

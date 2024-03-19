@@ -1,3 +1,0 @@
- 
-Instance  VRF      System Id        Type Interface          SNPA              State Hold time   Circuit Id          
-IGP       default  h49-N540-24Q8L2DD L2   Ethernet24         P2P               UP    25          00                  

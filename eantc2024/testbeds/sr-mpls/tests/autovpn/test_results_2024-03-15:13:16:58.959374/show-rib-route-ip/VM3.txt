@@ -1,0 +1,48 @@
+VRF: default, Protocol: connected
+Codes: C - Connected, S - Static, P - Route Input, G - Gribi
+       B - BGP, O - Ospf, O3 - Ospf3, I - Isis, R - Rip, VL - VRF Leak
+       > - Best Route, * - Unresolved Next hop
+       EM - Exact match of the SR-TE Policy
+       NM - Null endpoint match of the SR-TE Policy
+       AM - Any endpoint match of the SR-TE Policy
+       L - Part of a recursive route resolution loop
+       A - Next hop not resolved in ARP/ND
+       NF - Not in FEC
+>C    10.255.255.9/32 [0 pref/0 metric] updated 17:00:58 ago
+         via Loopback0, directly connected
+>C    172.16.2.6/31 [0 pref/0 metric] updated 17:00:51 ago
+         via Ethernet1, directly connected
+VRF: default, Protocol: static
+Codes: C - Connected, S - Static, P - Route Input, G - Gribi
+       B - BGP, O - Ospf, O3 - Ospf3, I - Isis, R - Rip, VL - VRF Leak
+       > - Best Route, * - Unresolved Next hop
+       EM - Exact match of the SR-TE Policy
+       NM - Null endpoint match of the SR-TE Policy
+       AM - Any endpoint match of the SR-TE Policy
+       L - Part of a recursive route resolution loop
+       A - Next hop not resolved in ARP/ND
+       NF - Not in FEC
+>S    0.0.0.0/0 [1 pref/0 metric] updated 17:00:51 ago
+         via 172.16.2.6 [0 pref/0 metric] type ipv4
+            via 172.16.2.6, Ethernet1
+VRF: default, Protocol: route-input
+Codes: C - Connected, S - Static, P - Route Input, G - Gribi
+       B - BGP, O - Ospf, O3 - Ospf3, I - Isis, R - Rip, VL - VRF Leak
+       > - Best Route, * - Unresolved Next hop
+       EM - Exact match of the SR-TE Policy
+       NM - Null endpoint match of the SR-TE Policy
+       AM - Any endpoint match of the SR-TE Policy
+       L - Part of a recursive route resolution loop
+       A - Next hop not resolved in ARP/ND
+       NF - Not in FEC
+>P    0.0.0.0/8 [1 pref/0 metric] updated 17:00:57 ago
+         via Null0, directly connected [NF]
+>P    10.255.255.2/32 [1 pref/0 metric] updated 17:00:47 ago
+         via 10.255.255.2, Dps1
+>P    10.255.255.3/32 [1 pref/0 metric] updated 17:00:47 ago
+         via 10.255.255.3, Dps1
+>P    10.255.255.7/32 [1 pref/0 metric] updated 13:30:40 ago
+         via 10.255.255.7, Dps1
+>P    127.0.0.0/8 [1 pref/0 metric] updated 17:00:57 ago
+         via :: [1 pref/1 metric] type ipv4
+            via , directly connected

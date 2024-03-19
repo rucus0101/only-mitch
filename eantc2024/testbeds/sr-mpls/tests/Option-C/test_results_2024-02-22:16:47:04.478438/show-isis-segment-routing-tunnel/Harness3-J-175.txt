@@ -1,3 +1,0 @@
-   Index       Endpoint       Next Hop/Tunnel Index       Interface    Labels
------------ -------------- --------------------------- --------------- ------
-

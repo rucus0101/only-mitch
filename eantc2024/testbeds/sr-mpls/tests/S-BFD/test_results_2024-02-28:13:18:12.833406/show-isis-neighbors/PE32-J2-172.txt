@@ -1,3 +1,0 @@
- 
-Instance  VRF      System Id        Type Interface          SNPA              State Hold time   Circuit Id          
-sr_eantc  default  Spine2-J-180     L2   Ethernet2          P2P               UP    25          2B                  

@@ -1,0 +1,17 @@
+Arista AWE-5510-F
+Hardware version: 11.01
+Serial number: WTW23160930
+Hardware MAC address: ec8a.4804.f569
+System MAC address: ec8a.4804.f569
+
+Software image version: 4.31.2F
+Architecture: x86_64
+Internal build version: 4.31.2F-35442176.4312F
+Internal build ID: 500c58e3-5beb-4481-afe9-8ad77245cc44
+Image format version: 3.0
+Image optimization: Default
+
+Uptime: 3 hours and 34 minutes
+Total memory: 65396488 kB
+Free memory: 39949268 kB
+

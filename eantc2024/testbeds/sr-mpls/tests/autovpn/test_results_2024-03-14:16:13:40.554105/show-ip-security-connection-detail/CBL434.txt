@@ -1,0 +1,16 @@
+path1:
+  Source address: 172.16.2.2, Destination address: 172.16.2.0
+  State: idle
+  Uptime: N/A
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.2
+  Role: responder
+path3:
+  Source address: 172.16.2.2, Destination address: 172.16.2.5
+  State: idle
+  Uptime: N/A
+  VRF: default
+  Type: static
+  Remote IP: 10.255.255.2
+  Role: responder
